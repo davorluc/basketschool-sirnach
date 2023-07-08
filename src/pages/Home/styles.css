@@ -58,3 +58,19 @@
     max-width: 30vw;
     object-fit: contain;
 }
+
+body {
+    color: #F7EFE5;
+    overflow-x: hidden;
+}
+
+.carousel {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.carousel img {
+    height: 100%;
+}

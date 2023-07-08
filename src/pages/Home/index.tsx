@@ -1,6 +1,10 @@
 import { useEffect } from 'react';
-import {Grid, Center, MantineProvider} from "@mantine/core";
+import {Grid, Center, MantineProvider, rem, Space} from "@mantine/core";
+import { Carousel } from '@mantine/carousel';
 import AOS from 'aos';
+import bear1 from '../../media/bc_bears_realistic_effect.png';
+import bear2 from '../../media/black_bear_realistic_second.png';
+import bear3 from '../../media/black_bear_realistic_second_cropped.png';
 import stilmat from '../../media/stilmat-logo-ch.png';
 import hederavita from '../../media/hederavita.png';
 import tgazajug from '../../media/tga_za_jug.jpeg';
@@ -19,23 +23,36 @@ function Home() {
 	return (
 		<Center>
 			<div>
-				<div className='sponsor-images grid'>
-					{/*<SimpleGrid*/}
-					{/*	cols={3}*/}
-					{/*	spacing={"lg"}*/}
-					{/*	breakpoints={[*/}
-					{/*		{maxWidth: '768px', cols: 2, spacing: 'md'},*/}
-					{/*		{maxWidth: '425px', cols: 1, spacing: 'sm'}*/}
-					{/*	]}*/}
-					{/*>*/}
-					{/*	<div><a href={'https://www.stilmat.com/de/'}><img src={stilmat} alt={'Stilmat Logo'}/></a></div>*/}
-					{/*	<div><a href={'https://hederavita.ch'}><img src={hederavita} alt={'Hederavita Logo'}/></a></div>*/}
-					{/*	<div><a href={'https://www.tgazajug.com'}><img src={tgazajug} alt={'Tga Za Jug Logo'}/></a></div>*/}
-					{/*	<div><a href={'https://munishi.ch'}><img src={munishi} alt={'Munishi Logo'}/></a></div>*/}
-					{/*	<div><a href={'https://kon-sens.com'}><img src={konsens} alt={'Konsens Logo'}/></a></div>*/}
-					{/*	<div><a href={'https://www.mobiliar.ch'}><img src={dieMobiliar} alt={'Die Mobiliar Logo'}/></a></div>*/}
+				<div className='carousel'>
+					<Carousel
+						slideSize='100%'
+						slidesToScroll={1}
+						withIndicators
+						height={425}
+						controlSize={50}
+						controlsOffset={'xl'}
+						align='center'
+						loop
+						speed={1.8}
+						styles={{
+							indicator: {
+								width: rem(12),
+								height: rem(4),
+								transition: 'width 250ms ease',
 
-					{/*</SimpleGrid>*/}
+								'&[data-active]': {
+									width: rem(40),
+								},
+							},
+						}}
+					>
+						<Carousel.Slide><img src={bear1}/></Carousel.Slide>
+						<Carousel.Slide><img src={bear2}/></Carousel.Slide>
+						<Carousel.Slide><img src={bear3}/></Carousel.Slide>
+					</Carousel>
+				</div>
+				<Space h="xl" />
+				<div className='sponsor-images grid'>
 					<MantineProvider>
 						<Grid justify='center' align='center'>
 							<Grid.Col sm={6} md={4}><a href={'https://www.stilmat.com/de/'}><img src={stilmat} alt={'Stilmat Logo'}/></a></Grid.Col>
