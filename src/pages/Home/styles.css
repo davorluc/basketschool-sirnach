@@ -74,3 +74,9 @@ body {
 .carousel img {
     height: 100%;
 }
+
+.next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

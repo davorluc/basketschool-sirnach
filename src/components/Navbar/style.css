@@ -15,6 +15,7 @@
     justify-content: space-between;
     background: var(--secondary-color);
     transition: all .50s ease;
+    z-index: 100;
 }
 
 .navigation-menu {

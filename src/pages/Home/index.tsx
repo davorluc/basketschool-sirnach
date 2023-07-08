@@ -1,10 +1,23 @@
 import { useEffect } from 'react';
-import {Grid, Center, MantineProvider, rem, Space} from "@mantine/core";
+import {
+	Grid,
+	Center,
+	MantineProvider,
+	rem,
+	Space,
+	Card,
+	Image,
+	Text,
+	Badge,
+	Group,
+	AspectRatio
+} from "@mantine/core";
 import { Carousel } from '@mantine/carousel';
 import AOS from 'aos';
 import bear1 from '../../media/bc_bears_realistic_effect.png';
 import bear2 from '../../media/black_bear_realistic_second.png';
 import bear3 from '../../media/black_bear_realistic_second_cropped.png';
+import beach from '../../media/beachphoto.jpg'
 import stilmat from '../../media/stilmat-logo-ch.png';
 import hederavita from '../../media/hederavita.png';
 import tgazajug from '../../media/tga_za_jug.jpeg';
@@ -20,6 +33,7 @@ function Home() {
 		AOS.init({ duration: 1000 })
 	});
 
+
 	return (
 		<Center>
 			<div>
@@ -28,9 +42,8 @@ function Home() {
 						slideSize='100%'
 						slidesToScroll={1}
 						withIndicators
-						height={425}
-						controlSize={50}
-						controlsOffset={'xl'}
+						height={400}
+						withControls={false}
 						align='center'
 						loop
 						speed={1.8}
@@ -52,6 +65,72 @@ function Home() {
 					</Carousel>
 				</div>
 				<Space h="xl" />
+				<div className={'next'}>
+					<Card shadow={'sm'} radius={'md'} mx={'lg'}>
+						<Card.Section>
+							<AspectRatio ratio={2048/1357}>
+								<Image
+									src={beach}
+									height={'100%'}
+									alt={'beach'}
+									fit={'fill'}
+								/>
+							</AspectRatio>
+							<Group position={'apart'} m={'md'}>
+								<Text weight={500}>Sommerferien!</Text>
+								<Badge color={'green'} variant={'light'}>
+									Info
+								</Badge>
+							</Group>
+							<Text size={'sm'} color={'dimmed'} mx={'lg'} maw={'60ch'} my={'sm'}>
+								Die Saison neigt sich dem Ende, darum wünschen wir allen Spielern und Eltern unserer Spieler einen erholsamen Sommer!
+							</Text>
+						</Card.Section>
+					</Card>
+					<Card shadow={'sm'} radius={'md'} mx={'lg'}>
+						<Card.Section>
+							<AspectRatio ratio={2048/1357}>
+								<Image
+									src={beach}
+									height={'100%'}
+									alt={'beach'}
+									fit={'fill'}
+								/>
+							</AspectRatio>
+							<Group position={'apart'} m={'md'}>
+								<Text weight={500}>Sommerferien!</Text>
+								<Badge color={'green'} variant={'light'}>
+									Info
+								</Badge>
+							</Group>
+							<Text size={'sm'} color={'dimmed'} mx={'lg'} maw={'60ch'} my={'sm'}>
+								Die Saison neigt sich dem Ende, darum wünschen wir allen Spielern und Eltern unserer Spieler einen erholsamen Sommer!
+							</Text>
+						</Card.Section>
+					</Card>
+					<Card shadow={'sm'} radius={'md'} mx={'lg'}>
+						<Card.Section>
+							<AspectRatio ratio={2048/1357}>
+								<Image
+									src={beach}
+									height={'100%'}
+									alt={'beach'}
+									fit={'fill'}
+								/>
+							</AspectRatio>
+							<Group position={'apart'} m={'md'}>
+								<Text weight={500}>Sommerferien!</Text>
+								<Badge color={'green'} variant={'light'}>
+									Info
+								</Badge>
+							</Group>
+							<Text size={'sm'} color={'dimmed'} mx={'lg'} maw={'60ch'} my={'sm'}>
+								Die Saison neigt sich dem Ende, darum wünschen wir allen Spielern und Eltern unserer Spieler einen erholsamen Sommer!
+							</Text>
+						</Card.Section>
+					</Card>
+				</div>
+				<Space h="xl" />
 				<div className='sponsor-images grid'>
 					<MantineProvider>
 						<Grid justify='center' align='center'>
@@ -69,5 +148,4 @@ function Home() {
 
 	);
 }
-
 export default Home;
