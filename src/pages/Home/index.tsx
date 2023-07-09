@@ -45,7 +45,7 @@ import './styles.css';
 import 'aos/dist/aos.css'
 
 // Icons Imports here
-import { Mail, WorldWww } from 'tabler-icons-react';
+import { Mail, WorldWww, BrandInstagram, BrandFacebook } from 'tabler-icons-react';
 
 function Home() {
 
@@ -349,6 +349,19 @@ function Home() {
 									}>
 								</NavLink>
 							</Box>
+							<Group my={'xs'}>
+								<Anchor href={'https://www.instagram.com/bc_bears_wil/'}>
+									<ThemeIcon c={'green'} variant={'light'} size={'xl'} radius={'md'}>
+										<BrandInstagram/>
+									</ThemeIcon>
+								</Anchor>
+								<Anchor href={'https://www.facebook.com/BasketballClubBearsWil/'}>
+									<ThemeIcon c={'green'} variant={'light'} size={'xl'} radius={'md'}>
+										<BrandFacebook
+											strokeWidth={1.5}/>
+									</ThemeIcon>
+								</Anchor>
+							</Group>
 						</Grid.Col>
 						<Grid.Col md={4} sm={6}>
 							<Box align={'center'}>
