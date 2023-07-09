@@ -1,3 +1,6 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400&display=swap');
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -16,11 +19,11 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  color: white;
+  text-decoration: none;
 }
 a:hover {
-  color: #189940;
+  color: black;
 }
 
 body {
@@ -61,9 +64,13 @@ button:focus-visible {
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: black;
   }
   button {
     background-color: #f9f9f9;
   }
+}
+
+.mantine-ThemeIcon-root {
+  border: none
 }

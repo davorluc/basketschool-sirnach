@@ -6,9 +6,11 @@ import {
 	Grid,
 	Center,
 	Space,
+	Divider,
 	Card,
 	Image,
 	NavLink,
+	Blockquote,
 	Text,
 	Badge,
 	Group,
@@ -59,7 +61,7 @@ function Home() {
 					<div className='carousel'>
 
 					</div>
-					<Space h="xl" />
+					<Divider mx={'xl'} my={'xl'}/>
 					<div className={'next-title'}>
 						<Title order={1} align={'center'} my={'xl'}>Unsere nächsten Veranstaltungen</Title>
 					</div>
@@ -136,7 +138,7 @@ function Home() {
 								</Grid.Col>
 							</Grid>
 					</div>
-					<Space h="xl" />
+					<Divider mx={'xl'} my={'xl'}/>
 					<div className='sponsor-images grid'>
 							<Grid justify='center' align='center'>
 								<Grid.Col sm={6} md={4}><a href={'https://www.stilmat.com/de/'}><img src={stilmat} alt={'Stilmat Logo'}/></a></Grid.Col>
@@ -147,99 +149,213 @@ function Home() {
 								<Grid.Col sm={6} md={4}><a href={'https://www.mobiliar.ch'}><img src={dieMobiliar} alt={'Die Mobiliar Logo'}/></a></Grid.Col>
 							</Grid>
 					</div>
-					<Space h="xl" />
 				</div>
 				<div className='footer'>
-					<Grid justify={'center'} align={'center'} mx={'10%'}>
-						<Grid.Col md={4} sm={6}>
-							<AspectRatio ratio={2000/2189} maw={'30%'} my={'lg'}>
-								<Image
-									src={logo}
-									height={'100%'}
-									mx={'lg'}
-								/>
-							</AspectRatio>
+					<Grid justify={'center'} align={'center'} mx={'xl'}>
+						<Grid.Col md={4} sm={6} align={'left'} ml={'xl'}>
+								<AspectRatio ratio={2000/2189} maw={'30%'} my={'lg'}>
+									<Anchor href={'https://www.bcbears.ch'}>
+										<Image
+											src={logo}
+											height={'100%'}
+											mx={'lg'}
+											my={'xs'}
+										/>
+									</Anchor>
+								</AspectRatio>
 							<Title order={2} my={'xl'} align={'left'}>BC BEARS WIL</Title>
 							<Text align={'left'}>
-								<Anchor href={'mailto:bcbear-wil@bluewin.ch'} underline={false} c={'dimmed'} mx={'2px'}>
-									<ThemeIcon color={'green'} mr={'7px'} variant={'outline'}>
+								<Anchor href={'mailto:bcbear-wil@bluewin.ch'} underline={false} mx={'2px'} c={'black'} weight={700}>
+									<ThemeIcon mr={'7px'} variant={'outline'} c={'black'}>
 										<Mail/>
 									</ThemeIcon>
 									bcbears-wil@bluewin.ch
 								</Anchor>
 							</Text>
 							<Text align={'left'}>
-								<Anchor href={'https://www.bcbears.ch'} underline={false} c={'dimmed'} mx={'2px'}>
-									<ThemeIcon color={'green'} mr={'7px'} variant={'outline'}>
-										<WorldWww/>
+								<Anchor href={'https://www.bcbears.ch'} underline={false} mx={'2px'} c={'black'} weight={700}>
+									<ThemeIcon mr={'7px'} variant={'outline'} c={'black'}>
+										<WorldWww />
 									</ThemeIcon>
 									www.bcbears.ch
 								</Anchor>
 							</Text>
 						</Grid.Col>
-						<Grid.Col md={4} sm={6} mx={'lg'}>
-							<Title order={2}>SITEMAP</Title>
-							<Box w={'100%'} color={'black'}>
+						<Grid.Col md={3} sm={3} mx={'lg'} align={'left'}>
+							<Title order={2} ml={'sm'}>SITEMAP</Title>
+							<Box w={'100%'}>
 								<NavLink
-									label={'Home'}>
+									label={'Home'}
+									c={'black'}
+									sx={() => ({
+										'&:hover': {
+											backgroundColor: '#E6F9E6',
+										}})
+									}>
 								</NavLink>
 								<NavLink
 									label={'Verein'}
-									childrenOffset={'lg'}>
+									childrenOffset={'lg'}
+									c={'black'}
+									sx={() => ({
+										'&:hover': {
+											backgroundColor: '#E6F9E6',
+										}})
+									}>
 									<NavLink
-										label={'Geschichte'}>
+										label={'Geschichte'}
+										c={'black'}
+										sx={() => ({
+											'&:hover': {
+												backgroundColor: '#E6F9E6',
+											}})
+										}>
 									</NavLink>
 									<NavLink
-										label={'Vorstand'}>
+										label={'Vorstand'}
+										c={'black'}
+										sx={() => ({
+											'&:hover': {
+												backgroundColor: '#E6F9E6',
+											}})
+										}>
 									</NavLink>
 									<NavLink
-										label={'Trainer/innen'}>
+										label={'Trainer/innen'}
+										c={'black'}
+										sx={() => ({
+											'&:hover': {
+												backgroundColor: '#E6F9E6',
+											}})
+										}>
 									</NavLink>
 									<NavLink
-										label={'Hallen'}>
+										label={'Hallen'}
+										c={'black'}
+										sx={() => ({
+											'&:hover': {
+												backgroundColor: '#E6F9E6',
+											}})
+										}>
 									</NavLink>
 									<NavLink
-										label={'Mitglied werden'}>
+										label={'Mitglied werden'}
+										c={'black'}
+										sx={() => ({
+											'&:hover': {
+												backgroundColor: '#E6F9E6',
+											}})
+										}>
 									</NavLink>
 								</NavLink>
 								<NavLink
 									label={'Teams'}
-									childrenOffset={'lg'}>
+									childrenOffset={'lg'}
+									c={'black'}
+									sx={() => ({
+										'&:hover': {
+											backgroundColor: '#E6F9E6',
+										}})
+									}>
 									<NavLink
-										label={'Mix U10'}>
+										label={'Mix U10'}
+										c={'black'}
+										sx={() => ({
+											'&:hover': {
+												backgroundColor: '#E6F9E6',
+											}})
+										}>
 									</NavLink>
 									<NavLink
-										label={'Mix U12'}>
+										label={'Mix U12'}
+										c={'black'}
+										sx={() => ({
+											'&:hover': {
+												backgroundColor: '#E6F9E6',
+											}})
+										}>
 									</NavLink>
 									<NavLink
-										label={'Herren U14'}>
+										label={'Herren U14'}
+										c={'black'}
+										sx={() => ({
+											'&:hover': {
+												backgroundColor: '#E6F9E6',
+											}})
+										}>
 									</NavLink>
 									<NavLink
-										label={'Damen U14'}>
+										label={'Damen U14'}
+										c={'black'}
+										sx={() => ({
+											'&:hover': {
+												backgroundColor: '#E6F9E6',
+											}})
+										}>
 									</NavLink>
 									<NavLink
-										label={'Herren U16'}>
+										label={'Herren U16'}
+										c={'black'}
+										sx={() => ({
+											'&:hover': {
+												backgroundColor: '#E6F9E6',
+											}})
+										}>
 									</NavLink>
 									<NavLink
-										label={'Herren U18'}>
+										label={'Herren U18'}
+										c={'black'}
+										sx={() => ({
+											'&:hover': {
+												backgroundColor: '#E6F9E6',
+											}})
+										}>
 									</NavLink>
 									<NavLink
-										label={'Herren 2. Liga'}>
+										label={'Herren 2. Liga'}
+										c={'black'}
+										sx={() => ({
+											'&:hover': {
+												backgroundColor: '#E6F9E6',
+											}})
+										}>
 									</NavLink>
 									<NavLink
-										label={'Herren 4. Liga'}>
+										label={'Herren 4. Liga'}
+										c={'black'}
+										sx={() => ({
+											'&:hover': {
+												backgroundColor: '#E6F9E6',
+											}})
+										}>
 									</NavLink>
 								</NavLink>
 								<NavLink
-									label={'Partner & Gönner'}>
+									label={'Partner & Gönner'}
+									c={'black'}
+									sx={() => ({
+										'&:hover': {
+											backgroundColor: '#E6F9E6',
+										}})
+									}>
 								</NavLink>
 								<NavLink
-									label={'Shop'}>
+									label={'Shop'}
+									c={'black'}
+									sx={() => ({
+										'&:hover': {
+											backgroundColor: '#E6F9E6',
+										}})
+									}>
 								</NavLink>
 							</Box>
 						</Grid.Col>
 						<Grid.Col md={4} sm={6}>
-
+							<Box align={'center'}>
+								<Blockquote cite={'- Miodrag Manojlovic, Vereinspräsident BC Bears Wil'}>
+									Ein Sport, Eine Leidenschaft, Eine Familie
+								</Blockquote>
+							</Box>
 						</Grid.Col>
 					</Grid>
 				</div>

@@ -7,7 +7,7 @@ import {MantineProvider} from "@mantine/core";
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
       <MantineProvider withGlobalStyles theme={{
-          fontFamily: 'Noto Sans, sans-serif'
+          fontFamily: 'Roboto Condensed, sans-serif'
       }}>
           <App />
       </MantineProvider>
