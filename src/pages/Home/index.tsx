@@ -45,7 +45,7 @@ import './styles.css';
 import 'aos/dist/aos.css'
 
 // Icons Imports here
-import { Mail, WorldWww, BrandInstagram, BrandFacebook } from 'tabler-icons-react';
+import {Mail, WorldWww, BrandInstagram, BrandFacebook } from 'tabler-icons-react';
 
 function Home() {
 
@@ -151,9 +151,9 @@ function Home() {
 					</div>
 				</div>
 				<div className='footer'>
-					<Grid justify={'center'} align={'center'} mx={'xl'}>
+					<Grid justify={'center'} align={'center'} mx={'xl'} py={'xs'}>
 						<Grid.Col md={4} sm={6} align={'left'} ml={'xl'}>
-								<AspectRatio ratio={2000/2189} maw={'30%'} my={'lg'}>
+								<AspectRatio ratio={2000/2189} maw={'30%'} my={'sm'}>
 									<Anchor href={'https://www.bcbears.ch'}>
 										<Image
 											src={logo}
@@ -166,7 +166,7 @@ function Home() {
 							<Title order={2} my={'xl'} align={'left'}>BC BEARS WIL</Title>
 							<Text align={'left'}>
 								<Anchor href={'mailto:bcbear-wil@bluewin.ch'} underline={false} mx={'2px'} c={'black'} weight={700}>
-									<ThemeIcon mr={'7px'} variant={'outline'} c={'black'}>
+									<ThemeIcon mr={'xs'} variant={'outline'} c={'black'}>
 										<Mail/>
 									</ThemeIcon>
 									bcbears-wil@bluewin.ch
@@ -174,7 +174,7 @@ function Home() {
 							</Text>
 							<Text align={'left'}>
 								<Anchor href={'https://www.bcbears.ch'} underline={false} mx={'2px'} c={'black'} weight={700}>
-									<ThemeIcon mr={'7px'} variant={'outline'} c={'black'}>
+									<ThemeIcon mr={'xs'} variant={'outline'} c={'black'}>
 										<WorldWww />
 									</ThemeIcon>
 									www.bcbears.ch
@@ -371,6 +371,9 @@ function Home() {
 							</Box>
 						</Grid.Col>
 					</Grid>
+					<Title order={4} align={'center'}>&copy; 2023 BC Bears Wil</Title>
+					<Text align={'center'} size={'sm'}>Engineering and Design by</Text>
+					<Text align={'center'} pb={'lg'}><Anchor c={'black'} href={'https://github.com/davorluc'} underline={false}>Davor Lucic</Anchor> and <Anchor href={'https://github.com/FadilSmajilbasic'} underline={false} c={'black'}>Fadil Smajilbasic</Anchor></Text>
 				</div>
 			</div>
 		</Center>
