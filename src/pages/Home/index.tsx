@@ -1,11 +1,10 @@
 // React imports here
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
 // Mantine Imports here
 import {
 	Grid,
 	Center,
-	Space,
 	Divider,
 	Card,
 	Image,
@@ -53,13 +52,48 @@ function Home() {
 		AOS.init({ duration: 1000 })
 	});
 
-
 	return (
 		<Center>
 			<div>
 				<div className={'main'}>
 					<div className='carousel'>
+						<Carousel slideSize={'100%'}
+								  height={'xl'}
+								  withIndicators
+								  withControls={false}
+								  loop>
+							<Carousel.Slide>
+								<AspectRatio ratio={1536/520}>
+									<Image
+										src={bear2}
+										alt={'bear wide cropped'}
+										fit={'fill'}
+										width={'100%'}
+									/>
 
+								</AspectRatio>
+							</Carousel.Slide>
+							<Carousel.Slide>
+								<AspectRatio ratio={1536/520}>
+									<Image
+										src={bear1}
+										alt={'bear wide cropped'}
+										fit={'fill'}
+										width={'100%'}
+									/>
+								</AspectRatio>
+							</Carousel.Slide>
+							<Carousel.Slide>
+								<AspectRatio ratio={1536/520}>
+									<Image
+										src={bear2}
+										alt={'bear wide cropped'}
+										fit={'fill'}
+										width={'100%'}
+									/>
+								</AspectRatio>
+							</Carousel.Slide>
+						</Carousel>
 					</div>
 					<Divider mx={'xl'} my={'xl'}/>
 					<div className={'next-title'}>
