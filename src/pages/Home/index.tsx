@@ -14,12 +14,14 @@ import {
 	Badge,
 	Group,
 	Box,
+	rem,
 	ThemeIcon,
 	Title,
 	Anchor,
 	AspectRatio
 } from "@mantine/core";
 import { Carousel } from '@mantine/carousel';
+import Autoplay from "embla-carousel-autoplay";
 
 // AOS Import
 import AOS from 'aos';
@@ -52,6 +54,8 @@ function Home() {
 		AOS.init({ duration: 1000 })
 	});
 
+	const autoplay = useRef(Autoplay({ delay: 10000 }));
+
 	return (
 		<Center>
 			<div>
@@ -61,7 +65,21 @@ function Home() {
 								  height={'xl'}
 								  withIndicators
 								  withControls={false}
-								  loop>
+								  plugins={[autoplay.current]}
+								  onMouseEnter={autoplay.current.stop}
+								  onMouseLeave={autoplay.current.reset}
+								  loop
+								  styles={{
+									  indicator: {
+										  width: rem(12),
+										  height: rem(4),
+										  transition: 'width 250ms ease',
+
+										  '&[data-active]': {
+											  width: rem(40),
+										  },
+									  },
+								  }}>
 							<Carousel.Slide>
 								<AspectRatio ratio={1536/520}>
 									<Image
