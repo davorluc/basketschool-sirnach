@@ -1,48 +1,48 @@
 # BC BEARS website
 
-- ASAP
+[] ASAP
 
 #### Requirements
 
-- Login Dateien (für server)
-- Colors (#189940 ?)
-- HTML Template (3 choices)
-- Day/Night Theme
-- Anmeldeformular (für training)
-- Kontaktformular (mit captcha)
-- Trainerdaten (Kontakt)
-- Gruppe mit trainer verbinden
+[] Login Dateien (für server)
+[] Colors (#189940 ?)
+[] HTML Template (3 choices)
+[] Day/Night Theme
+[] Anmeldeformular (für training)
+[] Kontaktformular (mit captcha)
+[] Trainerdaten (Kontakt)
+[] Gruppe mit trainer verbinden
 
 #### Extra
-- PDF generierung für Anmeldeformular
-- Direkte anmeldung
-- QR code für sponsor
+[] PDF generierung für Anmeldeformular
+[] Direkte anmeldung
+[] QR code für sponsor
 
 #### TBD
 
-- Liefertermin
-- Preis (Nebenkosten fragen)
-- Template
+[] Liefertermin
+[] Preis (Nebenkosten fragen)
+[] Template
 
 ###### Questions
 
-- Wo liegt die Website?
-- Farben?
-- Template?
+[] Wo liegt die Website?
+[] Farben?
+[] Template?
 
 #### Meeting mit Miki
 
 ###### Theme
-- Grün
-- Weiss
-- Grau
+[] Grün
+[] Weiss
+[] Grau
 
 ###### Header
-- Wie bei Skiclub Wil
-- Sticky Navbar
+[] Wie bei Skiclub Wil
+[x] Sticky Navbar
 
 ###### Footer
-- Wie bei Skiclub Wil (auch mit Sitemap und "Mitglied werden)
+[x] Wie bei Skiclub Wil (auch mit Sitemap und "Mitglied werden)
 
 ###### Hero Section als Slideshow:
 1. Willkommensmessage mit Logo wie bei Swiss Central
@@ -51,66 +51,66 @@
 4. Fanshop (wie Fanshop bei BC Winterthur)
 
 ###### Verein wie bei BC Winterthur
-- Zum Beispiel mit Kacheln
-- Cards wären auch cool
-- Sonst irgendwie kreativ werden. Wenn möglich, gleichen Flair wie BC Winterthur
-- In Navbar auch Dropdown-Menü mit:
-    - Geschichte
-    - Vorstand
-    - Trainer/Trainerinnen
-    - Hallen
-    - Neumitglied
-- Nur auf der Vereins-Page Sponsoren auf der Seite (Wie bei Alte Kanti Aarau)
+[x] Zum Beispiel mit Kacheln
+[x] Cards wären auch cool
+[x] Sonst irgendwie kreativ werden. Wenn möglich, gleichen Flair wie BC Winterthur
+[] In Navbar auch Dropdown-Menü mit:
+    [] Geschichte
+    [] Vorstand
+    [] Trainer/Trainerinnen
+    [] Hallen
+    [] Neumitglied
+[] Nur auf der Vereins-Page Sponsoren auf der Seite (Wie bei Alte Kanti Aarau)
 
 ###### Teams
-- Ähnlich wie bei BC Winterthur
-- Mit Mannschaftsfoto
-- Mit Foto und Kontaktdaten von Trainer
-- Mit Adresse, Foto von Gebäude und Map vom Trainingsort
+[] Ähnlich wie bei BC Winterthur
+[] Mit Mannschaftsfoto
+[] Mit Foto und Kontaktdaten von Trainer
+[] Mit Adresse, Foto von Gebäude und Map vom Trainingsort
 
 ###### Sponsoren
-- Wie bei BC Winterthur
-- Aufgeteilt in: Haupt, Silber, Medien, Medical
-- und BC Bears Wil Gönner (Gönner wie bei BC Winterthur)
-- Am Schluss "Willst du auch Sponsor werden? Unterstütze uns hier: [QR Code]"
+[] Wie bei BC Winterthur
+[] Aufgeteilt in: Haupt, Silber, Medien, Medical
+[] und BC Bears Wil Gönner (Gönner wie bei BC Winterthur)
+[] Am Schluss "Willst du auch Sponsor werden? Unterstütze uns hier: [QR Code]"
 
 ###### Navbar Aufbau
-- Home
-- Verein
-    - Geschichte
-    - Vorstand
-    - Trainer/-innen
-    - Hallen
-    - Neumitglied
-- Teams
-    - Mix U10
-        - Rangliste & Spielplan
-    - Mix U12
-        - Rangliste & Spielplan
-    - Damen U14
-        - Rangliste & Spielplan
-    - Herren U14
-        - Rangliste & Spielplan
-    - Herren U16
-        - Rangliste & Spielplan
-    - Herren U18
-        - Rangliste & Spielplan
-    - Herren 3. Liga
-        - Rangliste & Spielplan
-    - Herren 4. Liga
-        - Rangliste & Spielplan
-- Partner & Gönner
-    - Hauptsponsoren
-    - Silbersponsoren
-    - Mediensponsoren
-    - Medicalsponsoren
-    - BCB Gönner
-    - "Sponsor werden" (Wie bei Swiss Central Basketball)
-- Shop
+[x] Home
+[x] Verein
+    [x] Geschichte
+    [x] Vorstand
+    [x] Trainer/-innen
+    [x] Hallen
+    [x] Neumitglied
+[x] Teams
+    [x] Mix U10
+        [x] Rangliste & Spielplan
+    [x] Mix U12
+        [x] Rangliste & Spielplan
+    [x] Damen U14
+        [x] Rangliste & Spielplan
+    [x] Herren U14
+        [x] Rangliste & Spielplan
+    [x] Herren U16
+        [x] Rangliste & Spielplan
+    [x] Herren U18
+        [x] Rangliste & Spielplan
+    [x] Herren 3. Liga
+        [x] Rangliste & Spielplan
+    [x] Herren 4. Liga
+        [x] Rangliste & Spielplan
+[x] Partner & Gönner
+    [] Hauptsponsoren
+    [] Silbersponsoren
+    [] Mediensponsoren
+    [] Medicalsponsoren
+    [] BCB Gönner
+    [] "Sponsor werden" (Wie bei Swiss Central Basketball)
+[x] Shop
 
 
 ###### Homepage Aufbau
-1. Hero Section (siehe oben für Spezifikationen)
-2. Unsere nächste Veranstaltungen (z.B. GV, Weihnachtsessen, usw... wie bei Skiclub Wil)
-3. Sponsoren (wie jetzt ist ok)
-4. Footer (Siehe Spezifikationen oben)
+[] Hero Section (siehe oben für Spezifikationen)
+[x] Unsere nächste Veranstaltungen (z.B. GV, Weihnachtsessen, usw... wie bei Skiclub Wil)
+[x] Sponsoren (wie jetzt ist ok)
+[x] Footer (Siehe Spezifikationen oben)
