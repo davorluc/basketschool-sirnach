@@ -190,6 +190,9 @@ function Home() {
 							</Grid>
 					</div>
 					<Divider mx={'xl'} my={'xl'}/>
+					<div className={'sponsors-title'}>
+						<Title order={1} align={'center'} my={'xl'}>Unsere Sponsoren</Title>
+					</div>
 					<div className='sponsor-images grid'>
 							<Grid justify='center' align='center' pb={'xl'}>
 								<Grid.Col sm={6} md={4}><a href={'https://www.stilmat.com/de/'}><img src={stilmat} alt={'Stilmat Logo'}/></a></Grid.Col>
