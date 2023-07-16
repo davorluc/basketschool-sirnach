@@ -211,13 +211,13 @@ const Footer = () => {
                         </NavLink>
                     </Box>
                     <Group my={'xs'}>
-                        <Anchor href={'https://www.instagram.com/bc_bears_wil/'}>
-                            <ThemeIcon c={'green'} variant={'light'} size={'xl'} radius={'md'}>
+                        <Anchor href={'https://www.instagram.com/bc_bears_wil/'} c={'#E6F9E6'}>
+                            <ThemeIcon c={'#189940'} variant={'light'} size={'xl'} radius={'md'}>
                                 <BrandInstagram/>
                             </ThemeIcon>
                         </Anchor>
                         <Anchor href={'https://www.facebook.com/BasketballClubBearsWil/'}>
-                            <ThemeIcon c={'green'} variant={'light'} size={'xl'} radius={'md'}>
+                            <ThemeIcon c={'#189940'} variant={'light'} size={'xl'} radius={'md'}>
                                 <BrandFacebook
                                     strokeWidth={1.5}/>
                             </ThemeIcon>

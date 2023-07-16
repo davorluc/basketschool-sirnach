@@ -31,7 +31,7 @@ function Verein () {
                     <Title order={1} my={'xl'} mx={'xl'} align={'left'}>Verein</Title>
                 </div>
                 <div className={'verein-grid'}>
-                    <Grid my={'xl'} align={'center'} justify={'center'}>
+                    <Grid my={'xl'} align={'center'} justify={'center'} mx={'xl'}>
                         <Grid.Col md={4} sm={6}>
                             <Card shadow={'sm'} radius={'md'} style={{backgroundColor: "#F0F0F0"}}>
                                 <Card.Section p={'xl'}>
@@ -43,7 +43,7 @@ function Verein () {
                                             fit={'fill'}
                                         />
                                     </AspectRatio>
-                                        <Title m={'xl'} p={'xl'} align={'center'} order={2}>Geschichte!</Title>
+                                        <Title m={'xl'} p={'xl'} align={'center'} order={2}>Geschichte</Title>
                                 </Card.Section>
                             </Card>
                         </Grid.Col>
