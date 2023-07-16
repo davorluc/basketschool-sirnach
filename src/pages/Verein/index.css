@@ -1,0 +1,16 @@
+body {
+    width: 100%
+}
+
+.main {
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    background: white;
+}
+
+.verein-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
