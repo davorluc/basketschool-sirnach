@@ -62,12 +62,6 @@
     - [ ] Neumitglied
 - [ ] Nur auf der Vereins-Page Sponsoren auf der Seite (Wie bei Alte Kanti Aarau)
 
-###### Teams
-- [ ] Ähnlich wie bei BC Winterthur
-- [ ] Mit Mannschaftsfoto
-- [ ] Mit Foto und Kontaktdaten von Trainer
-- [ ] Mit Adresse, Foto von Gebäude und Map vom Trainingsort
-
 ###### Sponsoren
 - [ ] Wie bei BC Winterthur
 - [ ] Aufgeteilt in: Haupt, Silber, Medien, Medical
