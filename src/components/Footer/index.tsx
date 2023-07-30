@@ -7,6 +7,8 @@ import logo from "../../media/wil_basktetball_small.png";
 // Icons Imports here
 import {Mail, WorldWww, BrandInstagram, BrandFacebook } from 'tabler-icons-react';
 
+// Style import
+import './index.css'
 
 const Footer = () => {
 
