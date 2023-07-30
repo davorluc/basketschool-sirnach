@@ -33,7 +33,7 @@ function Verein () {
                 <div className={'verein-grid'}>
                     <Grid my={'xl'} align={'center'} justify={'center'} mx={'xl'}>
                         <Grid.Col md={4} sm={6}>
-                            <Card shadow={'sm'} radius={'md'} style={{backgroundColor: "#F0F0F0"}}>
+                            <Card shadow={'sm'} radius={'md'} style={{backgroundColor: "#F0F0F0"}} component={'a'} href={'/verein/geschichte'}>
                                 <Card.Section p={'xl'}>
                                     <AspectRatio ratio={2000/1797} p={'xl'}>
                                         <Image
@@ -48,7 +48,7 @@ function Verein () {
                             </Card>
                         </Grid.Col>
                         <Grid.Col md={4} sm={6}>
-                            <Card shadow={'sm'} radius={'md'} style={{backgroundColor: "#F0F0F0"}}>
+                            <Card shadow={'sm'} radius={'md'} style={{backgroundColor: "#F0F0F0"}} component={'a'} href={'/verein/vorstand'}>
                                 <Card.Section p={'xl'}>
                                     <AspectRatio ratio={2000/1797}>
                                         <Image
@@ -63,7 +63,7 @@ function Verein () {
                             </Card>
                         </Grid.Col>
                         <Grid.Col md={4} sm={6}>
-                            <Card shadow={'sm'} radius={'md'} style={{backgroundColor: "#F0F0F0"}}>
+                            <Card shadow={'sm'} radius={'md'} style={{backgroundColor: "#F0F0F0"}} component={'a'} href={'/verein/trainer'}>
                                 <Card.Section p={'xl'}>
                                     <AspectRatio ratio={2000/1797}>
                                         <Image
@@ -78,7 +78,7 @@ function Verein () {
                             </Card>
                         </Grid.Col>
                         <Grid.Col md={4} sm={6}>
-                            <Card shadow={'sm'} radius={'md'} style={{backgroundColor: "#F0F0F0"}}>
+                            <Card shadow={'sm'} radius={'md'} style={{backgroundColor: "#F0F0F0"}} component={'a'} href={'/verein/hallen'}>
                                 <Card.Section p={'xl'}>
                                     <AspectRatio ratio={2000/1797}>
                                         <Image
@@ -93,7 +93,7 @@ function Verein () {
                             </Card>
                         </Grid.Col>
                         <Grid.Col md={4} sm={6}>
-                            <Card shadow={'sm'} radius={'md'} style={{backgroundColor: "#F0F0F0"}}>
+                            <Card shadow={'sm'} radius={'md'} style={{backgroundColor: "#F0F0F0"}} component={'a'} href={'/verein/neumitglied'}>
                                 <Card.Section p={'xl'}>
                                     <AspectRatio ratio={2000/1797}>
                                         <Image

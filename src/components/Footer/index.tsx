@@ -50,6 +50,8 @@ const Footer = () => {
                         <NavLink
                             label={'Home'}
                             c={'black'}
+                            component={'a'}
+                            href={'/'}
                             sx={() => ({
                                 '&:hover': {
                                     backgroundColor: '#E6F9E6',
@@ -60,6 +62,8 @@ const Footer = () => {
                             label={'Verein'}
                             childrenOffset={'lg'}
                             c={'black'}
+                            component={'a'}
+                            href={'/verein'}
                             sx={() => ({
                                 '&:hover': {
                                     backgroundColor: '#E6F9E6',
@@ -68,6 +72,8 @@ const Footer = () => {
                             <NavLink
                                 label={'Geschichte'}
                                 c={'black'}
+                                component={'a'}
+                                href={'/verein/geschichte'}
                                 sx={() => ({
                                     '&:hover': {
                                         backgroundColor: '#E6F9E6',
@@ -77,6 +83,8 @@ const Footer = () => {
                             <NavLink
                                 label={'Vorstand'}
                                 c={'black'}
+                                component={'a'}
+                                href={'/verein/vorstand'}
                                 sx={() => ({
                                     '&:hover': {
                                         backgroundColor: '#E6F9E6',
@@ -86,6 +94,8 @@ const Footer = () => {
                             <NavLink
                                 label={'Trainer/innen'}
                                 c={'black'}
+                                component={'a'}
+                                href={'verein/trainer'}
                                 sx={() => ({
                                     '&:hover': {
                                         backgroundColor: '#E6F9E6',
@@ -95,6 +105,8 @@ const Footer = () => {
                             <NavLink
                                 label={'Hallen'}
                                 c={'black'}
+                                component={'a'}
+                                href={'verein/hallen'}
                                 sx={() => ({
                                     '&:hover': {
                                         backgroundColor: '#E6F9E6',
@@ -104,6 +116,8 @@ const Footer = () => {
                             <NavLink
                                 label={'Mitglied werden'}
                                 c={'black'}
+                                component={'a'}
+                                href={'/verein/neumitglied'}
                                 sx={() => ({
                                     '&:hover': {
                                         backgroundColor: '#E6F9E6',
@@ -115,6 +129,8 @@ const Footer = () => {
                             label={'Teams'}
                             childrenOffset={'lg'}
                             c={'black'}
+                            component={'a'}
+                            href={'/teams'}
                             sx={() => ({
                                 '&:hover': {
                                     backgroundColor: '#E6F9E6',
@@ -123,6 +139,8 @@ const Footer = () => {
                             <NavLink
                                 label={'Mix U10'}
                                 c={'black'}
+                                component={'a'}
+                                href={'/teams/mixu10'}
                                 sx={() => ({
                                     '&:hover': {
                                         backgroundColor: '#E6F9E6',
@@ -132,6 +150,8 @@ const Footer = () => {
                             <NavLink
                                 label={'Mix U12'}
                                 c={'black'}
+                                component={'a'}
+                                href={'/teams/mixu12'}
                                 sx={() => ({
                                     '&:hover': {
                                         backgroundColor: '#E6F9E6',
@@ -141,6 +161,8 @@ const Footer = () => {
                             <NavLink
                                 label={'Herren U14'}
                                 c={'black'}
+                                component={'a'}
+                                href={'/teams/herrenu14'}
                                 sx={() => ({
                                     '&:hover': {
                                         backgroundColor: '#E6F9E6',
@@ -150,6 +172,8 @@ const Footer = () => {
                             <NavLink
                                 label={'Damen U14'}
                                 c={'black'}
+                                component={'a'}
+                                href={'/teams/damenu14'}
                                 sx={() => ({
                                     '&:hover': {
                                         backgroundColor: '#E6F9E6',
@@ -159,6 +183,8 @@ const Footer = () => {
                             <NavLink
                                 label={'Herren U16'}
                                 c={'black'}
+                                component={'a'}
+                                href={'herrenu16'}
                                 sx={() => ({
                                     '&:hover': {
                                         backgroundColor: '#E6F9E6',
@@ -168,6 +194,8 @@ const Footer = () => {
                             <NavLink
                                 label={'Herren U18'}
                                 c={'black'}
+                                component={'a'}
+                                href={'/teams/herrenu18'}
                                 sx={() => ({
                                     '&:hover': {
                                         backgroundColor: '#E6F9E6',
@@ -177,6 +205,8 @@ const Footer = () => {
                             <NavLink
                                 label={'Herren 2. Liga'}
                                 c={'black'}
+                                component={'a'}
+                                href={'/teams/herren3'}
                                 sx={() => ({
                                     '&:hover': {
                                         backgroundColor: '#E6F9E6',
@@ -186,6 +216,8 @@ const Footer = () => {
                             <NavLink
                                 label={'Herren 4. Liga'}
                                 c={'black'}
+                                component={'a'}
+                                href={'/teams/herren4'}
                                 sx={() => ({
                                     '&:hover': {
                                         backgroundColor: '#E6F9E6',
@@ -196,6 +228,8 @@ const Footer = () => {
                         <NavLink
                             label={'Partner & Gönner'}
                             c={'black'}
+                            component={'a'}
+                            href={'partners'}
                             sx={() => ({
                                 '&:hover': {
                                     backgroundColor: '#E6F9E6',
@@ -205,6 +239,8 @@ const Footer = () => {
                         <NavLink
                             label={'Shop'}
                             c={'black'}
+                            component={'a'}
+                            href={'/shop'}
                             sx={() => ({
                                 '&:hover': {
                                     backgroundColor: '#E6F9E6',
