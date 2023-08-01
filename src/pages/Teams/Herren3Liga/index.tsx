@@ -16,7 +16,6 @@ import {
 // Image imports
 import team from '../../../media/teams/senioren.jpg';
 import person from '../../../media/placeholder_person.jpeg';
-import logo from '../../../media/wil_basketball_small_cropped.png';
 import ebnet from '../../../media/hallen/ebnet.jpg';
 import kanti from '../../../media/hallen/kanti.jpg'
 
@@ -31,7 +30,7 @@ function Herren3 () {
             <div className={'main'}>
                 <Space h={'xl'}/>
                 <Space h={'xl'}/>
-                <Title c={'#189940'} order={1} mt={'xl'} mx={'xl'}>Herren 2. Liga</Title>
+                <Title c={'#189940'} order={1} mt={'xl'} mx={'7%'}>Herren 2. Liga</Title>
                 <div className={'team-infos'}>
                     <Container my={'lg'}>
                         <Image
