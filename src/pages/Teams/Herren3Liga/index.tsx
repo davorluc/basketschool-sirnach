@@ -52,21 +52,25 @@ function Herren3 () {
                         <Title mx={'xl'} order={2}>Trainer</Title>
                     </Box>
                     <Grid mx={'8%'}>
-                        <Card shadow={'md'} radius={'md'} mb={'xl'}>
-                            <Card.Section>
-                                <AspectRatio ratio={600/620}>
-                                    <Image
-                                        src={person}
-                                    />
-                                </AspectRatio>
-                                <Group position={'apart'} m={'md'}>
-                                    <Title c={'#189940'} order={3}>Miodrag Manojlovic</Title>
-                                    <Badge color={'green'} variant={'light'}>
-                                        Herren 2. Liga
-                                    </Badge>
-                                </Group>
-                            </Card.Section>
-                        </Card>
+                        <Grid.Col sm={3}>
+                            <Card shadow={'md'} radius={'md'} mb={'xl'}>
+                                <Card.Section>
+                                    <AspectRatio ratio={600/620}>
+                                        <Image
+                                            src={person}
+                                        />
+                                    </AspectRatio>
+                                    <Group position={'apart'} mx={'md'} my={'xs'}>
+                                        <Title c={'#189940'} order={4}>Miodrag Manojlovic</Title>
+                                        <Badge color={'green'} variant={'light'}>
+                                            Herren 2. Liga
+                                        </Badge>
+                                    </Group>
+                                    <Text mx={'lg'} c={'dimmed'}>*Email*</Text>
+                                    <Text mx={'lg'} mb={'md'} c={'dimmed'}>*Nummer*</Text>
+                                </Card.Section>
+                            </Card>
+                        </Grid.Col>
                     </Grid>
                 </div>
                 <Divider m={'xl'}/>
