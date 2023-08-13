@@ -32,17 +32,9 @@
 
 #### Meeting mit Miki
 
-###### Theme
-- [ ] Grün
-- [ ] Weiss
-- [ ] Grau
-
 ###### Header
 - [ ] Wie bei Skiclub Wil
 - [x] Sticky Navbar
-
-###### Footer
-- [x] Wie bei Skiclub Wil (auch mit Sitemap und "Mitglied werden)
 
 ###### Hero Section als Slideshow:
 - [ ] Willkommensmessage mit Logo wie bei Swiss Central
@@ -50,26 +42,3 @@
 - [ ] Vereinsgeschichte wie bei BC Winterthur
 - [ ] Fanshop (wie Fanshop bei BC Winterthur)
 
-###### Verein wie bei BC Winterthur
-- [x] Zum Beispiel mit Kacheln
-- [x] Cards wären auch cool
-- [x] Sonst irgendwie kreativ werden. Wenn möglich, gleichen Flair wie BC Winterthur
-- [ ] In Navbar auch Dropdown-Menü mit:
-    - [ ] Geschichte
-    - [ ] Vorstand
-    - [ ] Trainer/Trainerinnen
-    - [ ] Hallen
-    - [ ] Neumitglied
-- [ ] Nur auf der Vereins-Page Sponsoren auf der Seite (Wie bei Alte Kanti Aarau)
-
-###### Sponsoren
-- [ ] Wie bei BC Winterthur
-- [ ] Aufgeteilt in: Haupt, Silber, Medien, Medical
-- [ ] und BC Bears Wil Gönner (Gönner wie bei BC Winterthur)
-- [ ] Am Schluss "Willst du auch Sponsor werden? Unterstütze uns hier: [QR Code]"
-
-###### Homepage Aufbau
-- [ ] Hero Section (siehe oben für Spezifikationen)
-- [x] Unsere nächste Veranstaltungen (z.B. GV, Weihnachtsessen, usw... wie bei Skiclub Wil)
-- [x] Sponsoren (wie jetzt ist ok)
-- [x] Footer (Siehe Spezifikationen oben)
