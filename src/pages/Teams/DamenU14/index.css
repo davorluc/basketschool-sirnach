@@ -1,0 +1,11 @@
+.main {
+    position: relative;
+    z-index: 1;
+    background: white;
+}
+
+.team-infos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
