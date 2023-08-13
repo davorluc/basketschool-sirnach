@@ -61,7 +61,7 @@ function HerrenU14 () {
                                     <Group position={'apart'} mx={'md'} my={'xs'}>
                                         <Title c={'#189940'} order={4}>Davor Lucic</Title>
                                         <Badge color={'green'} variant={'light'}>
-                                            Herren U14
+                                            Herren U14/U16
                                         </Badge>
                                     </Group>
                                     <Text mx={'lg'} c={'dimmed'}>*Email*</Text>
