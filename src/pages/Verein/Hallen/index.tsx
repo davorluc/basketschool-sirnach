@@ -6,10 +6,6 @@ import {
     Title,
     Image,
     Grid,
-    Container,
-    Divider,
-    Overlay,
-    Box,
     Card,
     Space, AspectRatio, Group, Text, Badge
 } from '@mantine/core';
@@ -47,6 +43,9 @@ function Hallen () {
                                     </AspectRatio>
                                     <Group position={'apart'} m={'md'}>
                                         <Title c={'#189940'} order={4}>Oberstufe Sonnenhof, Wil</Title>
+                                        <Badge color={'green'} varian={'light'}>
+                                            U14/U16
+                                        </Badge>
                                         <Text color={'dimmed'}>Bronschhoferstrasse 43, 9500 Wil, Schweiz</Text>
                                     </Group>
                                 </Card.Section>
@@ -65,12 +64,15 @@ function Hallen () {
                                     </AspectRatio>
                                     <Group position={'apart'} m={'md'}>
                                         <Title c={'#189940'} order={4}>Kantonsschule Wil, Wil SG</Title>
+                                        <Badge color={'green'} variant={'light'}>
+                                            H2/H4/U16/U18
+                                        </Badge>
                                         <Text color={'dimmed'}>Hubstrasse 75, 9501 Wil, Schweiz</Text>
                                     </Group>
                                 </Card.Section>
                             </Card>
                         </Grid.Col>
-                        <Grid.Col sm={6} md={4}>
+                        <Grid.Col sm={4}>
                             <Card shadow={'md'} radius={'md'} mb={'xl'}>
                                 <Card.Section>
                                     <AspectRatio ratio={1000/500} onClick={() => setHalleEbnet((v) => !v)}>
@@ -83,6 +85,9 @@ function Hallen () {
                                     </AspectRatio>
                                     <Group position={'apart'} m={'md'}>
                                         <Title c={'#189940'} order={4}>Ebnet Saal, Bronschhofen</Title>
+                                        <Badge color={'green'} variant={'light'}>
+                                            H2/U10/DU14
+                                        </Badge>
                                         <Text color={'dimmed'}>Industriestrasse 2, 9552 Bronschhofen, Schweiz</Text>
                                     </Group>
                                 </Card.Section>
