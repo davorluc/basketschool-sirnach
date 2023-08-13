@@ -43,13 +43,13 @@ function Verein () {
                                             fit={'fill'}
                                         />
                                     </AspectRatio>
-                                        <Title m={'xl'} p={'xl'} align={'center'} order={2}>Geschichte</Title>
+                                    <Title m={'xl'} p={'xl'} align={'center'} order={2}>Geschichte</Title>
                                 </Card.Section>
                             </Card>
                         </Grid.Col>
                         <Grid.Col md={4} sm={6}>
-                            <Card shadow={'sm'} radius={'md'} style={{backgroundColor: "#F0F0F0"}} component={'a'} href={'/verein/vorstand'}>
-                                <Card.Section p={'xl'}>
+                                <Card shadow={'sm'} radius={'md'} style={{backgroundColor: "#F0F0F0"}} component={'a'} href={'/verein/vorstand'}>
+                                        <Card.Section p={'xl'}>
                                     <AspectRatio ratio={2000/1797}>
                                         <Image
                                             src={geschichte}
