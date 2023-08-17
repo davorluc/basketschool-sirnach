@@ -28,7 +28,16 @@ function HerrenU18 () {
             <div className={'main'}>
                 <Space h={'xl'}/>
                 <Space h={'xl'}/>
-                <Title c={'#189940'} order={1} mt={'xl'} mx={'7%'}>Herren U18</Title>
+                <Box
+                    mx={'7%'}
+                    c={'white'}
+                    my={'xl'}
+                    sx={() => ({
+                        backgroundColor: '#189940',
+                        borderRadius: '7px'})
+                    }>
+                    <Title mx={'xl'} order={1}>Herren U18</Title>
+                </Box>
                 <div className={'team-infos'}>
                     <Container my={'lg'}>
                         <Image
