@@ -102,15 +102,15 @@ function Neumitglied() {
                             {/*Place for supervisor data
                             <Grid.Col sm={6} span={2}></Grid.Col> */}
                         </Grid>
-                        <Checkbox mx={"lg"} mt="md" label="Ich akzeptiere die Datenschutzbestimmungen." {...form.getInputProps("gdpr", { type: "checkbox" })} />
+                        <Checkbox mx={"7%"} mt="md" label="Ich akzeptiere die Datenschutzbestimmungen." {...form.getInputProps("gdpr", { type: "checkbox" })} />
                         <Checkbox
                             mt="md"
-                            mx={"lg"}
+                            mx={"7%"}
                             label="Ich bin damit einverstanden, dass Fotos von mir auf der Website und in den sozialen Medien veröffentlicht werden."
                             {...form.getInputProps("socialPermission", { type: "checkbox" })}
                         />
-                        <Group position="right" mt="md" mx="lg">
-                            <Button type="submit">Submit</Button>
+                        <Group position="right" mt="md" mx="8%">
+                            <Button type="submit" variant={"gradient"} gradient={{from: '#189940', to: '#189940'}}>Submit</Button>
                         </Group>
                     </form>
                 </div>
