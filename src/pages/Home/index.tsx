@@ -8,16 +8,11 @@ import {
 	Divider,
 	Card,
 	Image,
-	NavLink,
-	Blockquote,
 	Text,
 	Badge,
 	Group,
-	Box,
 	rem,
-	ThemeIcon,
 	Title,
-	Anchor,
 	AspectRatio
 } from "@mantine/core";
 import { Carousel } from '@mantine/carousel';
@@ -29,7 +24,6 @@ import AOS from 'aos';
 // Image Imports here
 import bear1 from '../../media/bears/bc_bears_realistic_effect.png';
 import bear2 from '../../media/bears/black_bear_realistic_second.png';
-// import bear3 from '../../media/bears/black_bear_realistic_second_cropped.png';
 import first from '../../media/beachphoto.jpg'
 import second from '../../media/DV.jpg'
 import third from '../../media/teams/senioren.jpg'
@@ -116,6 +110,9 @@ function Home() {
 					<div className={'next-title'}>
 						<Title order={1} align={'center'} my={'xl'}>Unsere nächsten Veranstaltungen</Title>
 					</div>
+                        <div className='next-description'>
+                        <Text c='dimmed' mx='7%' mb='xl'>Selbst an Spannung mangelt es nicht, denn in unserem "Kommende Termine" Abschnitt verpassen Sie nie wieder ein aufregendes Basketballspiel oder wichtige administrative Veranstaltungen. Halten Sie sich auf dem Laufenden über die nächsten Höhepunkte, die unser Basketballverein zu bieten hat – sei es ein mitreißendes Heimspiel oder eine wichtige Vereinssitzung. Von packenden Auswärtsbegegnungen auf dem Spielfeld bis hin zu bedeutenden organisatorischen Ereignissen neben dem Spielfeld – hier finden Sie alle Termine, die Sie benötigen, um sowohl Teil unserer leidenschaftlichen Fan-Gemeinschaft als auch informiert über die Vereinsangelegenheiten zu sein. Seien Sie bereit, unsere Mannschaft anzufeuern und die Zukunft des Vereins mitzugestalten. Verpassen Sie keine Gelegenheit mehr, die Spannung des Sports und die Bedeutung der Vereinsarbeit hautnah zu erleben. Schauen Sie regelmäßig vorbei, um sicherzustellen, dass Sie keine der kommenden Veranstaltungen, sei es sportlich oder administrativ, verpassen.</Text>
+                        </div>
 					<div className={'next'}>
 							<Grid justify={'center'} align={'center'} mx={'lg'}>
 								<Grid.Col md={4} sm={6}>
