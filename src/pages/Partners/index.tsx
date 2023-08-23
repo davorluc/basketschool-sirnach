@@ -4,6 +4,7 @@ import { Space,
     Grid,
     Container,
     Title,
+    Box,
     Divider,
     Image,
     AspectRatio
@@ -40,7 +41,16 @@ function Partners () {
                 <div className="main">
                     <Space h={'xl'}/>
                     <Space h={'xl'}/>
-                    <Title order={1} my='xl' c='#189940' mx='7%'>Sponsoren</Title>
+                    <Box
+                        mx={'7%'}
+                        c={'white'}
+                        my={'xl'}
+                        sx={() => ({
+                            backgroundColor: '#189940',
+                            borderRadius: '7px'})
+                        }>
+                        <Title mx={'xl'} order={1}>Sponsoren</Title>
+                    </Box>
                 </div>
             </div>
            );
