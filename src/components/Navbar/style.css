@@ -13,9 +13,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: var(--secondary-color);
+    background: var(--main-color);
     transition: all .50s ease;
     z-index: 100;
+    text-transform: uppercase;
 }
 
 .navigation-menu {
@@ -28,7 +29,7 @@
 }
 
 .navigation-menu a {
-    color: var(--text);
+    color: white;
     font-weight: 500;
     font-size: 1.1rem;
     padding: 5px 0;
@@ -46,12 +47,12 @@
 }
 
 .navigation-menu ul li:hover > a {
-    color: var(--main-color);
+    color: white;
 }
 
 .brand-name {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 1.3rem;
     margin-left: 1rem;
 }
