@@ -8,6 +8,7 @@ import {
 	Divider,
 	Card,
 	Image,
+    Space,
 	Text,
 	Badge,
 	Group,
@@ -53,6 +54,8 @@ function Home() {
 		<Center>
 			<div>
 				<div className={'main'}>
+                    <Space h='xl'/>
+                    <Space h='xl'/>
 					<div className='carousel'>
 						<Carousel slideSize={'100%'}
 								  height={'xl'}
@@ -79,7 +82,7 @@ function Home() {
 										src={bear2}
 										alt={'bear wide cropped'}
 										fit={'fill'}
-										width={'100%'}
+										width={'100vw'}
 									/>
 
 								</AspectRatio>
@@ -90,7 +93,7 @@ function Home() {
 										src={bear1}
 										alt={'bear wide cropped'}
 										fit={'fill'}
-										width={'100%'}
+										width={'100vw'}
 									/>
 								</AspectRatio>
 							</Carousel.Slide>
@@ -100,7 +103,7 @@ function Home() {
 										src={bear2}
 										alt={'bear wide cropped'}
 										fit={'fill'}
-										width={'100%'}
+										width={'100vw'}
 									/>
 								</AspectRatio>
 							</Carousel.Slide>
