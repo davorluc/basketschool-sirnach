@@ -28,7 +28,8 @@ function Partners () {
     ];
 
     const bronze = [
-    { image: tgazajug, text: 'this is another example description' }
+    { image: tgazajug, text: 'this is another example description' },
+    { image: stilmat, text: 'this is the stilmat text'}
     ];
 
     const medical = [
