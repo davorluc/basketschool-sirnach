@@ -37,6 +37,34 @@ function Partners () {
     { image: konsens, text: 'this is another example description' }
     ];
 
+    const mainSponsorContent = mainSponsor.map((entry) => (
+        <div>
+            <Image mx='9%' src={entry.image} maw='50%'/>
+            <Text mx='9%'>{entry.text}</Text>
+        </div>
+        ));
+
+    const silverSponsorContent = silver.map((entry) => (
+        <div>
+            <Image mx='9%' src={entry.image} maw='50%'/>
+            <Text mx='9%'>{entry.text}</Text>
+        </div>
+        ));
+
+    const bronzeSponsorContent = bronze.map((entry) => (
+        <div>
+            <Image mx='9%' src={entry.image} maw='50%'/>
+            <Text mx='9%'>{entry.text}</Text>
+        </div>
+        ));
+
+    const medicalSponsorContent= medical.map((entry) => (
+        <div>
+            <Image mx='9%' src={entry.image} maw='50%'/>
+            <Text mx='9%'>{entry.text}</Text>
+        </div>
+        ));
+
     return (
             <div>
                 <div className="main">
@@ -52,6 +80,21 @@ function Partners () {
                         }>
                         <Title mx={'xl'} order={1}>Sponsoren</Title>
                     </Box>
+                    <div className='main-sponsors'>
+                        {mainSponsorContent}
+                    </div>
+                    <Divider m='xl'/>
+                    <div className='main-sponsors'>
+                        {silverSponsorContent}
+                    </div>
+                    <Divider m='xl'/>
+                    <div className='main-sponsors'>
+                        {bronzeSponsorContent}
+                    </div>
+                    <Divider m='xl'/>
+                    <div className='main-sponsors'>
+                        {medicalSponsorContent}
+                    </div>
                 </div>
             </div>
            );
