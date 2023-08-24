@@ -15,7 +15,7 @@ import {
 
 // Image imports
 import team from '../../../media/teams/u14.jpeg';
-import person from '../../../media/placeholder_person.jpeg';
+import person from '../../../media/portraits/davor.jpeg';
 import sonnenhof from '../../../media/hallen/sonnenhof.jpg';
 
 // Stylesheet import
@@ -62,7 +62,7 @@ function HerrenU14 () {
                         <Grid.Col sm={3}>
                             <Card shadow={'md'} radius={'md'} mb={'xl'}>
                                 <Card.Section>
-                                    <AspectRatio ratio={600/620}>
+                                    <AspectRatio ratio={600/800}>
                                         <Image
                                             src={person}
                                         />

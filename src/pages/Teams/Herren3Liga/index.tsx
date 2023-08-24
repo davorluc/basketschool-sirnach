@@ -15,7 +15,7 @@ import {
 
 // Image imports
 import team from '../../../media/teams/senioren.jpg';
-import person from '../../../media/placeholder_person.jpeg';
+import person from '../../../media/portraits/miki.jpeg';
 import ebnet from '../../../media/hallen/ebnet.jpg';
 import kanti from '../../../media/hallen/kanti.jpg'
 
@@ -64,7 +64,7 @@ function Herren3 () {
                         <Grid.Col sm={3}>
                             <Card shadow={'md'} radius={'md'} mb={'xl'}>
                                 <Card.Section>
-                                    <AspectRatio ratio={600/620}>
+                                    <AspectRatio ratio={600/800}>
                                         <Image
                                             src={person}
                                         />

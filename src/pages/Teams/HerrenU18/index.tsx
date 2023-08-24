@@ -15,7 +15,7 @@ import {
 
 // Image imports
 import team from '../../../media/teams/u18.jpg';
-import person from '../../../media/placeholder_person.jpeg';
+import person from '../../../media/portraits/ersun.jpeg';
 import kanti from '../../../media/hallen/kanti.jpg'
 
 // Stylesheet import
@@ -62,13 +62,13 @@ function HerrenU18 () {
                         <Grid.Col sm={3}>
                             <Card shadow={'md'} radius={'md'} mb={'xl'}>
                                 <Card.Section>
-                                    <AspectRatio ratio={600/620}>
+                                    <AspectRatio ratio={600/800}>
                                         <Image
                                             src={person}
                                         />
                                     </AspectRatio>
                                     <Group position={'apart'} mx={'md'} my={'xs'}>
-                                        <Title c={'#189940'} order={4}>Max Mustermann</Title>
+                                        <Title c={'#189940'} order={4}>Ersun Luma</Title>
                                         <Badge color={'green'} variant={'light'}>
                                             Herren U18
                                         </Badge>

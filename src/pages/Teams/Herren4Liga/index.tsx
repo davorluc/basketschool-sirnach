@@ -15,7 +15,7 @@ import {
 
 // Image imports
 import team from '../../../media/teams/senioren.jpg';
-import person from '../../../media/placeholder_person.jpeg';
+import person from '../../../media/portraits/alen.jpeg';
 import kanti from '../../../media/hallen/kanti.jpg'
 
 // Stylesheet import
@@ -63,13 +63,13 @@ function Herren4 () {
                         <Grid.Col sm={3}>
                             <Card shadow={'md'} radius={'md'} mb={'xl'}>
                                 <Card.Section>
-                                    <AspectRatio ratio={600/620}>
+                                    <AspectRatio ratio={600/800}>
                                         <Image
                                             src={person}
                                         />
                                     </AspectRatio>
                                     <Group position={'apart'} mx={'md'} my={'xs'}>
-                                        <Title c={'#189940'} order={4}>Alldin Nalbani</Title>
+                                        <Title c={'#189940'} order={4}>Alen Kruljac</Title>
                                         <Badge color={'green'} variant={'light'}>
                                             Herren 4. Liga
                                         </Badge>
