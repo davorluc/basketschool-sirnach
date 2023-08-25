@@ -14,7 +14,7 @@ import {
 } from '@mantine/core';
 
 // Image imports
-import team from '../../../media/teams/senioren.jpg';
+import team from '../../../media/teams/h4.jpeg';
 import person from '../../../media/portraits/alen.jpeg';
 import kanti from '../../../media/hallen/kanti.jpg'
 
