@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/restrict-plus-operands */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-unsafe-call */
@@ -7,6 +8,7 @@ import { TextInput, Checkbox, Button, Group, Radio } from "@mantine/core";
 import { DateInput } from "@mantine/dates";
 import { useForm } from "@mantine/form";
 import { useState } from "react";
+import validator from "validator";
 
 function underAgeValidate(birthday: Date) {
     const age = ~~((Date.now() - birthday.getTime()) / 31557600000);
@@ -15,7 +17,10 @@ function underAgeValidate(birthday: Date) {
 
 function Neumitglied() {
     const [date, setDateValue] = useState<Date | null>(null);
-
+    const legal = new Date();
+    legal.setFullYear(new Date().getFullYear() - 18);
+    const nummerPattern = /\+41[0-9]{9}/;
+    const AHVPattern = /765.[0-9]{4}.[0-9]{4}.[0-9]{2}/;
     const form = useForm({
         initialValues: {
             name: "",
@@ -26,8 +31,8 @@ function Neumitglied() {
             gdpr: false,
             address: {
                 street: "",
-                number: undefined,
-                zip: undefined,
+                number: 0,
+                zip: 0,
                 city: "",
             },
             ahv: undefined,
@@ -42,9 +47,26 @@ function Neumitglied() {
         },
 
         validate: {
-            email: (value) => (/^\S+@\S+$/.test(value) ? null : "Invalid email"),
-            name: (value) => (value.length < 3 ? "Der Name ist nicht valide" : null),
-            surname: (value) => (value.length < 3 ? "Der Nachname ist nicht valide" : null),
+            email: (value) => (validator.isEmail(value + "") ? null : "Das Email ist nicht valide"),
+            name: (value) => (validator.isAlpha(value + "") ? null : "Der Name ist nicht valide"),
+            surname: (value) => (validator.isAlpha(value + "") ? null : "Der Nachname ist nicht valide"),
+            birthdate: (value) => (validator.isBefore(value + "", legal.toISOString()) ? null : "Du bist noch nicht 18 Jahre alt"),
+            phone: (value) => (validator.isMobilePhone(value + "") ? null : "Die Telefonnummer ist nicht valide"),
+            address: {
+                street: (value) => (validator.isAlpha(value + "") ? null : "Die Strasse ist nicht valide"),
+                number: (value) => (validator.isInt(value + "", { min: 1, max: 200 }) ? null : "Die Hausnummer ist nicht valide"),
+                zip: (value) => (validator.isPostalCode(value + "", "CH") ? null : "Die Postleitzahl ist nicht valide"),
+                city: (value) => (validator.isAlpha(value + "") ? null : "Die Stadt ist nicht valide"),
+            },
+            ahv: (value) => (AHVPattern.test(value + "") ? null : "Die AHV Nummer ist nicht valide"),
+            supervisor: {
+                email: (value) => (validator.isEmail(value + "") ? null : "Das Email ist nicht valide"),
+                name: (value) => (validator.isAlpha(value + "") ? null : "Der Name ist nicht valide"),
+                surname: (value) => (validator.isAlpha(value + "") ? null : "Der Nachname ist nicht valide"),
+                phone: (value) => (validator.isMobilePhone(value + "") ? null : "Die Telefonnummer ist nicht valide"),
+            },
+            sex: (value) => (value === undefined ? "Bitte wählen Sie Ihr Geschlecht aus" : null),
+            gdpr: (value) => (value === false ? "Bitte akzeptieren Sie die Datenschutzerklärung" : null),
         },
     });
 
@@ -76,12 +98,10 @@ function Neumitglied() {
                                     valueFormat="DD.MM.YYYY"
                                     label="Geburtsdatum"
                                     placeholder="15.7.2007"
-                                    // onChange={(value: Date) => {
-                                    //     setDateValue(value);
-                                    //     if (underAgeValidate(value)) {
-                                    //         console.log("under age");
-                                    //     }
-                                    // }}
+                                    onChange={(value) => {
+                                        if (value) form.setFieldValue("birthdate", value.toISOString());
+                                    }}
+                                    defaultValue={legal}
                                 />
                                 <TextInput withAsterisk label="Email" placeholder="marcus.aurelius@gmail.com" {...form.getInputProps("email")} />
                                 <NumberInput label="Telefonnummer" placeholder="0795648977" hideControls {...form.getInputProps("phone")} />
@@ -102,7 +122,12 @@ function Neumitglied() {
                             {/*Place for supervisor data
                             <Grid.Col sm={6} span={2}></Grid.Col> */}
                         </Grid>
-                        <Checkbox mx={"7%"} mt="md" label="Ich akzeptiere die Datenschutzbestimmungen." {...form.getInputProps("gdpr", { type: "checkbox" })} />
+                        <Checkbox
+                            mx={"7%"}
+                            mt="md"
+                            label="Ich akzeptiere die Datenschutzbestimmungen."
+                            {...form.getInputProps("gdpr", { type: "checkbox" })}
+                        />
                         <Checkbox
                             mt="md"
                             mx={"7%"}
@@ -110,7 +135,9 @@ function Neumitglied() {
                             {...form.getInputProps("socialPermission", { type: "checkbox" })}
                         />
                         <Group position="right" mt="md" mx="8%">
-                            <Button type="submit" variant={"gradient"} gradient={{from: '#189940', to: '#189940'}}>Submit</Button>
+                            <Button type="submit" variant={"gradient"} gradient={{ from: "#189940", to: "#189940" }}>
+                                Submit
+                            </Button>
                         </Group>
                     </form>
                 </div>
