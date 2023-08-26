@@ -38,10 +38,10 @@ function Trainer () {
                         />
                     </AspectRatio>
                     <Group position='apart' mx='md' my='xs'>
-                        <Title c='#189940' order={3}>{trainer.name}</Title>
+                        <Title c='#189940' order={2}>{trainer.name}</Title>
                         <Badge color='green' variant='light'>{trainer.selection}</Badge>
                     </Group>
-                    <Stack>
+                    <Stack spacing='xs' mt='lg'>
                         <Text c='dimmed' component='a' href={`mailto:${trainer.email}`} mx='lg'>{trainer.email}</Text>
                         <Text c='dimmed' component='a' href={`tel:${trainer.tel}`} mx='lg' mb='md'>{trainer.tel}</Text>
                     </Stack>
