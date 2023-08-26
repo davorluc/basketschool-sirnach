@@ -43,7 +43,7 @@ function Hallen () {
                                     </AspectRatio>
                                     <Group position={'apart'} m={'md'}>
                                         <Title c={'#189940'} order={4}>Oberstufe Sonnenhof, Wil</Title>
-                                        <Badge color={'green'} varian={'light'}>
+                                        <Badge color={'green'} variant={'light'}>
                                             U14/U16
                                         </Badge>
                                         <Text color={'dimmed'}>Bronschhoferstrasse 43, 9500 Wil, Schweiz</Text>
