@@ -14,7 +14,7 @@ const Footer = () => {
 
     return (
         <div className='footer'>
-            <Grid justify={'center'} align={'center'} mx={'xl'} py={'xs'}>
+            <Grid justify={'center'} align={'center'} mx={'xl'} py={'xl'}>
                 <Grid.Col md={4} sm={6} align={'left'} ml={'xl'}>
                     <AspectRatio ratio={2000/2189} maw={'30%'} my={'sm'}>
                         <Anchor href={'https://www.bcbears.ch'}>
