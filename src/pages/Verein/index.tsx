@@ -31,7 +31,7 @@ function Verein () {
                     <Title order={1} my={'xl'} mx={'7%'} c='#189940' align={'left'}>Verein</Title>
                 </div>
                 <div className={'verein-grid'}>
-                    <Grid my={'xl'} align={'center'} justify={'center'} mx={'xl'}>
+                    <Grid my={'xl'} align={'center'} justify={'center'} mx={'xl'} gutter={30}>
                         <Grid.Col md={4} sm={6}>
                             <Card shadow={'sm'} radius={'md'} style={{backgroundColor: "#F0F0F0"}} component={'a'} href={'/verein/geschichte'}>
                                 <Card.Section p={'xl'}>
