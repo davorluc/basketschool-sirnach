@@ -59,7 +59,7 @@ function Vorstand () {
                 <Space h={'xl'}/>
                 <Title c={'#189940'} order={1} mt={'xl'} mx={'7%'}>Vorstand</Title>
                 <div className='board-grid'>
-                    <Grid mx='8%' gutter={30}>
+                    <Grid mx='8%' my='xl' gutter={30}>
                         {renderBoard}
                     </Grid>
                 </div>
