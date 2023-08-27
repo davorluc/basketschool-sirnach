@@ -32,7 +32,7 @@ function Teams() {
 
     const renderTeams = teams.map((team) => (
     <Grid.Col sm={6} md={4}>
-        <Card shadow='md' style={{backgroundColor: "#189940"}} radius='md' mb='xl' component='a' href={team.link}>
+        <Card shadow='md' style={{backgroundColor: "#189940"}} radius='md' component='a' href={team.link}>
             <Card.Section>
                 <AspectRatio ratio={8/5}>
                     <Image
@@ -53,7 +53,7 @@ function Teams() {
                 <Space h='xl'/>
                 <Title c='#189940' order={1} my='xl' mx='7%'>Teams</Title>
                 <div className="teams-grid">
-                    <Grid mx='8%' my='xl'>
+                    <Grid mx='8%' my='xl' gutter={30}>
                         {renderTeams}
                     </Grid>
                 </div>
