@@ -3,6 +3,7 @@ import {
     Space,
     Box,
     Image,
+    ThemeIcon,
     AspectRatio,
     Stack,
     Group,
@@ -20,6 +21,9 @@ import vreni from '../../../media/portraits/vreni.jpeg'
 import ivana from '../../../media/portraits/ivana.jpeg'
 import christian  from '../../../media/portraits/christian.jpeg'
 import daniel from '../../../media/portraits/daniel.jpeg'
+
+// Icon imports
+import { Phone, Mail } from 'tabler-icons-react'
 
 function Vorstand () {
     const board = [
@@ -45,8 +49,8 @@ function Vorstand () {
                         <Badge color='green' variant='light'>{member.role}</Badge>
                     </Group>
                     <Stack spacing='xs' mt='lg'>
-                        <Text c='dimmed' component='a' href={`mailto:${member.email}`} mx='lg'>{member.email}</Text>
-                        <Text c='dimmed' component='a' href={`tel:${member.tel}`} mx='lg' mb='md'>{member.tel}</Text>
+                        <Text c='dimmed' component='a' href={`mailto:${member.email}`} mx='lg'><ThemeIcon mx='sm' color='green' variant='light'><Mail /></ThemeIcon>{member.email}</Text>
+                        <Text c='dimmed' component='a' href={`tel:${member.tel}`} mx='lg' mb='md'><ThemeIcon mx='sm' color='green' variant='light'><Phone /></ThemeIcon>{member.tel}</Text>
                     </Stack>
                 </Card.Section>
             </Card>
