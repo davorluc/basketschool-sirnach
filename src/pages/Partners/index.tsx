@@ -3,6 +3,7 @@ import { Space,
     Text,
     Grid,
     Container,
+    Stack,
     Title,
     Box,
     Divider,
@@ -20,7 +21,7 @@ import konsens from '../../media/sponsors/konsens_logo.png'
 
 function Partners () {
     const mainSponsor = [
-    { image: munishi, text: 'this is an example description' },
+    { image: munishi, text: 'this is an example description', dimension: 937/509 },
     ];
 
     const silver = [
@@ -38,31 +39,33 @@ function Partners () {
     ];
 
     const mainSponsorContent = mainSponsor.map((entry) => (
-        <div>
-            <Image my='xl' mx='9%' src={entry.image} maw='50%'/>
+        <Stack>
+            <AspectRatio ratio={entry.dimension} m={0} p={0}>
+                <Image my='xl' mx='9%' src={entry.image} maw='50%'/>
+            </AspectRatio>
             <Text my='xl' mx='9%'>{entry.text}</Text>
-        </div>
+        </Stack>
         ));
 
     const silverSponsorContent = silver.map((entry) => (
-        <div>
+        <Stack>
             <Image my='xl' mx='9%' src={entry.image} maw='50%'/>
             <Text my='xl' mx='9%'>{entry.text}</Text>
-        </div>
+        </Stack>
         ));
 
     const bronzeSponsorContent = bronze.map((entry) => (
-        <div>
+        <Stack>
             <Image my='xl' mx='9%' src={entry.image} maw='50%'/>
             <Text my='xl' mx='9%'>{entry.text}</Text>
-        </div>
+        </Stack>
         ));
 
     const medicalSponsorContent= medical.map((entry) => (
-        <div>
+        <Stack>
             <Image my='xl' mx='9%' src={entry.image} maw='50%'/>
             <Text my='xl' mx='9%'>{entry.text}</Text>
-        </div>
+        </Stack>
         ));
 
     return (
