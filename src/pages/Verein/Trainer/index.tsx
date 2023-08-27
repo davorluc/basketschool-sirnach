@@ -4,6 +4,7 @@ import {
     Image,
     Group,
     Stack,
+    ThemeIcon,
     Space,
     Text,
     Badge,
@@ -18,6 +19,9 @@ import alen from '../../../media/portraits/alen.jpeg'
 import ersun from '../../../media/portraits/ersun.jpeg'
 import nef from '../../../media/portraits/nef.jpeg'
 import davor from '../../../media/portraits/davor.jpeg'
+
+// Icon imports
+import { Phone, Mail } from 'tabler-icons-react'
 
 function Trainer () {
     const trainers = [
@@ -42,8 +46,8 @@ function Trainer () {
                         <Badge color='green' variant='light'>{trainer.selection}</Badge>
                     </Group>
                     <Stack spacing='xs' mt='lg'>
-                        <Text c='dimmed' component='a' href={`mailto:${trainer.email}`} mx='lg'>{trainer.email}</Text>
-                        <Text c='dimmed' component='a' href={`tel:${trainer.tel}`} mx='lg' mb='md'>{trainer.tel}</Text>
+                        <Text c='dimmed' component='a' href={`mailto:${trainer.email}`} mx='lg'><ThemeIcon mx='sm' color='green' variant='light'><Mail /></ThemeIcon>{trainer.email}</Text>
+                        <Text c='dimmed' component='a' href={`tel:${trainer.tel}`} mx='lg' mb='md'><ThemeIcon mx='sm' color='green' variant='light'><Phone /></ThemeIcon>{trainer.tel}</Text>
                     </Stack>
                 </Card.Section>
             </Card>
