@@ -28,7 +28,7 @@ function Verein () {
                 <Space h={'xl'}/>
                 <Space h={'xl'}/>
                 <div className={'header'}>
-                    <Title order={1} my={'xl'} mx={'xl'} align={'left'}>Verein</Title>
+                    <Title order={1} my={'xl'} mx={'7%'} c='#189940' align={'left'}>Verein</Title>
                 </div>
                 <div className={'verein-grid'}>
                     <Grid my={'xl'} align={'center'} justify={'center'} mx={'xl'}>
