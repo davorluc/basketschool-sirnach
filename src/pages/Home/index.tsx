@@ -67,6 +67,7 @@ function Home() {
 
         title: {
         fontWeight: 900,
+        textShadow: '2px 2px #000000',
         color: '#189940',
         lineHeight: 1.2,
         fontSize: rem(50),
