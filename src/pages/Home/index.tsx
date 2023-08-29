@@ -6,9 +6,12 @@ import {
 	Grid,
 	Center,
 	Divider,
+    Button,
 	Card,
 	Image,
     Space,
+    createStyles,
+    Paper,
 	Text,
 	Badge,
 	Group,
@@ -25,6 +28,7 @@ import AOS from 'aos';
 // Image Imports here
 import bear1 from '../../media/bears/bc_bears_realistic_effect.png';
 import bear2 from '../../media/bears/black_bear_realistic_second.png';
+import whole from '../../media/teams/all.jpeg'
 import first from '../../media/beachphoto.jpg'
 import second from '../../media/DV.jpg'
 import third from '../../media/teams/senioren.jpg'
@@ -50,6 +54,81 @@ function Home() {
 
 	const autoplay = useRef(Autoplay({ delay: 6000 }));
 
+    const useStyles = createStyles((theme) => ({
+        card: {
+        height: rem(440),
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+        alignItems: 'flex-start',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        },
+
+        title: {
+        fontWeight: 900,
+        color: '#189940',
+        lineHeight: 1.2,
+        fontSize: rem(50),
+        marginTop: theme.spacing.xs,
+        },
+          }));
+
+    interface CardProps {
+      image: string;
+      title: string;
+    }
+
+    function Hero({ image, title }: CardProps) {
+      const { classes } = useStyles();
+
+  return (
+  <AspectRatio ratio={2/1}>
+    <Paper
+      p="xl"
+      radius={0}
+      sx={{ backgroundImage: `url(${image})`,
+      backgroundSize: '100% 100%'}}
+      className={classes.card}
+    >
+      <div>
+        <Title order={1} className={classes.title} my='xl'>
+          {title}
+        </Title>
+      </div>
+      <Button variant="white" color="dark" my='xl'>
+        Read article
+      </Button>
+    </Paper>
+  </AspectRatio>
+  );
+}
+
+    const data = [
+  {
+    image: whole,
+    title: 'Willkommen beim BC Bears Wil!',
+  },
+  {
+    image: bear1,
+    title: 'Worauf wartest du noch? Melde dich hier an!',
+  },
+  {
+    image: bear2,
+    title: 'Geschichte',
+  },
+  {
+    image: whole,
+    title: 'shop',
+  },
+  ];
+
+  const slides = data.map((item) => (
+    <Carousel.Slide key={item.title}>
+      <Hero {...item} />
+    </Carousel.Slide>
+  ));
+
 	return (
 		<Center>
 			<div>
@@ -57,7 +136,7 @@ function Home() {
                     <Space h='xl'/>
                     <Space h='xl'/>
 					<div className='carousel'>
-						<Carousel slideSize={'100%'}
+                    <Carousel slideSize={'100%'}
 								  height={'xl'}
 								  withIndicators
 								  withControls={false}
@@ -75,49 +154,20 @@ function Home() {
 											  width: rem(40),
 										  },
 									  },
-								  }}>
-							<Carousel.Slide>
-								<AspectRatio ratio={1536/520}>
-									<Image
-										src={bear2}
-										alt={'bear wide cropped'}
-										fit={'fill'}
-										width={'100vw'}
-									/>
-
-								</AspectRatio>
-							</Carousel.Slide>
-							<Carousel.Slide>
-								<AspectRatio ratio={1536/520}>
-									<Image
-										src={bear1}
-										alt={'bear wide cropped'}
-										fit={'fill'}
-										width={'100vw'}
-									/>
-								</AspectRatio>
-							</Carousel.Slide>
-							<Carousel.Slide>
-								<AspectRatio ratio={1536/520}>
-									<Image
-										src={bear2}
-										alt={'bear wide cropped'}
-										fit={'fill'}
-										width={'100vw'}
-									/>
-								</AspectRatio>
-							</Carousel.Slide>
-						</Carousel>
+								  }}
+                        >
+                          {slides}
+                    </Carousel>
 					</div>
-					<Divider mx={'xl'} my={'xl'}/>
+                    <div className='next'>
 					<div className={'next-title'}>
-						<Title order={1} align={'center'} my={'xl'}>Unsere nächsten Veranstaltungen</Title>
+						<Title order={1} align={'center'} mb={'xl'} c='white' pt='xl'>Unsere nächsten Veranstaltungen</Title>
 					</div>
                         <div className='next-description'>
-                        <Text c='dimmed' mx='7%' mb='xl'>Selbst an Spannung mangelt es nicht, denn in unserem "Kommende Termine" Abschnitt verpassen Sie nie wieder ein aufregendes Basketballspiel oder wichtige administrative Veranstaltungen. Halten Sie sich auf dem Laufenden über die nächsten Höhepunkte, die unser Basketballverein zu bieten hat – sei es ein mitreißendes Heimspiel oder eine wichtige Vereinssitzung. Von packenden Auswärtsbegegnungen auf dem Spielfeld bis hin zu bedeutenden organisatorischen Ereignissen neben dem Spielfeld – hier finden Sie alle Termine, die Sie benötigen, um sowohl Teil unserer leidenschaftlichen Fan-Gemeinschaft als auch informiert über die Vereinsangelegenheiten zu sein. Seien Sie bereit, unsere Mannschaft anzufeuern und die Zukunft des Vereins mitzugestalten. Verpassen Sie keine Gelegenheit mehr, die Spannung des Sports und die Bedeutung der Vereinsarbeit hautnah zu erleben. Schauen Sie regelmäßig vorbei, um sicherzustellen, dass Sie keine der kommenden Veranstaltungen, sei es sportlich oder administrativ, verpassen.</Text>
+                        <Text c='white' mx='7%' mb='xl' size='xl'>Selbst an Spannung mangelt es nicht, denn in unserem "Kommende Termine" Abschnitt verpassen Sie nie wieder ein aufregendes Basketballspiel oder wichtige administrative Veranstaltungen. Halten Sie sich auf dem Laufenden über die nächsten Höhepunkte, die unser Basketballverein zu bieten hat – sei es ein mitreißendes Heimspiel oder eine wichtige Vereinssitzung. Von packenden Auswärtsbegegnungen auf dem Spielfeld bis hin zu bedeutenden organisatorischen Ereignissen neben dem Spielfeld – hier finden Sie alle Termine, die Sie benötigen, um sowohl Teil unserer leidenschaftlichen Fan-Gemeinschaft als auch informiert über die Vereinsangelegenheiten zu sein. Seien Sie bereit, unsere Mannschaft anzufeuern und die Zukunft des Vereins mitzugestalten. Verpassen Sie keine Gelegenheit mehr, die Spannung des Sports und die Bedeutung der Vereinsarbeit hautnah zu erleben. Schauen Sie regelmäßig vorbei, um sicherzustellen, dass Sie keine der kommenden Veranstaltungen, sei es sportlich oder administrativ, verpassen.</Text>
                         </div>
-					<div className={'next'}>
-							<Grid justify={'center'} align={'center'} mx={'lg'}>
+					<div className={'next-content'}>
+							<Grid justify={'center'} align={'center'} mx={'lg'} pb='xl'>
 								<Grid.Col md={4} sm={6}>
 									<Card shadow={'sm'} radius={'md'}>
 										<Card.Section>
@@ -164,7 +214,7 @@ function Home() {
 										</Card.Section>
 									</Card>
 								</Grid.Col>
-								<Grid.Col md={4} sm={6}>
+								<Grid.Col md={4} sm={6} py='xl'>
 									<Card shadow={'sm'} radius={'md'}>
 										<Card.Section>
 											<AspectRatio ratio={2048/1357}>
@@ -189,7 +239,8 @@ function Home() {
 								</Grid.Col>
 							</Grid>
 					</div>
-					<Divider mx={'xl'} my={'xl'}/>
+                    </div>
+                    <Divider my='xl' mx='7%'/>
 					<div className={'sponsors-title'}>
 						<Title order={1} align={'center'} my={'xl'}>Unsere Sponsoren</Title>
 					</div>

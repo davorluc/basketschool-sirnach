@@ -31,10 +31,14 @@ body {
     height: 100%;
 }
 
-.next {
+.next-content {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.next {
+    background-image: linear-gradient(#189940, white)
 }
 
 .main {
@@ -50,3 +54,4 @@ body {
     left: 0;
     background: #F0F0F0;
 }
+
