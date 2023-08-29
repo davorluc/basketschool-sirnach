@@ -134,7 +134,6 @@ function Home() {
 			<div>
 				<div className={'main'}>
                     <Space h='xl'/>
-                    <Space h='xl'/>
 					<div className='carousel'>
                     <Carousel slideSize={'100%'}
 								  height={'xl'}
