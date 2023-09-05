@@ -13,11 +13,6 @@
 - Trainerdaten (Kontakt)
 - Gruppe mit trainer verbinden
 
-#### Extra
-- PDF generierung für Anmeldeformular
-- Direkte anmeldung
-- QR code für sponsor
-
 #### TBD
 
 - Liefertermin
