@@ -35,10 +35,3 @@
 ###### Header
 - [ ] Wie bei Skiclub Wil
 - [x] Sticky Navbar
-
-###### Hero Section als Slideshow:
-- [ ] Willkommensmessage mit Logo wie bei Swiss Central
-- [ ] "Mitglied werden" mit Button der zu einem Form führt wie bei Skiclub Wil
-- [ ] Vereinsgeschichte wie bei BC Winterthur
-- [ ] Fanshop (wie Fanshop bei BC Winterthur)
-
