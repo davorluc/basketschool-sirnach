@@ -25,7 +25,7 @@ import { Phone, Mail } from 'tabler-icons-react'
 
 function Trainer () {
     const trainers = [
-    { image: miki, name: 'Miki Manojlovic', selection: 'U18 Herren', email: '*email*', tel: '+41799533413' },
+    { image: miki, name: 'Miodrag Manojlovic', selection: 'U18 Herren', email: '*email*', tel: '+41799533413' },
     { image: alen, name: 'Alen Kruljac', selection: 'U10 Mix/Herren 4. Liga', email: '*email*', tel: '+41792871834' },
     { image: ersun, name: 'Ersun Luma', selection: 'U18 Herren', email: '*email*', tel: '+41791276850' },
     { image: nef, name: 'Nefajla Fata', selection: 'U14 Damen', email: '*email*', tel: '+41789107186' },
