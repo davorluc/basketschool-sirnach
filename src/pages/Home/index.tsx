@@ -81,6 +81,19 @@ function Home() {
 		</Grid.Col>
 	));
 
+	const sponsorData = [
+		{ image: munishi, link: 'https://munishi.ch', alternativeText: 'Munishi Logo'},
+		{ image: tgazajug, link: 'https://www.tgazajug.com', alternativeText: 'Tga Za Jug Logo'},
+		{ image: dieMobiliar, link: 'https://www.mobiliar.ch', alternativeText: 'die Mobiliar Logo'},
+		{ image: hederavita, link: 'https://hederavita.ch', alternativeText: 'Hederavita Logo'},
+		{ image: konsens, link: 'https://kon-sens.com', alternativeText: 'Konsens Logo'},
+		{ image: stilmat, link: 'https://www.stilmat.com/de/', alternativeText: 'Stilmat Logo'}
+	];
+
+	const renderSponsors = sponsorData.map((sponsor) => (
+		<Grid.Col sm={6} md={4}><a href={sponsor.link}><img src={sponsor.image} alt={sponsor.alternativeText}/></a></Grid.Col>
+	))
+
 	useEffect(() => {
 		AOS.init({ duration: 1000 })
 	});
@@ -211,12 +224,7 @@ function Home() {
 					</div>
 					<div className='sponsor-images grid'>
 							<Grid justify='center' align='center' pb={'xl'}>
-								<Grid.Col sm={6} md={4}><a href={'https://www.stilmat.com/de/'}><img src={stilmat} alt={'Stilmat Logo'}/></a></Grid.Col>
-								<Grid.Col sm={6} md={4}><a href={'https://hederavita.ch'}><img src={hederavita} alt={'Hederavita Logo'}/></a></Grid.Col>
-								<Grid.Col sm={6} md={4}><a href={'https://www.tgazajug.com'}><img src={tgazajug} alt={'Tga Za Jug Logo'}/></a></Grid.Col>
-								<Grid.Col sm={6} md={4}><a href={'https://munishi.ch'}><img src={munishi} alt={'Munishi Logo'}/></a></Grid.Col>
-								<Grid.Col sm={6} md={4}><a href={'https://kon-sens.com'}><img src={konsens} alt={'Konsens Logo'}/></a></Grid.Col>
-								<Grid.Col sm={6} md={4}><a href={'https://www.mobiliar.ch'}><img src={dieMobiliar} alt={'Die Mobiliar Logo'}/></a></Grid.Col>
+								{renderSponsors}
 							</Grid>
 					</div>
 				</div>
