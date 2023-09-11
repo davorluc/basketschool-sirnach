@@ -27,7 +27,7 @@ function Verein () {
         { image: geschichte, title: 'Vorstand', link: '/verein/vorstand' },
         { image: geschichte, title: 'TrainerInnen', link: 'verein/trainer' },
         { image: geschichte, title: 'Hallen', link: '/verein/hallen' },
-        { image: geschichte, title: 'Mitglied werden', link: '/verein/neumitgglied'}
+        { image: geschichte, title: 'Mitglied werden', link: '/verein/neumitglied'}
     ];
 
     const renderVereinData = vereinData.map((entry) => (
@@ -58,81 +58,7 @@ function Verein () {
                 </div>
                 <div className={'verein-grid'}>
                     <Grid my={'xl'} align={'center'} justify={'center'} mx={'xl'} gutter={30}>
-                        <Grid.Col md={4} sm={6}>
-                            <Card shadow={'sm'} radius={'md'} style={{backgroundColor: "#F0F0F0"}} component={'a'} href={'/verein/geschichte'}>
-                                <Card.Section p={'xl'}>
-                                    <AspectRatio ratio={2000/1797} p={'xl'}>
-                                        <Image
-                                            src={geschichte}
-                                            height={'100%'}
-                                            alt={'first'}
-                                            fit={'fill'}
-                                        />
-                                    </AspectRatio>
-                                    <Title m={'xl'} p={'xl'} align={'center'} order={2}>Geschichte</Title>
-                                </Card.Section>
-                            </Card>
-                        </Grid.Col>
-                        <Grid.Col md={4} sm={6}>
-                                <Card shadow={'sm'} radius={'md'} style={{backgroundColor: "#F0F0F0"}} component={'a'} href={'/verein/vorstand'}>
-                                        <Card.Section p={'xl'}>
-                                    <AspectRatio ratio={2000/1797}>
-                                        <Image
-                                            src={geschichte}
-                                            height={'100%'}
-                                            alt={'first'}
-                                            fit={'fill'}
-                                        />
-                                    </AspectRatio>
-                                    <Title m={'xl'} p={'xl'} align={'center'} order={2}>Vorstand</Title>
-                                </Card.Section>
-                            </Card>
-                        </Grid.Col>
-                        <Grid.Col md={4} sm={6}>
-                            <Card shadow={'sm'} radius={'md'} style={{backgroundColor: "#F0F0F0"}} component={'a'} href={'/verein/trainer'}>
-                                <Card.Section p={'xl'}>
-                                    <AspectRatio ratio={2000/1797}>
-                                        <Image
-                                            src={geschichte}
-                                            height={'100%'}
-                                            alt={'first'}
-                                            fit={'fill'}
-                                        />
-                                    </AspectRatio>
-                                    <Title m={'xl'} p={'xl'} align={'center'} order={2}>Trainer/Innen</Title>
-                                </Card.Section>
-                            </Card>
-                        </Grid.Col>
-                        <Grid.Col md={4} sm={6}>
-                            <Card shadow={'sm'} radius={'md'} style={{backgroundColor: "#F0F0F0"}} component={'a'} href={'/verein/hallen'}>
-                                <Card.Section p={'xl'}>
-                                    <AspectRatio ratio={2000/1797}>
-                                        <Image
-                                            src={geschichte}
-                                            height={'100%'}
-                                            alt={'first'}
-                                            fit={'fill'}
-                                        />
-                                    </AspectRatio>
-                                    <Title m={'xl'} p={'xl'} align={'center'} order={2}>Hallen</Title>
-                                </Card.Section>
-                            </Card>
-                        </Grid.Col>
-                        <Grid.Col md={4} sm={6}>
-                            <Card shadow={'sm'} radius={'md'} style={{backgroundColor: "#F0F0F0"}} component={'a'} href={'/verein/neumitglied'}>
-                                <Card.Section p={'xl'}>
-                                    <AspectRatio ratio={2000/1797}>
-                                        <Image
-                                            src={geschichte}
-                                            height={'100%'}
-                                            alt={'first'}
-                                            fit={'fill'}
-                                        />
-                                    </AspectRatio>
-                                    <Title m={'xl'} p={'xl'} align={'center'} order={2}>Mitglied werden</Title>
-                                </Card.Section>
-                            </Card>
-                        </Grid.Col>
+                        {renderVereinData}
                     </Grid>
                 </div>
             </div>
