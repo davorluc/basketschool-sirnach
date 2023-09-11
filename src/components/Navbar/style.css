@@ -17,6 +17,9 @@
     transition: all .50s ease;
     z-index: 100;
     text-transform: uppercase;
+    border-bottom: #136e30 3px solid;
+    border-right: #136e30 3px solid;
+    border-left: #136e30 3px solid;
 }
 
 .navigation-menu {
