@@ -22,6 +22,32 @@ import geschichte from '../../media/wil_basketball_small_cropped.png';
 // import mitglied from
 
 function Verein () {
+    const vereinData = [
+        { image: geschichte, title: 'Geschichte', link: '/verein/geschichte' },
+        { image: geschichte, title: 'Vorstand', link: '/verein/vorstand' },
+        { image: geschichte, title: 'TrainerInnen', link: 'verein/trainer' },
+        { image: geschichte, title: 'Hallen', link: '/verein/hallen' },
+        { image: geschichte, title: 'Mitglied werden', link: '/verein/neumitgglied'}
+    ];
+
+    const renderVereinData = vereinData.map((entry) => (
+        <Grid.Col md={4} sm={6}>
+            <Card shadow={'sm'} radius={'md'} style={{backgroundColor: "#F0F0F0"}} component={'a'} href={entry.link}>
+                <Card.Section p={'xl'}>
+                    <AspectRatio ratio={2000/1797} p={'xl'}>
+                        <Image
+                            src={entry.image}
+                            height={'100%'}
+                            alt={'first'}
+                            fit={'fill'}
+                        />
+                    </AspectRatio>
+                    <Title m={'xl'} p={'xl'} align={'center'} order={2}>{entry.title}</Title>
+                </Card.Section>
+            </Card>
+        </Grid.Col>
+    ))
+
     return (
         <div>
             <div className={'main'}>
