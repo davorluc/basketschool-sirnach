@@ -7,8 +7,7 @@ import { Space,
     Title,
     Box,
     Divider,
-    Image,
-    AspectRatio
+    Image
 } from '@mantine/core'
 
 // Image imports
@@ -21,50 +20,48 @@ import konsens from '../../media/sponsors/konsens_logo.png'
 
 function Partners () {
     const mainSponsor = [
-    { image: munishi, text: 'this is an example description', dimension: 937/509 },
+    { image: munishi, text: 'Sponsorbeschreibung' },
     ];
 
     const silver = [
-    { image: dieMobiliar, text: 'this is another example description' }
+    { image: dieMobiliar, text: 'Sponsorenbeschreibung' }
     ];
 
     const bronze = [
-    { image: tgazajug, text: 'this is another example description' },
-    { image: stilmat, text: 'this is the stilmat text'}
+    { image: tgazajug, text: 'Sponsorenbeschreibung' },
+    { image: stilmat, text: 'Sponsorenbeschreibung'}
     ];
 
     const medical = [
-    { image: hederavita, text: 'this is another example description' },
-    { image: konsens, text: 'this is another example description' }
+    { image: hederavita, text: 'Sponsorenbeschreibung' },
+    { image: konsens, text: 'Sponsorenbeschreibung' }
     ];
 
     const mainSponsorContent = mainSponsor.map((entry) => (
         <Stack>
-            <AspectRatio ratio={entry.dimension} m={0} p={0}>
-                <Image my='xl' mx='9%' src={entry.image} maw='50%'/>
-            </AspectRatio>
-            <Text my='xl' mx='9%'>{entry.text}</Text>
+            <Image my='xl' mx='9%' src={entry.image} maw='200px'/>
+            <Text mb='xl' mx='9%'>{entry.text}</Text>
         </Stack>
         ));
 
     const silverSponsorContent = silver.map((entry) => (
         <Stack>
-            <Image my='xl' mx='9%' src={entry.image} maw='50%'/>
-            <Text my='xl' mx='9%'>{entry.text}</Text>
+            <Image my='xl' mx='9%' src={entry.image} maw='200px'/>
+            <Text mb='xl' mx='9%'>{entry.text}</Text>
         </Stack>
         ));
 
     const bronzeSponsorContent = bronze.map((entry) => (
         <Stack>
-            <Image my='xl' mx='9%' src={entry.image} maw='50%'/>
-            <Text my='xl' mx='9%'>{entry.text}</Text>
+            <Image my='xl' mx='9%' src={entry.image} maw='200px'/>
+            <Text mb='xl' mx='9%'>{entry.text}</Text>
         </Stack>
         ));
 
     const medicalSponsorContent= medical.map((entry) => (
         <Stack>
-            <Image my='xl' mx='9%' src={entry.image} maw='50%'/>
-            <Text my='xl' mx='9%'>{entry.text}</Text>
+            <Image my='xl' mx='9%' src={entry.image} maw='200px'/>
+            <Text mb='xl' mx='9%'>{entry.text}</Text>
         </Stack>
         ));
 
@@ -84,18 +81,22 @@ function Partners () {
                         <Title mx={'xl'} order={1}>Sponsoren</Title>
                     </Box>
                     <div className='main-sponsors'>
+                        <Title order={1} c='#189940' mx='8%'>Hauptsponsoren</Title>
                         {mainSponsorContent}
                     </div>
                     <Divider m='xl'/>
                     <div className='main-sponsors'>
+                        <Title order={1} c='#189940' mx='8%'>Silber</Title>
                         {silverSponsorContent}
                     </div>
                     <Divider m='xl'/>
                     <div className='main-sponsors'>
+                    <Title order={1} c='#189940' mx='8%'>Silber</Title>
                         {bronzeSponsorContent}
                     </div>
                     <Divider m='xl'/>
                     <div className='main-sponsors'>
+                    <Title order={1} c='#189940' mx='8%'>Medical</Title>
                         {medicalSponsorContent}
                     </div>
                 </div>
