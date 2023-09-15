@@ -20,46 +20,46 @@ import konsens from '../../media/sponsors/konsens_logo.png'
 
 function Partners () {
     const mainSponsor = [
-    { image: munishi, text: 'Sponsorbeschreibung' },
+    { image: munishi, text: 'Sponsorbeschreibung', link:'https://munishi.ch' },
     ];
 
     const silver = [
-    { image: dieMobiliar, text: 'Sponsorenbeschreibung' }
+    { image: dieMobiliar, text: 'Sponsorenbeschreibung', link: 'https://www.mobiliar.ch'}
     ];
 
     const bronze = [
-    { image: tgazajug, text: 'Sponsorenbeschreibung' },
-    { image: stilmat, text: 'Sponsorenbeschreibung'}
+    { image: tgazajug, text: 'Sponsorenbeschreibung', link:'https://www.tgazajug.com' },
+    { image: stilmat, text: 'Sponsorenbeschreibung', link:'https://stilmat.com/de' }
     ];
 
     const medical = [
-    { image: hederavita, text: 'Sponsorenbeschreibung' },
-    { image: konsens, text: 'Sponsorenbeschreibung' }
+    { image: hederavita, text: 'Sponsorenbeschreibung', link:'https://hederavita.ch' },
+    { image: konsens, text: 'Sponsorenbeschreibung', link:'https://kon-sens.com' }
     ];
 
     const mainSponsorContent = mainSponsor.map((entry) => (
-        <Stack>
+        <Stack component='a' href={entry.link}>
             <Image my='xl' mx='9%' src={entry.image} maw='200px'/>
             <Text mb='xl' mx='9%'>{entry.text}</Text>
         </Stack>
         ));
 
     const silverSponsorContent = silver.map((entry) => (
-        <Stack>
+        <Stack component='a' href={entry.link}>
             <Image my='xl' mx='9%' src={entry.image} maw='200px'/>
             <Text mb='xl' mx='9%'>{entry.text}</Text>
         </Stack>
         ));
 
     const bronzeSponsorContent = bronze.map((entry) => (
-        <Stack>
+        <Stack component='a' href={entry.link}>
             <Image my='xl' mx='9%' src={entry.image} maw='200px'/>
             <Text mb='xl' mx='9%'>{entry.text}</Text>
         </Stack>
         ));
 
     const medicalSponsorContent= medical.map((entry) => (
-        <Stack>
+        <Stack component='a' href={entry.link}>
             <Image my='xl' mx='9%' src={entry.image} maw='200px'/>
             <Text mb='xl' mx='9%'>{entry.text}</Text>
         </Stack>
