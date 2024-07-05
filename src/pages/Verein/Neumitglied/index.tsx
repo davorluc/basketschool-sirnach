@@ -20,7 +20,7 @@ function Neumitglied() {
     const legal = new Date();
     legal.setFullYear(new Date().getFullYear() - 18);
     const nummerPattern = /\+41[0-9]{9}/;
-    const AHVPattern = /765.[0-9]{4}.[0-9]{4}.[0-9]{2}/;
+    const AHVPattern = /756.[0-9]{4}.[0-9]{4}.[0-9]{2}/;
     const form = useForm({
         initialValues: {
             name: "",
@@ -111,11 +111,12 @@ function Neumitglied() {
                                 <NumberInput withAsterisk label="Nummer" placeholder="12" hideControls {...form.getInputProps("address.number")} />
                                 <NumberInput withAsterisk label="PLZ" placeholder="8000" hideControls {...form.getInputProps("address.zip")} />
                                 <TextInput withAsterisk label="Ort" placeholder="Zürich" {...form.getInputProps("address.city")} />
-                                <NumberInput label="AHV Nummer" placeholder="756.1234.5678.97" hideControls {...form.getInputProps("ahv")} />
+                                <TextInput label="AHV Nummer" placeholder="756.1234.5678.97" {...form.getInputProps("ahv")} />
                                 <Radio.Group name="sex" label="Geschlecht" withAsterisk>
                                     <Group mt="xs">
-                                        <Radio value={0} label="M" />
-                                        <Radio value={1} label="W" />
+                                        <Radio value={0} label="M" name="gender"/>
+                                        <Radio value={1} label="W" name="gender"/>
+                                        <Radio value={2} label="andere" name="gender"/>
                                     </Group>
                                 </Radio.Group>
                             </Grid.Col>

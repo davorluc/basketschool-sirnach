@@ -1,5 +1,5 @@
 :root {
-    --main-color: #189940;
+    --main-color: #1B1A55;
     --secondary-color: #f4f4f4;
     --tertiary-color: #635985;
     --text: #333
@@ -17,9 +17,9 @@
     transition: all .50s ease;
     z-index: 100;
     text-transform: uppercase;
-    border-bottom: #136e30 3px solid;
-    border-right: #136e30 3px solid;
-    border-left: #136e30 3px solid;
+    border-bottom: #161546 3px solid;
+    border-right: #161546  3px solid;
+    border-left: #161546  3px solid;
 }
 
 .navigation-menu {

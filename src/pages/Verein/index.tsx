@@ -23,11 +23,11 @@ import geschichte from '../../media/wil_basketball_small_cropped.png';
 
 function Verein () {
     const vereinData = [
-        { image: geschichte, title: 'Geschichte', link: '/verein/geschichte' },
-        { image: geschichte, title: 'Vorstand', link: '/verein/vorstand' },
-        { image: geschichte, title: 'TrainerInnen', link: 'verein/trainer' },
-        { image: geschichte, title: 'Hallen', link: '/verein/hallen' },
-        { image: geschichte, title: 'Mitglied werden', link: '/verein/neumitglied'}
+        { image: geschichte, title: 'Geschichte', link: '/infos/geschichte' },
+        { image: geschichte, title: 'Vorstand', link: '/infos/vorstand' },
+        { image: geschichte, title: 'Trainer', link: 'infos/trainer' },
+        { image: geschichte, title: 'Hallen', link: '/infos/hallen' },
+        { image: geschichte, title: 'Mitglied werden', link: '/infos/neumitglied'}
     ];
 
     const renderVereinData = vereinData.map((entry) => (

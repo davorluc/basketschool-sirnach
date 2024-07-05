@@ -15,21 +15,7 @@ import {
 import './index.css'
 
 function Geschichte () {
-    const achievements = [
-        {season: '18/19', finish: '1', league: 'Herren 4. Liga'},
-        {season: '19/20', finish: '1', league: 'Herren 4. Liga - Saison durch Covid-19 unterbochen'},
-        {season: '20/21', finish: '-', league: 'Herren 4. Liga; Saison durch Covid-19 unterbrochen'},
-        {season: '21/22', finish: '2*', league: 'Herren 4. Liga'},
-        {season: '22/23', finish: '1*', league: 'Herren 3. Liga'}
-    ]
 
-    const rowsAchievement = achievements.map((achievement) => (
-        <tr key={achievement.season}>
-            <td>{achievement.season}</td>
-            <td>{achievement.finish}</td>
-            <td>{achievement.league}</td>
-        </tr>
-    ));
 
     return (
         <div>
@@ -37,9 +23,14 @@ function Geschichte () {
                 <Space h={'xl'}/>
                 <Space h={'xl'}/>
                 <div className={'page-header'}>
-                    <Title order={1} my={'xl'} mx={'7%'} c={'#189940'}>
-                        Geschichte
-                    </Title>
+                    <Box mx={'7%'} my={'xl'} sx={() => ({
+                        backgroundColor: '#1B1A55',
+                        borderRadius: '7px'
+                    })}>
+                        <Title order={1} my={'xl'} mx={'xl'} c={'white'}>
+                            Geschichte
+                        </Title>
+                    </Box>
                 </div>
                 <div className={'page-content'}>
                     <Grid mx={'7%'} my={'xl'} gutter={'xl'}>
@@ -48,52 +39,6 @@ function Geschichte () {
                         </Grid.Col>
                         <Grid.Col sm={6}>
                             <Text>Ut imperdiet condimentum ex. Donec vel nisi et diam aliquet pretium a eget velit. Ut vel justo urna. Donec id elementum neque. In hac habitasse platea dictumst. Aenean sed eros sodales, gravida purus non, volutpat ipsum. Sed ante nisi, egestas et placerat iaculis, faucibus non lacus. Aliquam eget nisi sem. Mauris risus tortor, gravida id scelerisque et, blandit a purus. Maecenas urna magna, tempus a purus non, porttitor porttitor justo. Suspendisse sodales dignissim aliquet. Vestibulum facilisis condimentum turpis sed tempor. Vestibulum fermentum felis ut ex auctor blandit. Ut imperdiet condimentum ex. Donec vel nisi et diam aliquet pretium a eget velit. Ut vel justo urna. Donec id elementum neque. In hac habitasse platea dictumst. Aenean sed eros sodales, gravida purus non, volutpat ipsum. Sed ante nisi, egestas et placerat iaculis, faucibus non lacus. Aliquam eget nisi sem. Mauris risus tortor, gravida id scelerisque et, blandit a purus. Maecenas urna magna, tempus a purus non, porttitor porttitor justo. Suspendisse sodales dignissim aliquet. Vestibulum facilisis condimentum turpis sed tempor. Vestibulum fermentum felis ut ex auctor blandit. Ut imperdiet condimentum ex. Donec vel nisi et diam aliquet pretium a eget velit. Ut vel justo urna. Donec id elementum neque. In hac habitasse platea dictumst. Aenean sed eros sodales, gravida purus non, volutpat ipsum. Sed ante nisi, egestas et placerat iaculis, faucibus non lacus. Aliquam eget nisi sem. Mauris risus tortor, gravida id scelerisque et, blandit a purus. Maecenas urna magna, tempus a purus non, porttitor porttitor justo. Suspendisse sodales dignissim aliquet. Vestibulum facilisis condimentum turpis sed tempor. Vestibulum fermentum felis ut ex auctor blandit</Text>
-                        </Grid.Col>
-                    </Grid>
-                    <Grid mx={'7%'} my={'xl'} gutter={'xl'}>
-                        <Grid.Col sm={6}>
-                            <Box
-                                c={'white'}
-                                my={'xl'}
-                                sx={() => ({
-                                    backgroundColor: '#189940',
-                                    borderRadius: '7px'})
-                                }>
-                                <Title mx={'xl'} order={2}>Unsere Erfolge</Title>
-                            </Box>
-                            <Table striped highlightOnHover captionSide={'bottom'} horizontalSpacing={'xl'}>
-                                <caption>* Aufstieg in dieser Saison</caption>
-                                <thead>
-                                <tr>
-                                    <th>Saison</th>
-                                    <th>Platz</th>
-                                    <th>Liga</th>
-                                </tr>
-                                </thead>
-                                <tbody>{rowsAchievement}</tbody>
-                            </Table>
-                        </Grid.Col>
-                        <Grid.Col sm={6}>
-                            <Box
-                                c={'white'}
-                                my={'xl'}
-                                sx={() => ({
-                                    backgroundColor: '#189940',
-                                    borderRadius: '7px'})
-                                }>
-                                <Title mx={'xl'} order={2}>Unsere Erfolge</Title>
-                            </Box>
-                            <Table striped highlightOnHover captionSide={'bottom'} horizontalSpacing={'xl'}>
-                                <caption>* Aufstieg in dieser Saison</caption>
-                                <thead>
-                                <tr>
-                                    <th>Saison</th>
-                                    <th>Platz</th>
-                                    <th>Liga</th>
-                                </tr>
-                                </thead>
-                                <tbody>{rowsAchievement}</tbody>
-                            </Table>
                         </Grid.Col>
                     </Grid>
                 </div>
