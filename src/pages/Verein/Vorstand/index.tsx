@@ -15,24 +15,17 @@ import {
 } from '@mantine/core'
 
 // Image imports
-import miki from '../../../media/portraits/miki.jpeg'
-import alex from '../../../media/portraits/alex.jpeg'
-import vreni from '../../../media/portraits/vreni.jpeg'
-import ivana from '../../../media/portraits/ivana.jpeg'
-import christian  from '../../../media/portraits/christian.jpeg'
-import daniel from '../../../media/portraits/daniel.jpeg'
+import placeholder from '../../../media/placeholder_person.jpeg'
 
 // Icon imports
 import { Phone, Mail } from 'tabler-icons-react'
 
 function Vorstand () {
     const board = [
-        { img: miki, name: 'Miodrag Manojlovic', role: 'Präsident', email:'*email*', tel:'+41799533413' },
-        { img: alex, name: 'Alexander Manzan', role: 'Vize-Vereinspr.', email:'*email*', tel:'+41799159823' },
-        { img: vreni, name: 'Vreni Nachname', role: 'k/a', email:'*email*', tel:'*tel*' },
-        { img: ivana, name: 'Ivana Manojlovic', role: 'Finanzen', email:'*email*', tel:'*tel*' },
-        { img: christian, name: 'Christian Nachname', role: 'k/a', email:'*email*', tel:'+41796826517' },
-        { img: daniel, name: 'Daniel Brüschweiler', role: 'k/a', email:'*email*', tel:'+41788901535' },
+        { img: placeholder, name: 'Thomas Frischknecht', role: 'Präsident', email:'*email*', tel:'*tel*' },
+        { img: placeholder, name: 'Pascal Ghirardi', role: 'VP', email:'*email*', tel:'*tel*' },
+        { img: placeholder, name: 'Kevin Rubin', role: 'Kassier', email:'*email*', tel:'*tel*' },
+        { img: placeholder, name: 'Niklaus Engi', role: 'Aktuar', email:'*email*', tel:'*tel*' },
     ]
 
     const renderBoard = board.map((member) => (
@@ -45,12 +38,12 @@ function Vorstand () {
                         />
                     </AspectRatio>
                     <Group position='apart' mx='md' my='xs' noWrap={true}>
-                        <Title c='#189940' order={2}>{member.name}</Title>
-                        <Badge color='green' variant='light'>{member.role}</Badge>
+                        <Title c='#1B1A55' order={2}>{member.name}</Title>
+                        <Badge color='blue' variant='light'>{member.role}</Badge>
                     </Group>
                     <Stack spacing='xs' mt='lg'>
-                        <Text c='dimmed' component='a' href={`mailto:${member.email}`} mx='lg'><ThemeIcon mx='sm' color='green' variant='light'><Mail /></ThemeIcon>{member.email}</Text>
-                        <Text c='dimmed' component='a' href={`tel:${member.tel}`} mx='lg' mb='md'><ThemeIcon mx='sm' color='green' variant='light'><Phone /></ThemeIcon>{member.tel}</Text>
+                        <Text c='dimmed' component='a' href={`mailto:${member.email}`} mx='lg'><ThemeIcon mx='sm' color='blue' variant='light'><Mail /></ThemeIcon>{member.email}</Text>
+                        <Text c='dimmed' component='a' href={`tel:${member.tel}`} mx='lg' mb='md'><ThemeIcon mx='sm' color='blue' variant='light'><Phone /></ThemeIcon>{member.tel}</Text>
                     </Stack>
                 </Card.Section>
             </Card>
@@ -61,9 +54,16 @@ function Vorstand () {
             <div className={'main'}>
                 <Space h={'xl'}/>
                 <Space h={'xl'}/>
-                <Title c={'#189940'} order={1} mt={'xl'} mx={'7%'}>Vorstand</Title>
+                <Box mx={'7%'} mt={'4%'} sx={() => ({
+                    backgroundColor: '#1B1A55',
+                    borderRadius: '7px'
+                })}>
+                    <Title order={1} mt={'xl'} mx={'xl'} c={'white'}>
+                        Vorstand 
+                    </Title>
+                </Box>
                 <div className='board-grid'>
-                    <Grid mx='8%' my='xl' gutter={30}>
+                    <Grid mx='8%' mb='xl' gutter={30}>
                         {renderBoard}
                     </Grid>
                 </div>
