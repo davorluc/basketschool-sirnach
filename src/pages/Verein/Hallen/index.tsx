@@ -6,31 +6,56 @@ import {
     Title,
     Image,
     Grid,
+    Box,
     Card,
     Space, AspectRatio, Group, Text, Badge
 } from '@mantine/core';
 
 // Image imports
-import kanti from '../../../media/hallen/kanti.jpg'
-import ebnet from '../../../media/hallen/ebnet.jpg'
 import sonnenhof from '../../../media/hallen/sonnenhof.jpg'
 
+// Data for special Trainings
+const trainingData = [
+    { date: '05. Juli - 12. August', description: 'Sommerferien, es finden keine Trainings statt', type: 'Ausfall'},
+    { date: '13. Januar', description: 'Es wird wieder trainiert.', type: 'Info' },
+];
+
+const renderTrainingData = trainingData.map((training) => (
+    <Grid.Col md={4} sm={5} mt={'md'}>
+        <Card shadow={'sm'} radius={'md'}>
+            <Card.Section>
+                <Group m={'md'}>
+                    <Text size={'xl'} weight={500}>{training.type}</Text>
+                    <Badge color={'blue'} variant={'light'}>
+                        {training.date}
+                    </Badge>
+                </Group>
+                <Text size={'md'} color={'dimmed'} mx={'lg'} maw={'60ch'} my={'sm'}>
+                    {training.description}
+                </Text>
+            </Card.Section>
+        </Card>
+    </Grid.Col>
+));
 
 function Hallen () {
     const [halleSonnenhof, setHalleSonnenhof] = useState(true);
-    const [halleEbnet, setHalleEbnet] = useState(true);
-    const [halleKanti, setHalleKanti] = useState(true);
     return (
         <div>
             <div className={'main'}>
                 <Space h={'xl'}/>
                 <Space h={'xl'}/>
-                <div className={'header'}>
-                    <Title c={'#189940'} order={1} my={'xl'} mx={'7%'}>Hallen</Title>
-                </div>
+                <Box mx={'7%'} mt={'4%'} sx={() => ({
+                    backgroundColor: '#1B1A55',
+                    borderRadius: '7px'
+                })}>
+                    <Title order={1} mt={'xl'} mx={'xl'} c={'white'}>
+                        Wann & Wo 
+                    </Title>
+                </Box>
                 <div className={'gym-grid'}>
-                    <Grid mx={'8%'}>
-                        <Grid.Col sm={6} md={4}>
+                    <Grid mx={'8%'} mt={'xl'}>
+                        <Grid.Col sm={10} md={10} lg={10} mx={'auto'}>
                             <Card shadow={'md'} radius={'md'} mb={'xl'}>
                                 <Card.Section>
                                     <AspectRatio ratio={1000/500} onClick={() => setHalleSonnenhof((v) => !v)}>
@@ -39,61 +64,35 @@ function Hallen () {
                                             fit={'fill'}
                                         />
                                         {!halleSonnenhof && <iframe
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2697.0980266890647!2d9.040443175729395!3d47.46851917117743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479aebea2b77b975%3A0x1eb9b99ae18e950!2sOberstufe%20Sonnenhof!5e0!3m2!1sen!2sch!4v1691932950433!5m2!1sen!2sch" referrerPolicy="no-referrer-when-downgrade"></iframe>}
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d389.98775837116847!2d8.997254189901522!3d47.465220352224854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479aeb1223472fb3%3A0x43965ac69ec21113!2sTurnhalle%20Birkenweg!5e0!3m2!1sen!2str!4v1720891817953!5m2!1sen!2str"></iframe>}
                                     </AspectRatio>
                                     <Group position={'apart'} m={'md'}>
-                                        <Title c={'#189940'} order={4}>Oberstufe Sonnenhof, Wil</Title>
-                                        <Badge color={'green'} variant={'light'}>
-                                            U14/U16
+                                        <Title c={'#1B1A55'} order={2}>Turnhalle am Birkenweg</Title>
+                                        <Badge color={'blue'} variant={'light'}>
+                                            10:30 - 12:00 
                                         </Badge>
-                                        <Text color={'dimmed'}>Bronschhoferstrasse 43, 9500 Wil, Schweiz</Text>
+                                        <Text color={'dimmed'}>Birkenweg 20, 8370 Sirnach, Schweiz</Text>
                                     </Group>
-                                </Card.Section>
-                            </Card>
-                        </Grid.Col>
-                        <Grid.Col sm={6} md={4}>
-                            <Card shadow={'md'} radius={'md'} mb={'xl'}>
-                                <Card.Section>
-                                    <AspectRatio ratio={1000/500} onClick={() => setHalleKanti((v) => !v)}>
-                                        <Image
-                                            src={kanti}
-                                            fit={'fill'}
-                                        />
-                                        {!halleKanti && <iframe
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2697.5236597753797!2d9.030890475728803!3d47.4602240711768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479aebb88cc4d3db%3A0x13891633e5ba315a!2sKantonsschule%20Wil!5e0!3m2!1sen!2shr!4v1690914619557!5m2!1sen!2shr" referrerPolicy="no-referrer-when-downgrade"></iframe>}
-                                    </AspectRatio>
-                                    <Group position={'apart'} m={'md'}>
-                                        <Title c={'#189940'} order={4}>Kantonsschule Wil, Wil SG</Title>
-                                        <Badge color={'green'} variant={'light'}>
-                                            H2/H4/U16/U18
-                                        </Badge>
-                                        <Text color={'dimmed'}>Hubstrasse 75, 9501 Wil, Schweiz</Text>
-                                    </Group>
-                                </Card.Section>
-                            </Card>
-                        </Grid.Col>
-                        <Grid.Col sm={4}>
-                            <Card shadow={'md'} radius={'md'} mb={'xl'}>
-                                <Card.Section>
-                                    <AspectRatio ratio={1000/500} onClick={() => setHalleEbnet((v) => !v)}>
-                                        <Image
-                                            src={ebnet}
-                                            fit={'fill'}
-                                        />
-                                        {!halleEbnet && <iframe
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2696.748475427073!2d9.03378445!3d47.475330699999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479aeb92221f5eab%3A0xfdd9243307a78e58!2sEbnet-Saal%2C%20Industriestrasse%202%2C%209552%20Bronschhofen%2C%20Switzerland!5e0!3m2!1sen!2shr!4v1690835404168!5m2!1sen!2shr"referrerPolicy="no-referrer-when-downgrade"></iframe>}
-                                    </AspectRatio>
-                                    <Group position={'apart'} m={'md'}>
-                                        <Title c={'#189940'} order={4}>Ebnet Saal, Bronschhofen</Title>
-                                        <Badge color={'green'} variant={'light'}>
-                                            H2/U10/DU14
-                                        </Badge>
-                                        <Text color={'dimmed'}>Industriestrasse 2, 9552 Bronschhofen, Schweiz</Text>
+                                    <Group>
+                                        <Text mx={'xl'} pb={'xl'}>
+                                            Hier Trainieren Jungs und Mädchen zusammen. Ebenfalls unterscheiden wir auch die Altersgruppen nicht. Unsere Trainer haben jahrelange Erfahrung in diesem Bereich, sodass jedes Kind sicherlich das bekommt, was nötig ist. Neben Technik schauen unsere Trainer ebenfalls, dass auch genug Spass am Spiel dabei ist. Wir wollen nämlich keine Maschinen kreieren, sondern Kids die Freude an diesem wunderschönen Sport haben. Besondere Termine und Ausfälle finden Sie unten.
+                                        </Text>
                                     </Group>
                                 </Card.Section>
                             </Card>
                         </Grid.Col>
                     </Grid>
+                <Box mx={'7%'} mt={'4%'} sx={() => ({
+                    backgroundColor: '#1B1A55',
+                    borderRadius: '7px'
+                })}>
+                    <Title order={1} mt={'xl'} mx={'xl'} c={'white'}>
+                        Spezielle Termine und Ausfälle
+                    </Title>
+                </Box>
+                <Grid mx={'8%'} pb={'xl'}>
+                    {renderTrainingData}
+                </Grid>
                 </div>
             </div>
         </div>

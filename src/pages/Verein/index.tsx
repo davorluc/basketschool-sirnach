@@ -26,7 +26,7 @@ function Verein () {
         { image: geschichte, title: 'Geschichte', link: '/infos/geschichte' },
         { image: geschichte, title: 'Vorstand', link: '/infos/vorstand' },
         { image: geschichte, title: 'Trainer', link: 'infos/trainer' },
-        { image: geschichte, title: 'Hallen', link: '/infos/hallen' },
+        { image: geschichte, title: 'Wann & Wo', link: '/infos/hallen' },
         { image: geschichte, title: 'Mitglied werden', link: '/infos/neumitglied'}
     ];
 

@@ -2,20 +2,49 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-unsafe-call */
-import { Title, Text, Space, Grid, NumberInput } from "@mantine/core";
-import { TextInput, Checkbox, Button, Group, Radio } from "@mantine/core";
+import { Title,
+        Text,
+        Space,
+        Grid,
+        Box,
+        NumberInput,
+        TextInput,
+        Checkbox,
+        Button,
+        Group,
+        Radio
+} from "@mantine/core"
 
 import { DateInput } from "@mantine/dates";
 import { useForm } from "@mantine/form";
 import { useState } from "react";
 import validator from "validator";
-
+/*
 function underAgeValidate(birthday: Date) {
     const age = ~~((Date.now() - birthday.getTime()) / 31557600000);
     return age > 18;
 }
+*/
+const singleTrainingData = [
+    {title: 'Einzeltraining', price: '15.-'}
+]
+
+const stampCardData = [
+    {title: '6 Trainings', price: '80.-'},
+    {title: '12 Trainings', price: '150.-'},
+]
+
+const annualSubscriptionData = [
+    {title: '1. Jahr', price: '330.-'},
+    {title: '2. Jahr', price: '320.-'},
+    {title: '3. Jahr', price: '310.-'},
+    {title: '3+ Jahre', price: '300.-'},
+]
+
+// TODO: render all Datas as grid of cards
 
 function Neumitglied() {
+    /*
     const [date, setDateValue] = useState<Date | null>(null);
     const legal = new Date();
     legal.setFullYear(new Date().getFullYear() - 18);
@@ -69,8 +98,9 @@ function Neumitglied() {
             gdpr: (value) => (value === false ? "Bitte akzeptieren Sie die Datenschutzerklärung" : null),
         },
     });
-
+*/
     return (
+        /*
         <div>
             <div className={"main"}>
                 <Space h={"xl"} />
@@ -120,8 +150,8 @@ function Neumitglied() {
                                     </Group>
                                 </Radio.Group>
                             </Grid.Col>
-                            {/*Place for supervisor data
-                            <Grid.Col sm={6} span={2}></Grid.Col> */}
+                            {Place for supervisor data
+                            <Grid.Col sm={6} span={2}></Grid.Col> }
                         </Grid>
                         <Checkbox
                             mx={"7%"}
@@ -142,6 +172,29 @@ function Neumitglied() {
                         </Group>
                     </form>
                 </div>
+            </div>
+        </div>
+        */
+        <div>
+            <div className={'main'}>
+                <Space h={'xl'}/>
+                <Space h={'xl'}/>
+                <Box mx={'7%'} mt={'4%'} sx={() => ({
+                    backgroundColor: '#1B1A55',
+                    borderRadius: '7px'
+                })}>
+                    <Title order={1} mt={'xl'} mx={'xl'} c={'white'}>
+                        Mitgliedschaft
+                    </Title>
+                </Box>
+                <Group my={'xl'} mx={'7%'}>
+                    <Title order={2}>Vor der Mitgliedschaft</Title>
+                    <Text>Jedes Kind hat Anrecht auf zwei gratis Probetrainings bevor er/sie die Entscheidung treffen soll. Dies soll den Kindern ermöglichen einen guten Einblick in die Trainings zu erschaffen und womöglich auch die ersten Freundschaften zu schliessen. Da wir in der Regel in kleineren Gruppen trainieren, lernen sich die Spieler viel schneller kennen, sodass keiner ausgeschlossen wird.</Text>
+                </Group>
+                <Group my={'xl'} mx={'7%'}>
+                    <Title order={2}>Arten Mitgliedschaft</Title>
+                    <Text>Generell wird zwischen Einzeltrainings, Sammelkarten und Jahresbeiträgen unterschieden. Nach den absolvierten Probetrainings soll sich das Kind, resp. die Eltern, für eines der Modelle entscheiden. Umso langfristiger das Kind dabei ist, desto weniger Kosten die Trainings im Schnitt.</Text>
+                </Group>
             </div>
         </div>
     );

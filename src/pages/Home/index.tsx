@@ -50,9 +50,9 @@ import { render } from 'react-dom';
 function Home() {
 
 	const upNextData = [
-		{ image: first, title: 'Sommerferien!', datetime: '10.07.2023 - 14.08.2023', content: 'Die Saison neigt sich dem Ende, darum wünschen wir allen Spielern und Eltern unserer Spieler einen erholsamen Sommer!' },
-		{ image: second, title: 'Delegiertenversammlung', datetime: '09.06.2023 19:30', content: 'Die jährliche Delegiertenversammlung findet wieder statt! Es erwarten euch Infos bzgl. zur nächsten Saison, Administratives, Budget, Preisverleihung und ein Apéro!'},
-		{ image: third, title: 'Aufstiegsspiel Herren 1!', datetime: '07.05.2023 13:00', content: 'Unsere Herrenmannschaft hat die Möglichkeit, Ihre äusserst erfolgreiche Saison mit einem krönenden Abschluss zu verzieren. In der Kanti Wil kommt es zum Rückspiel gegen Wohlen Basket. Wir brauchen so viel unterstützung wie möglich!' }
+		{ image: first, title: 'Sommerferien!', datetime: '05.07.2024 - 12.08.2024', content: 'Die Saison neigt sich dem Ende, darum wünschen wir allen Spielern und Eltern unserer Spieler einen erholsamen Sommer!' },
+		{ image: first, title: 'Sommerferien!', datetime: '05.07.2024 - 12.08.2024', content: 'Die Saison neigt sich dem Ende, darum wünschen wir allen Spielern und Eltern unserer Spieler einen erholsamen Sommer!' },
+		{ image: first, title: 'Sommerferien!', datetime: '05.07.2024 - 12.08.2024', content: 'Die Saison neigt sich dem Ende, darum wünschen wir allen Spielern und Eltern unserer Spieler einen erholsamen Sommer!' },
 	];
 
 	const renderUpNextData = upNextData.map((event) => (
@@ -69,7 +69,7 @@ function Home() {
 					</AspectRatio>
 					<Group position={'apart'} m={'md'}>
 						<Text weight={500}>{event.title}</Text>
-						<Badge color={'green'} variant={'light'}>
+						<Badge color={'blue'} variant={'light'}>
 							{event.datetime}
 						</Badge>
 					</Group>
@@ -113,8 +113,8 @@ function Home() {
 
         title: {
         fontWeight: 900,
-        textShadow: '2px 2px #000000',
-        color: '#189940',
+        textShadow: '2px 2px #ffffff',
+        color: '#1B1A55',
         lineHeight: 1.2,
         fontSize: rem(50),
         marginTop: theme.spacing.xs,
@@ -207,10 +207,10 @@ function Home() {
 					</div>
                     <div className='next'>
 					<div className={'next-title'}>
-						<Title order={1} align={'center'} mb={'xl'} c='white' pt='xl'>Unsere nächsten Veranstaltungen</Title>
+						<Title order={1} align={'center'} mb={'xl'} c='white' pt='xl'>Wichtige Termine</Title>
 					</div>
                         <div className='next-description'>
-                        <Text c='white' mx='7%' mb='xl' size='xl'>Selbst an Spannung mangelt es nicht, denn in diesem Abschnitt verpassen Sie nie wieder ein aufregendes Basketballspiel oder wichtige administrative Veranstaltungen. Halten Sie sich auf dem Laufenden über die nächsten Höhepunkte, die unser Basketballverein zu bieten hat – sei es ein mitreißendes Heimspiel oder eine wichtige Vereinssitzung. Von packenden Auswärtsbegegnungen auf dem Spielfeld bis hin zu bedeutenden organisatorischen Ereignissen neben dem Spielfeld – hier finden Sie alle Termine, die Sie benötigen, um sowohl Teil unserer leidenschaftlichen Fan-Gemeinschaft als auch informiert über die Vereinsangelegenheiten zu sein. Seien Sie bereit, unsere Mannschaft anzufeuern und die Zukunft des Vereins mitzugestalten. Verpassen Sie keine Gelegenheit mehr, die Spannung des Sports und die Bedeutung der Vereinsarbeit hautnah zu erleben. Schauen Sie regelmäßig vorbei, um sicherzustellen, dass Sie keine der kommenden Veranstaltungen, sei es sportlich oder administrativ, verpassen.</Text>
+                        <Text c='white' mx='7%' mb='xl' size='xl'>Hier finden unsere Spieler und deren Eltern die nächsten wichtigen Termine. Von Spezialtrainings bis hin zu geplanten Trainingsausfällen durch andersweitige Hallenbesetzungen findet Ihr hier alles. Diese Sammlung wird regelmässig gepflegt, sodass ihr sicherlich keine wichtigen Infos verpasst. Bei Unklarheiten könnt ihr euch jederzeit bei einem der Trainer auf Whatsapp melden.</Text>
                         </div>
 					<div className={'next-content'}>
 						<Grid justify={'center'} align={'center'} mx={'lg'} pb='xl'>
