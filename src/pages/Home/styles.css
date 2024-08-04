@@ -14,13 +14,6 @@
 
 }
 
-@media screen and (max-width: 480px) {
-  .sponsor-images img {
-      max-height: 20vh;
-      max-width: 80vw;
-      object-fit: contain;
-}
-
 body {
     color: #F7EFE5;
     overflow-x: hidden;
@@ -60,5 +53,12 @@ body {
     bottom: 0;
     left: 0;
     background: #F0F0F0;
+}
+
+@media screen and (max-width: 480px) {
+  .sponsor-images img {
+      max-height: 20vh;
+      max-width: 80vw;
+      object-fit: contain;
 }
 
