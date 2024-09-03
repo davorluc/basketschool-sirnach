@@ -2,7 +2,7 @@
 import { Anchor, AspectRatio, Blockquote, Box, Grid, Group, Image, NavLink, Text, ThemeIcon, Title } from "@mantine/core";
 
 // Image Imports
-import logo from "../../media/wil_basktetball_small.png";
+import logo from "../../media/basketschool_sirnach_logo.png";
 
 // Icons Imports here
 import { Mail, WorldWww, BrandInstagram, BrandFacebook } from 'tabler-icons-react';
@@ -16,23 +16,23 @@ const Footer = () => {
     <div className='footer'>
       <Grid justify={'center'} align={'center'} mx={'xl'} py={'xl'}>
         <Grid.Col md={4} sm={6} align={'left'} ml={'xl'}>
-          <AspectRatio ratio={2000 / 2189} maw={'30%'} my={'sm'}>
+          <AspectRatio ratio={2000 / 2000} maw={'30%'} my={'sm'}>
             <Anchor href={'https://www.basketschool.ch'}>
               <Image
                 src={logo}
                 height={'100%'}
-                mx={'lg'}
+                mx={'xs'}
                 my={'xs'}
               />
             </Anchor>
           </AspectRatio>
           <Title order={2} my={'xl'} align={'left'}>BASKETSCHOOL SIRNACH</Title>
           <Text align={'left'}>
-            <Anchor href={'mailto:bcbear-wil@bluewin.ch'} underline={false} mx={'2px'} c={'black'} weight={700}>
+            <Anchor href={'mailto:kontakt@basketschool.ch'} underline={false} mx={'2px'} c={'black'} weight={700}>
               <ThemeIcon mr={'xs'} variant={'outline'} c={'black'}>
                 <Mail />
               </ThemeIcon>
-              bcbears-wil@bluewin.ch
+              kontakt@basketschool.ch
             </Anchor>
           </Text>
           <Text align={'left'}>
