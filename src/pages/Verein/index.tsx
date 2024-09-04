@@ -15,7 +15,7 @@ import {
 import './index.css';
 
 // Image Imports
-import geschichte from '../../media/basketschool_sirnach_logo.png';
+import geschichte from '../../media/basketschool_sirnach_alternatelogo.png';
 // import vorstand from
 // import trainer from
 // import hallen from
@@ -34,7 +34,7 @@ function Verein() {
     <Grid.Col md={4} sm={6}>
       <Card shadow={'sm'} radius={'md'} style={{ backgroundColor: "#F0F0F0" }} component={'a'} href={entry.link}>
         <Card.Section p={'xl'}>
-          <AspectRatio ratio={2000 / 1797} p={'xl'}>
+          <AspectRatio ratio={1 / 1} p={'xl'}>
             <Image
               src={entry.image}
               height={'100%'}
@@ -42,7 +42,7 @@ function Verein() {
               fit={'fill'}
             />
           </AspectRatio>
-          <Title m={'xl'} p={'xl'} align={'center'} order={2}>{entry.title}</Title>
+          <Title m={'xl'} p={'xl'} align={'center'} order={2} c={'#1B1A55'}>{entry.title}</Title>
         </Card.Section>
       </Card>
     </Grid.Col>
