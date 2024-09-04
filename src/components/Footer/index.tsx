@@ -2,7 +2,7 @@
 import { Anchor, AspectRatio, Blockquote, Box, Grid, Group, Image, NavLink, Text, ThemeIcon, Title } from "@mantine/core";
 
 // Image Imports
-import logo from "../../media/basketschool_sirnach_logo.png";
+import logo from "../../media/basketschool_sirnach_alternatelogo.png";
 
 // Icons Imports here
 import { Mail, WorldWww, BrandInstagram, BrandFacebook } from 'tabler-icons-react';
