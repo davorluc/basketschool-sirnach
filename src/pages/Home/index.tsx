@@ -36,9 +36,9 @@ import logo from '../../media/wil_basktetball_small.png'
 import hostpoint from '../../media/sponsors/logo_hostpoint_orig.png';
 import velopeter from '../../media/sponsors/logo_velopeter_ohne_weiss.png';
 import apotheke from '../../media/sponsors/logo_apotheke.png';
-import swissInsurance from '../../media/sponsors/Logo_swissinsuranceag_04.jpg';
+import swissInsurance from '../../media/sponsors/Logo_swissinsuranceag_04.png';
 import raiffeisen from '../../media/sponsors/Raiffeisen_Schweiz_Logo.svg.png';
-import fitness4all from '../../media/sponsors/logo_fitness4all_02.jpg';
+import fitness4all from '../../media/sponsors/logo_fitness4all_02.png';
 
 
 // Stylesheet imports here
