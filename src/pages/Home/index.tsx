@@ -12,6 +12,7 @@ import {
   Space,
   createStyles,
   Paper,
+  Container,
   Text,
   Badge,
   Group,
@@ -32,7 +33,7 @@ import whole from '../../media/teams/all.jpeg'
 import first from '../../media/beachphoto.jpg'
 import second from '../../media/DV.jpg'
 import third from '../../media/teams/senioren.jpg'
-import logo from '../../media/wil_basktetball_small.png'
+import logo from '../../media/basketschool_sirnach_alternatelogo.png'
 import hostpoint from '../../media/sponsors/logo_hostpoint_orig.png';
 import velopeter from '../../media/sponsors/logo_velopeter_ohne_weiss.png';
 import apotheke from '../../media/sponsors/logo_apotheke.png';
@@ -99,115 +100,24 @@ function Home() {
     AOS.init({ duration: 1000 })
   });
 
-  const autoplay = useRef(Autoplay({ delay: 6000 }));
-
-  const useStyles = createStyles((theme) => ({
-    card: {
-      height: rem(440),
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'space-between',
-      alignItems: 'flex-start',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-    },
-
-    title: {
-      fontWeight: 900,
-      textShadow: '2px 2px #ffffff',
-      color: '#1B1A55',
-      lineHeight: 1.2,
-      fontSize: rem(50),
-      marginTop: theme.spacing.xs,
-    },
-  }));
-
-  interface CardProps {
-    image: string;
-    title: string;
-  }
-
-  function Hero({ image, title }: CardProps) {
-    const { classes } = useStyles();
-
-    return (
-      <AspectRatio ratio={2 / 1}>
-        <Paper
-          p="xl"
-          radius={0}
-          sx={{
-            backgroundImage: `url(${image})`,
-            backgroundSize: '100% 100%'
-          }}
-          className={classes.card}
-        >
-          <div>
-            <Title order={1} className={classes.title} my='xl'>
-              {title}
-            </Title>
-          </div>
-          <Button variant="white" color="dark" my='xl'>
-            Read article
-          </Button>
-        </Paper>
-      </AspectRatio>
-    );
-  }
-
-  const data = [
-    {
-      image: whole,
-      title: 'Willkommen beim BC Bears Wil!',
-    },
-    {
-      image: bear1,
-      title: 'Worauf wartest du noch? Melde dich hier an!',
-    },
-    {
-      image: bear2,
-      title: 'Geschichte',
-    },
-    {
-      image: whole,
-      title: 'shop',
-    },
-  ];
-
-  const slides = data.map((item) => (
-    <Carousel.Slide key={item.title}>
-      <Hero {...item} />
-    </Carousel.Slide>
-  ));
-
   return (
     <Center>
       <div>
         <div className={'main'}>
-          <Space h='xl' />
-          <div className='carousel'>
-            <Carousel slideSize={'100%'}
-              height={'xl'}
-              withIndicators
-              withControls={false}
-              plugins={[autoplay.current]}
-              onMouseEnter={autoplay.current.stop}
-              onMouseLeave={autoplay.current.reset}
-              loop
-              styles={{
-                indicator: {
-                  width: rem(12),
-                  height: rem(4),
-                  transition: 'width 250ms ease',
-
-                  '&[data-active]': {
-                    width: rem(40),
-                  },
-                },
-              }}
-            >
-              {slides}
-            </Carousel>
-          </div>
+        <Space h='xl' />
+        <Center className={'hero'}>
+          <Card shadow={'md'} radius={'lg'} withBorder style={{backgroundColor: '#1b1a55'}} mx={'10%'}>
+            <Card.Section p={'xl'}>
+              <Title order={1} c={'white'}>
+                Willkommen bei der Basketschool Sirnach!
+              </Title>
+            </Card.Section>
+              <Text c={'white'} p={'xl'} size={'xl'}>
+                Bei uns dreht sich alles um Spass am Basketball! In der Basketschool Sirnach lernen Kinder und Jugendliche spielerisch die Grundlagen des Basketballs, verbessern ihre Fähigkeiten und erleben Teamgeist hautnah. Komm vorbei und entdecke, wie viel Freude das Training machen kann!
+              </Text>
+          </Card>
+          <img id='hero-logo' src={logo}/>
+        </Center>
           <div className='next'>
             <div className={'next-title'}>
               <Title order={1} align={'center'} mb={'xl'} c='white' pt='xl'>Wichtige Termine</Title>
