@@ -11,30 +11,21 @@ import { Space,
 } from '@mantine/core'
 
 // Image imports
-import dieMobiliar from '../../media/sponsors/die_mobiliar.jpeg'
-import munishi from '../../media/sponsors/munishi_logo.jpeg'
-import hederavita from '../../media/sponsors/hederavita.png'
-import stilmat from '../../media/sponsors/stilmat-logo-ch.png'
-import tgazajug from '../../media/sponsors/tga_za_jug.jpeg'
-import konsens from '../../media/sponsors/konsens_logo.png'
+import hostpoint from '../../media/sponsors/logo_hostpoint_orig.png';
+import velopeter from '../../media/sponsors/logo_velopeter_ohne_weiss.png';
+import apotheke from '../../media/sponsors/logo_apotheke.png';
+import swissInsurance from '../../media/sponsors/Logo_swissinsuranceag_04.png';
+import raiffeisen from '../../media/sponsors/Raiffeisen_Schweiz_Logo.svg.png';
+import fitness4all from '../../media/sponsors/logo_fitness4all_02.png';
 
 function Partners () {
     const mainSponsor = [
-    { image: munishi, text: 'Sponsorbeschreibung', link:'https://munishi.ch' },
-    ];
-
-    const silver = [
-    { image: dieMobiliar, text: 'Sponsorenbeschreibung', link: 'https://www.mobiliar.ch'}
-    ];
-
-    const bronze = [
-    { image: tgazajug, text: 'Sponsorenbeschreibung', link:'https://www.tgazajug.com' },
-    { image: stilmat, text: 'Sponsorenbeschreibung', link:'https://stilmat.com/de' }
-    ];
-
-    const medical = [
-    { image: hederavita, text: 'Sponsorenbeschreibung', link:'https://hederavita.ch' },
-    { image: konsens, text: 'Sponsorenbeschreibung', link:'https://kon-sens.com' }
+    { image: hostpoint, text: 'Sponsorbeschreibung', link:'https://www.hostpoint.ch' },
+    { image: velopeter, text: 'Sponsorenbeschreibung', link: 'https://velopeter.ch/'},
+    { image: apotheke, text: 'Sponsorenbeschreibung', link:'http://www.gate24.ch/de/Beauty+Wellness-13/Sirnach/Apotheke-Sirnach-Dr--R--Krahenmann/detail-2951248-2940210.aspx' },
+    { image: swissInsurance, text: 'Sponsorenbeschreibung', link:'https://www.swiss-insurance-ag.ch/' },
+    { image: raiffeisen, text: 'Sponsorenbeschreibung', link:'https://www.raiffeisen.ch/regio-sirnach/de.html' },
+    { image: fitness4all, text: 'Sponsorenbeschreibung', link:'http://www.fitness4all.ch/' }
     ];
 
     const mainSponsorContent = mainSponsor.map((entry) => (
@@ -44,26 +35,6 @@ function Partners () {
         </Stack>
         ));
 
-    const silverSponsorContent = silver.map((entry) => (
-        <Stack component='a' href={entry.link}>
-            <Image my='xl' mx='9%' src={entry.image} maw='200px'/>
-            <Text mb='xl' mx='9%'>{entry.text}</Text>
-        </Stack>
-        ));
-
-    const bronzeSponsorContent = bronze.map((entry) => (
-        <Stack component='a' href={entry.link}>
-            <Image my='xl' mx='9%' src={entry.image} maw='200px'/>
-            <Text mb='xl' mx='9%'>{entry.text}</Text>
-        </Stack>
-        ));
-
-    const medicalSponsorContent= medical.map((entry) => (
-        <Stack component='a' href={entry.link}>
-            <Image my='xl' mx='9%' src={entry.image} maw='200px'/>
-            <Text mb='xl' mx='9%'>{entry.text}</Text>
-        </Stack>
-        ));
 
     return (
             <div>
@@ -75,30 +46,20 @@ function Partners () {
                         c={'white'}
                         my={'xl'}
                         sx={() => ({
-                            backgroundColor: '#189940',
+                            backgroundColor: '#1B1A55',
                             borderRadius: '7px'})
                         }>
                         <Title mx={'xl'} order={1}>Sponsoren</Title>
                     </Box>
                     <div className='main-sponsors'>
-                        <Title order={1} c='#189940' mx='8%'>Hauptsponsoren</Title>
+                        <Title order={1} c='#1B1A55' mx='8%'>Hauptsponsoren</Title>
                         {mainSponsorContent}
                     </div>
                     <Divider m='xl'/>
                     <div className='main-sponsors'>
-                        <Title order={1} c='#189940' mx='8%'>Silber</Title>
-                        {silverSponsorContent}
+                        <Title order={1} c='#1B1A55' mx='8%'>Andere Partner und Links</Title>
                     </div>
                     <Divider m='xl'/>
-                    <div className='main-sponsors'>
-                    <Title order={1} c='#189940' mx='8%'>Silber</Title>
-                        {bronzeSponsorContent}
-                    </div>
-                    <Divider m='xl'/>
-                    <div className='main-sponsors'>
-                    <Title order={1} c='#189940' mx='8%'>Medical</Title>
-                        {medicalSponsorContent}
-                    </div>
                 </div>
             </div>
            );
