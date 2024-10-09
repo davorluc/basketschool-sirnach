@@ -17,7 +17,7 @@ const Footer = () => {
       <Grid justify={'center'} align={'center'} mx={'xl'} py={'xl'}>
         <Grid.Col md={4} sm={6} align={'left'} ml={'xl'}>
           <AspectRatio ratio={2000 / 2000} maw={'30%'} my={'sm'}>
-            <Anchor href={'https://www.basketschool.ch'}>
+            <Anchor href={'http://www.basketschool.ch'}>
               <Image
                 src={logo}
                 height={'100%'}
@@ -36,7 +36,7 @@ const Footer = () => {
             </Anchor>
           </Text>
           <Text align={'left'}>
-            <Anchor href={'https://www.basketschool.ch'} underline={false} mx={'2px'} c={'black'} weight={700}>
+            <Anchor href={'http://www.basketschool.ch'} underline={false} mx={'2px'} c={'black'} weight={700}>
               <ThemeIcon mr={'xs'} variant={'outline'} c={'black'}>
                 <WorldWww />
               </ThemeIcon>
