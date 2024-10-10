@@ -5,7 +5,7 @@ import { Anchor, AspectRatio, Blockquote, Box, Grid, Group, Image, NavLink, Text
 import logo from "../../media/basketschool_sirnach_alternatelogo.png";
 
 // Icons Imports here
-import { Mail, WorldWww, BrandInstagram, BrandFacebook } from 'tabler-icons-react';
+import { Mail, WorldWww } from 'tabler-icons-react';
 
 // Style import
 import './index.css'
@@ -133,115 +133,6 @@ const Footer = () => {
               </NavLink>
             </NavLink>
             <NavLink
-              label={'Teams'}
-              childrenOffset={'lg'}
-              c={'black'}
-              component={'a'}
-              href={'/teams'}
-              sx={() => ({
-                '&:hover': {
-                  backgroundColor: '#E6F9FF',
-                }
-              })
-              }>
-              <NavLink
-                label={'Mix U10'}
-                c={'black'}
-                component={'a'}
-                href={'/teams/mixu10'}
-                sx={() => ({
-                  '&:hover': {
-                    backgroundColor: '#E6F9FF',
-                  }
-                })
-                }>
-              </NavLink>
-              <NavLink
-                label={'Mix U12'}
-                c={'black'}
-                component={'a'}
-                href={'/teams/mixu12'}
-                sx={() => ({
-                  '&:hover': {
-                    backgroundColor: '#E6F9FF',
-                  }
-                })
-                }>
-              </NavLink>
-              <NavLink
-                label={'Herren U14'}
-                c={'black'}
-                component={'a'}
-                href={'/teams/herrenu14'}
-                sx={() => ({
-                  '&:hover': {
-                    backgroundColor: '#E6F9FF',
-                  }
-                })
-                }>
-              </NavLink>
-              <NavLink
-                label={'Damen U14'}
-                c={'black'}
-                component={'a'}
-                href={'/teams/damenu14'}
-                sx={() => ({
-                  '&:hover': {
-                    backgroundColor: '#E6F9FF',
-                  }
-                })
-                }>
-              </NavLink>
-              <NavLink
-                label={'Herren U16'}
-                c={'black'}
-                component={'a'}
-                href={'herrenu16'}
-                sx={() => ({
-                  '&:hover': {
-                    backgroundColor: '#E6F9FF',
-                  }
-                })
-                }>
-              </NavLink>
-              <NavLink
-                label={'Herren U18'}
-                c={'black'}
-                component={'a'}
-                href={'/teams/herrenu18'}
-                sx={() => ({
-                  '&:hover': {
-                    backgroundColor: '#E6F9FF',
-                  }
-                })
-                }>
-              </NavLink>
-              <NavLink
-                label={'Herren 2. Liga'}
-                c={'black'}
-                component={'a'}
-                href={'/teams/herren3'}
-                sx={() => ({
-                  '&:hover': {
-                    backgroundColor: '#E6F9FF',
-                  }
-                })
-                }>
-              </NavLink>
-              <NavLink
-                label={'Herren 4. Liga'}
-                c={'black'}
-                component={'a'}
-                href={'/teams/herren4'}
-                sx={() => ({
-                  '&:hover': {
-                    backgroundColor: '#E6F9FF',
-                  }
-                })
-                }>
-              </NavLink>
-            </NavLink>
-            <NavLink
               label={'Partner & Gönner'}
               c={'black'}
               component={'a'}
@@ -254,10 +145,10 @@ const Footer = () => {
               }>
             </NavLink>
             <NavLink
-              label={'Shop'}
+              label={'Kontakt'}
               c={'black'}
               component={'a'}
-              href={'/shop'}
+              href={'/kontakt'}
               sx={() => ({
                 '&:hover': {
                   backgroundColor: '#E6F9FF',
