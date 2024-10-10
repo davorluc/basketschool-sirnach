@@ -1,12 +1,13 @@
 body {
-    width: 100%
+    width: 100%;
+    background-color: #f5f7f8;
 }
 
 .main {
     min-height: 100vh;
     position: relative;
     z-index: 1;
-    background-color: #ffffff;
+    background-color: #f5f7f8;
 }
 
 .verein-grid {

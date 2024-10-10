@@ -1,3 +1,7 @@
 .training-type-header {
   justify-content: space-between;
 }
+
+body {
+  background-color: #F5F7F8;
+}

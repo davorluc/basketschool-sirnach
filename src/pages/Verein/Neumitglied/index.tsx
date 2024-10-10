@@ -132,7 +132,7 @@ function Neumitglied() {
             {renderStampCard}
           </Grid>
         </Container>
-        <Container my={'xl'} mx={'7%'} align={'left'} px={0}>
+        <Container mt={'xl'} mx={'7%'} align={'left'} px={0} pb={'xl'}>
           <Title order={3} c={'#1B1A55'}>Jahresbeiträge</Title>
           <Grid>
             {renderSubscriptions}
