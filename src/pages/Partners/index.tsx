@@ -4,6 +4,8 @@ import { Space,
     Grid,
     Container,
     Stack,
+    Card,
+    AspectRatio,
     Title,
     Box,
     Divider,
@@ -20,25 +22,40 @@ import fitness4all from '../../media/sponsors/logo_fitness4all_02.png';
 
 function Partners () {
     const mainSponsor = [
-    { image: hostpoint, text: 'Sponsorbeschreibung', link:'https://www.hostpoint.ch' },
-    { image: velopeter, text: 'Sponsorenbeschreibung', link: 'https://velopeter.ch/'},
-    { image: apotheke, text: 'Sponsorenbeschreibung', link:'http://www.gate24.ch/de/Beauty+Wellness-13/Sirnach/Apotheke-Sirnach-Dr--R--Krahenmann/detail-2951248-2940210.aspx' },
-    { image: swissInsurance, text: 'Sponsorenbeschreibung', link:'https://www.swiss-insurance-ag.ch/' },
-    { image: raiffeisen, text: 'Sponsorenbeschreibung', link:'https://www.raiffeisen.ch/regio-sirnach/de.html' },
-    { image: fitness4all, text: 'Sponsorenbeschreibung', link:'http://www.fitness4all.ch/' }
+    { image: hostpoint, description: 'Sponsorbeschreibung', name: 'Hostpoint', link:'https://www.hostpoint.ch' },
+    { image: velopeter, description: 'Sponsorenbeschreibung', name: 'Velopeter', link: 'https://velopeter.ch/'},
+    { image: apotheke, description: 'Sponsorenbeschreibung', name: 'Apotheke Krähenmann', link:'http://www.gate24.ch/de/Beauty+Wellness-13/Sirnach/Apotheke-Sirnach-Dr--R--Krahenmann/detail-2951248-2940210.aspx' },
+    { image: swissInsurance, description: 'Sponsorenbeschreibung', name:'Swiss Insurance AG', link:'https://www.swiss-insurance-ag.ch/' },
+    { image: raiffeisen, description: 'Sponsorenbeschreibung', name: 'Raiffeisen', link:'https://www.raiffeisen.ch/regio-sirnach/de.html' },
+    { image: fitness4all, description: 'Sponsorenbeschreibung', name:'Fitness4all', link:'http://www.fitness4all.ch/' }
     ];
 
     const mainSponsorContent = mainSponsor.map((entry) => (
-        <Stack component='a' href={entry.link}>
-            <Image my='xl' mx='9%' src={entry.image} maw='200px'/>
-            <Text mb='xl' mx='9%'>{entry.text}</Text>
-        </Stack>
+        <Grid.Col md={4} sm={6}>
+            <Card shadow={'sm'} radius={'md'} component={'a'} href={entry.link}>
+                <Card.Section my={'xl'}>
+                    <AspectRatio ratio={35/12}>
+                        <Image
+                            src={entry.image}
+                            fit={'contain'}
+                            p={'xl'}
+                        />
+                    </AspectRatio>
+                    <Title order={3} mx={'xl'}>
+                        {entry.name}
+                    </Title>
+                    <Text size={'sm'} color={'dimmed'} mx={'lg'} maw={'60ch'} my={'sm'}>
+                        {entry.description}
+                    </Text>
+                </Card.Section>
+            </Card>
+        </Grid.Col>
         ));
 
 
     return (
-            <div>
-                <div className="main">
+            <div className="main">
+                <div>
                     <Space h={'xl'}/>
                     <Space h={'xl'}/>
                     <Box
@@ -53,7 +70,9 @@ function Partners () {
                     </Box>
                     <div className='main-sponsors'>
                         <Title order={1} c='#1B1A55' mx='8%'>Hauptsponsoren</Title>
-                        {mainSponsorContent}
+                        <Grid mx={'xl'} mt={'xl'}>
+                            {mainSponsorContent}
+                        </Grid>
                     </div>
                     <Divider m='xl'/>
                     <div className='main-sponsors'>
