@@ -1,11 +1,12 @@
 .main {
-    position: relative;
-    z-index: 1;
-    background-color: #F5F7F8;
+  position: relative;
+  z-index: 1;
+  background-color: #F5F7F8;
 }
 
-.main-sponsors {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.main-sponsors-grid .mantine-Grid-col:hover {
+  transform: scale(1.02);
+  transition: transform 0.33s;
+  cursor: pointer;
 }
