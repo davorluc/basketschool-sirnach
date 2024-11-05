@@ -121,7 +121,7 @@ function Home() {
               </Button>
             </Card.Section>
           </Card>
-          <img id='hero-logo' src={logo}/>
+          <img id='hero-logo' className={"ball"} src={logo}/>
         </Center>
           <div className='next'>
             <div className={'next-title'}>

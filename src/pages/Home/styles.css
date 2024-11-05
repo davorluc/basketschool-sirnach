@@ -62,3 +62,21 @@ body {
     object-fit: contain;
   }
 }
+.ball {
+  position: relative;
+  background-color: #ff5733;
+  border-radius: 50%;
+  animation: bounce 2s ease infinite;
+}
+
+/* Bouncing animation with squish effect */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-10px) scaleY(1) scaleX(1);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: translateY(10px) scaleY(0.95) scaleX(1.05);
+    animation-timing-function: ease-out;
+  }
+}
