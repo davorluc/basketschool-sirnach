@@ -104,25 +104,25 @@ function Home() {
     <Center>
       <div>
         <div className={'main'}>
-        <Space h='xl' />
-        <Center className={'hero'}>
-          <Card shadow={'lg'} radius={'lg'} withBorder style={{backgroundColor: '#1b1a55'}} mx={'10%'}>
-            <Card.Section p={'xl'}>
-              <Title order={1} c={'white'}>
-                Willkommen bei der Basketschool Sirnach!
-              </Title>
-            </Card.Section>
+          <Space h='xl' />
+          <Center className={'hero'}>
+            <Card className={'hero-card'} shadow={'lg'} radius={'lg'} withBorder style={{ backgroundColor: '#1b1a55' }} mx={'10%'}>
+              <Card.Section p={'xl'}>
+                <Title order={1} c={'white'}>
+                  Willkommen bei der Basketschool Sirnach!
+                </Title>
+              </Card.Section>
               <Text c={'white'} p={'xl'} size={'xl'}>
                 Bei uns dreht sich alles um Spass am Basketball! In der Basketschool Sirnach lernen Kinder und Jugendliche spielerisch die Grundlagen des Basketballs, verbessern ihre Fähigkeiten und erleben Teamgeist hautnah. Komm vorbei und entdecke, wie viel Freude das Training machen kann!
               </Text>
-            <Card.Section>
-              <Button variant={'white'} color={'indigo'} radius={'md'} mx={'xl'} mb={'xl'} component={'a'} href={'/infos/neumitglied'}>
-                Hier zur Anmeldung!
-              </Button>
-            </Card.Section>
-          </Card>
-          <img id='hero-logo' className={"ball"} src={logo}/>
-        </Center>
+              <Card.Section>
+                <Button variant={'white'} color={'indigo'} radius={'md'} mx={'xl'} mb={'xl'} component={'a'} href={'/infos/neumitglied'}>
+                  Hier zur Anmeldung!
+                </Button>
+              </Card.Section>
+            </Card>
+            <img id='hero-logo' className={"ball"} src={logo} />
+          </Center>
           <div className='next'>
             <div className={'next-title'}>
               <Title order={1} align={'center'} mb={'xl'} c='white' pt='xl'>Wichtige Termine</Title>

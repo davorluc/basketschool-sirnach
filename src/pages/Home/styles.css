@@ -23,7 +23,7 @@ body {
   justify-content: space-around;
   background-image: url('../../media/hero.jpg');
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
 }
 
 .hero img {
@@ -62,6 +62,7 @@ body {
     object-fit: contain;
   }
 }
+
 .ball {
   position: relative;
   background-color: #ff5733;
@@ -71,12 +72,31 @@ body {
 
 /* Bouncing animation with squish effect */
 @keyframes bounce {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(-10px) scaleY(1) scaleX(1);
     animation-timing-function: ease-in;
   }
+
   50% {
     transform: translateY(10px) scaleY(0.95) scaleX(1.05);
     animation-timing-function: ease-out;
   }
+}
+
+@media only screen and (max-width: 850px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-card {
+    margin-top: 3em;
+  }
+
+  .hero img {
+    max-width: 75%;
+    margin: 2em 0;
+  }
+
 }
