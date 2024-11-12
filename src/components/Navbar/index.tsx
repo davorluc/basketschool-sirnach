@@ -39,7 +39,7 @@ const Navbar = () => {
 				<ul >
 					<li><a href="/" onClick={toggleNav}>Home</a></li>
 					<li><a href="/infos" onClick={toggleNav}>Infos</a></li>
-					<li><a href="/partners" onClick={toggleNav}>Partner & Gönner</a></li>
+					<li><a href="/partners" onClick={toggleNav}>Sponsoren</a></li>
 					<li><a href="/kontakt" onClick={toggleNav}>Kontakt</a></li>
 				</ul>
 			</div>
