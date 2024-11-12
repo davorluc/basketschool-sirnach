@@ -23,11 +23,11 @@ import geschichte from '../../media/basketschool_sirnach_alternatelogo.png';
 
 function Verein() {
   const vereinData = [
-    { image: geschichte, title: 'Geschichte', link: '/infos/geschichte' },
-    { image: geschichte, title: 'Vorstand', link: '/infos/vorstand' },
-    { image: geschichte, title: 'Trainer', link: 'infos/trainer' },
     { image: geschichte, title: 'Wann & Wo', link: '/infos/hallen' },
-    { image: geschichte, title: 'Mitglied werden', link: '/infos/neumitglied' }
+    { image: geschichte, title: 'Mitglied werden', link: '/infos/neumitglied' },
+    { image: geschichte, title: 'Trainer', link: 'infos/trainer' },
+    { image: geschichte, title: 'Vorstand', link: '/infos/vorstand' },
+    { image: geschichte, title: 'Geschichte', link: '/infos/geschichte' }
   ];
 
   const renderVereinData = vereinData.map((entry) => (
