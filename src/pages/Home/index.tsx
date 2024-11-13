@@ -20,26 +20,20 @@ import {
   Title,
   AspectRatio
 } from "@mantine/core";
-import { Carousel } from '@mantine/carousel';
-import Autoplay from "embla-carousel-autoplay";
 
 // AOS Import
 import AOS from 'aos';
 
 // Image Imports here
-import bear1 from '../../media/bears/bc_bears_realistic_effect.png';
-import bear2 from '../../media/bears/black_bear_realistic_second.png';
-import whole from '../../media/teams/all.jpeg'
 import first from '../../media/beachphoto.jpg'
 import second from '../../media/DV.jpg'
 import third from '../../media/teams/senioren.jpg'
 import logo from '../../media/basketschool_sirnach_alternatelogo_withwhite.png'
 import hostpoint from '../../media/sponsors/logo_hostpoint_orig.png';
 import velopeter from '../../media/sponsors/logo_velopeter_ohne_weiss.png';
-import apotheke from '../../media/sponsors/logo_apotheke.png';
 import swissInsurance from '../../media/sponsors/Logo_swissinsuranceag_04.png';
 import raiffeisen from '../../media/sponsors/Raiffeisen_Schweiz_Logo.svg.png';
-import fitness4all from '../../media/sponsors/logo_fitness4all_02.png';
+import cubeless from '../../media/sponsors/cubeless_logo_rgb_500px_transp Juli 2023.png'
 
 
 // Stylesheet imports here
@@ -86,10 +80,9 @@ function Home() {
   const sponsorData = [
     { image: hostpoint, link: 'https://www.hostpoint.ch/', alternativeText: 'Hostpoint Logo' },
     { image: velopeter, link: 'https://velopeter.ch/', alternativeText: 'Velopeter Logo' },
-    { image: apotheke, link: 'http://www.gate24.ch/de/Beauty+Wellness-13/Sirnach/Apotheke-Sirnach-Dr--R--Krahenmann/detail-2951248-2940210.aspx', alternativeText: 'Dr. Krähemann Apotheke Logo' },
     { image: swissInsurance, link: 'https://www.swiss-insurance-ag.ch/', alternativeText: 'Swiss Insurance Logo' },
-    { image: raiffeisen, link: 'https://www.raiffeisen.ch/regio-sirnach/de.html', alternativeText: 'Raiffaisen Logo' },
-    { image: fitness4all, link: 'http://www.fitness4all.ch/', alternativeText: 'Fitness4All Logo' }
+    { image: cubeless, link: 'https://www.cubeless.ch/?adwords_ch_ged-pmax_all&adgr=adwords_&gad_source=1&gclid=CjwKCAiAudG5BhAREiwAWMlSjAgbs5MO4ynpaSh-RCKBNLcmDRxP4nPq10uXusf_ULQvMMJeaHyg_RoCXVgQAvD_BwE', alternativeText: 'Cubeless Logo' },
+    { image: raiffeisen, link: 'https://www.raiffeisen.ch/regio-sirnach/de.html', alternativeText: 'Raiffaisen Logo' }
   ];
 
   const renderSponsors = sponsorData.map((sponsor) => (
