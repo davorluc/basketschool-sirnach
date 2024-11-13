@@ -16,10 +16,9 @@ import {
 // Image imports
 import hostpoint from '../../media/sponsors/logo_hostpoint_orig.png';
 import velopeter from '../../media/sponsors/logo_velopeter_ohne_weiss.png';
-import apotheke from '../../media/sponsors/logo_apotheke.png';
 import swissInsurance from '../../media/sponsors/Logo_swissinsuranceag_04.png';
 import raiffeisen from '../../media/sponsors/Raiffeisen_Schweiz_Logo.svg.png';
-import fitness4all from '../../media/sponsors/logo_fitness4all_02.png';
+import cubeless from '../../media/sponsors/cubeless_logo_rgb_500px_transp Juli 2023.png';
 
 import './index.css';
 
@@ -27,10 +26,8 @@ function Partners() {
   const mainSponsor = [
     { image: hostpoint, description: 'Der führende Schweizer Web-hosting Anbieter und ausserdem unser Partner für alles rund ums Hosting. Eine Portion Hosting gefällig? - Mit Hostpoint macht man nichts falsch!', name: 'Hostpoint', link: 'https://www.hostpoint.ch' },
     { image: velopeter, description: 'Velopeter - langjähriger Fahrrad-Spezialist in Sirnach. Wir empfehlen unseren Spielern falls möglich zu Fuss oder mit dem Velo zu kommen. Beim Velo kann euch der Velopeter sicher aushelfen!', name: 'Velopeter', link: 'https://velopeter.ch/' },
-    { image: apotheke, description: 'Langjährige Apotheke des Vertrauens in Sirnach, auch perfekt geeignet für Mittel gegen Sportverletzungen. Knöchel umgeknickst? Kein Problem, die Apotheke Krähenmann regelt das schon!', name: 'Apotheke Krähenmann', link: 'http://www.gate24.ch/de/Beauty+Wellness-13/Sirnach/Apotheke-Sirnach-Dr--R--Krahenmann/detail-2951248-2940210.aspx' },
     { image: swissInsurance, description: 'Seit 20 Jahren Versicherungsanbieter im Thurgau. Egal ob Versicherung, Pensionskasse oder Pensions Planung, Hypotheken, Beratungen und Krankenkasse, bei Swiss Insurance ist sicher was für alle dabei!', name: 'Swiss Insurance AG', link: 'https://www.swiss-insurance-ag.ch/' },
-    { image: raiffeisen, description: 'Seit über 100 Jahren national wie auch lokal gut vertreten. 1900 schon eine Genossenschaft, 2024 noch eine Genosschenschaft. Die Raiffeisen Bank ist unsere Bank des Vertrauens. ', name: 'Raiffeisen', link: 'https://www.raiffeisen.ch/regio-sirnach/de.html' },
-    { image: fitness4all, description: 'Auch der Kraftraum gehört zum Arsenal eines Basketballers. Mehr Sprungkraft, schnellerer Sprint und stabilere Gelenke gehören auch zum Besserwerden. Schaut doch mal bei unserem Fitnesspartner vorbei!', name: 'Fitness4all', link: 'http://www.fitness4all.ch/' }
+    { image: cubeless, description: 'Auf cubeless.ch erwartet dich ein ausgesuchtes Sortiment an verschiedensten Speedcubes, Shape Mods und passendem Zubehör. Da ist auf jeden Fall der passende Speedcube für dich dabei, egal ob du Anfänger oder Profi bist.', name: 'Raiffeisen', link: 'https://www.cubeless.ch/' }
   ];
 
   const mainSponsorContent = mainSponsor.map((entry) => (
