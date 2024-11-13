@@ -32,7 +32,6 @@ import logo from '../../media/basketschool_sirnach_alternatelogo_withwhite.png'
 import hostpoint from '../../media/sponsors/logo_hostpoint_orig.png';
 import velopeter from '../../media/sponsors/logo_velopeter_ohne_weiss.png';
 import swissInsurance from '../../media/sponsors/Logo_swissinsuranceag_04.png';
-import raiffeisen from '../../media/sponsors/Raiffeisen_Schweiz_Logo.svg.png';
 import cubeless from '../../media/sponsors/cubeless_logo_rgb_500px_transp Juli 2023.png'
 
 
@@ -81,8 +80,7 @@ function Home() {
     { image: hostpoint, link: 'https://www.hostpoint.ch/', alternativeText: 'Hostpoint Logo' },
     { image: velopeter, link: 'https://velopeter.ch/', alternativeText: 'Velopeter Logo' },
     { image: swissInsurance, link: 'https://www.swiss-insurance-ag.ch/', alternativeText: 'Swiss Insurance Logo' },
-    { image: cubeless, link: 'https://www.cubeless.ch/?adwords_ch_ged-pmax_all&adgr=adwords_&gad_source=1&gclid=CjwKCAiAudG5BhAREiwAWMlSjAgbs5MO4ynpaSh-RCKBNLcmDRxP4nPq10uXusf_ULQvMMJeaHyg_RoCXVgQAvD_BwE', alternativeText: 'Cubeless Logo' },
-    { image: raiffeisen, link: 'https://www.raiffeisen.ch/regio-sirnach/de.html', alternativeText: 'Raiffaisen Logo' }
+    { image: cubeless, link: 'https://www.cubeless.ch/?adwords_ch_ged-pmax_all&adgr=adwords_&gad_source=1&gclid=CjwKCAiAudG5BhAREiwAWMlSjAgbs5MO4ynpaSh-RCKBNLcmDRxP4nPq10uXusf_ULQvMMJeaHyg_RoCXVgQAvD_BwE', alternativeText: 'Cubeless Logo' }
   ];
 
   const renderSponsors = sponsorData.map((sponsor) => (

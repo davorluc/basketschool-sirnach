@@ -17,7 +17,6 @@ import {
 import hostpoint from '../../media/sponsors/logo_hostpoint_orig.png';
 import velopeter from '../../media/sponsors/logo_velopeter_ohne_weiss.png';
 import swissInsurance from '../../media/sponsors/Logo_swissinsuranceag_04.png';
-import raiffeisen from '../../media/sponsors/Raiffeisen_Schweiz_Logo.svg.png';
 import cubeless from '../../media/sponsors/cubeless_logo_rgb_500px_transp Juli 2023.png';
 
 import './index.css';
@@ -26,8 +25,8 @@ function Partners() {
   const mainSponsor = [
     { image: hostpoint, description: 'Der führende Schweizer Web-hosting Anbieter und ausserdem unser Partner für alles rund ums Hosting. Eine Portion Hosting gefällig? - Mit Hostpoint macht man nichts falsch!', name: 'Hostpoint', link: 'https://www.hostpoint.ch' },
     { image: velopeter, description: 'Velopeter - langjähriger Fahrrad-Spezialist in Sirnach. Wir empfehlen unseren Spielern falls möglich zu Fuss oder mit dem Velo zu kommen. Beim Velo kann euch der Velopeter sicher aushelfen!', name: 'Velopeter', link: 'https://velopeter.ch/' },
-    { image: swissInsurance, description: 'Seit 20 Jahren Versicherungsanbieter im Thurgau. Egal ob Versicherung, Pensionskasse oder Pensions Planung, Hypotheken, Beratungen und Krankenkasse, bei Swiss Insurance ist sicher was für alle dabei!', name: 'Swiss Insurance AG', link: 'https://www.swiss-insurance-ag.ch/' },
-    { image: cubeless, description: 'Auf cubeless.ch erwartet dich ein ausgesuchtes Sortiment an verschiedensten Speedcubes, Shape Mods und passendem Zubehör. Da ist auf jeden Fall der passende Speedcube für dich dabei, egal ob du Anfänger oder Profi bist.', name: 'Raiffeisen', link: 'https://www.cubeless.ch/' }
+    { image: swissInsurance, description: 'Swiss Insurance – Ihre unabhängige Versicherungsberatung – gibt Ihnen Antworten auf Ihre Versicherungsfragen.Wir finden die ideale Form Ihrer Vorsorge. Wir prüfen, koordinieren und verwalten auf Wunsch Ihr gesamtes Versicherungsportfolio auf Mandatsbasis. Ob Sachversicherungen oder Lebensversicherungen, wir behalten den Überblick!', name: 'Swiss Insurance Ostschweiz', link: 'https://www.swi-brokers.ch' },
+    { image: cubeless, description: 'Auf cubeless.ch erwartet dich ein ausgesuchtes Sortiment an verschiedensten Speedcubes, Shape Mods und passendem Zubehör. Da ist auf jeden Fall der passende Speedcube für dich dabei, egal ob du Anfänger oder Profi bist.', name: 'Cubeless', link: 'https://www.cubeless.ch/' }
   ];
 
   const mainSponsorContent = mainSponsor.map((entry) => (
