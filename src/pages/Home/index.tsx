@@ -83,8 +83,18 @@ function Home() {
     { image: cubeless, link: 'https://www.cubeless.ch/?adwords_ch_ged-pmax_all&adgr=adwords_&gad_source=1&gclid=CjwKCAiAudG5BhAREiwAWMlSjAgbs5MO4ynpaSh-RCKBNLcmDRxP4nPq10uXusf_ULQvMMJeaHyg_RoCXVgQAvD_BwE', alternativeText: 'Cubeless Logo' }
   ];
 
-  const renderSponsors = sponsorData.map((sponsor) => (
-    <Grid.Col sm={6} md={4}><a href={sponsor.link}><img src={sponsor.image} alt={sponsor.alternativeText} /></a></Grid.Col>
+  const sponsorSlider = sponsorData.map((sponsor, index) => (
+    <div
+      className="item"
+      style={{
+        '--position': index
+      }}
+      key={index}
+    >
+      <a href={sponsor.link}>
+        <img src={sponsor.image} alt={sponsor.alternativeText} />
+      </a>
+    </div>
   ))
 
   useEffect(() => {
@@ -131,10 +141,10 @@ function Home() {
           <div className={'sponsors-title'}>
             <Title order={1} align={'center'} my={'xl'}>Unsere Sponsoren</Title>
           </div>
-          <div className='sponsor-images grid'>
-            <Grid justify='center' align='center' pb={'xl'} mx={'xl'}>
-              {renderSponsors}
-            </Grid>
+          <div className={'sponsor-slider'}>
+            <div className={'sponsor-list'}>
+              {sponsorSlider}
+            </div>
           </div>
         </div>
       </div>
