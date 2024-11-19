@@ -133,7 +133,7 @@ const Footer = () => {
               </NavLink>
             </NavLink>
             <NavLink
-              label={'Partner & Gönner'}
+              label={'Sponsoren'}
               c={'black'}
               component={'a'}
               href={'partners'}
