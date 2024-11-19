@@ -31,7 +31,7 @@ function Trainer() {
     <Grid.Col sm={6} md={4} xl={3}>
       <Card shadow='md' radius='md' mb='xl'>
         <Card.Section>
-          <AspectRatio ratio={6 / 8}>
+          <AspectRatio ratio={6 / 7}>
             <Image
               src={trainer.image}
             />
