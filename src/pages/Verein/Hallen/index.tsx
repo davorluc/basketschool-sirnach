@@ -17,8 +17,9 @@ import sonnenhof from '../../../media/hallen/sonnenhof.jpg'
 
 // Data for special Trainings
 const trainingData = [
-  { date: '05. Juli - 12. August', description: 'Sommerferien, es finden keine Trainings statt', type: 'Ausfall' },
+  { date: '20. Dezember - 06. Januar', description: 'Weihnachtsferien, es finden keine trainings statt', type: 'Ausfall' },
   { date: '13. Januar', description: 'Es wird wieder trainiert.', type: 'Info' },
+  { date: '05. Juli - 12. August', description: 'Sommerferien, es finden keine Trainings statt', type: 'Ausfall' },
 ];
 
 const renderTrainingData = trainingData.map((training) => (

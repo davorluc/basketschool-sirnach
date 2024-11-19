@@ -22,14 +22,14 @@ import {
 import AOS from 'aos';
 
 // Image Imports here
-import first from '../../media/beachphoto.jpg'
-import second from '../../media/DV.jpg'
-import third from '../../media/teams/senioren.jpg'
-import logo from '../../media/basketschool_sirnach_alternatelogo_withwhite.png'
+import summer from '../../media/beachphoto.jpg';
+import christmas from '../../media/christmas.jpg';
+import comeback from '../../media/comeback.jpg';
+import logo from '../../media/basketschool_sirnach_alternatelogo_withwhite.png';
 import hostpoint from '../../media/sponsors/logo_hostpoint_orig.png';
 import velopeter from '../../media/sponsors/logo_velopeter_ohne_weiss.png';
 import swissInsurance from '../../media/sponsors/Logo_swissinsuranceag_04.png';
-import cubeless from '../../media/sponsors/cubeless_logo_rgb_500px_transp Juli 2023.png'
+import cubeless from '../../media/sponsors/cubeless_logo_rgb_500px_transp Juli 2023.png';
 
 
 // Stylesheet imports here
@@ -42,9 +42,9 @@ import { render } from 'react-dom';
 function Home() {
 
   const upNextData = [
-    { image: first, title: 'Sommerferien!', datetime: '05.07.2024 - 12.08.2024', content: 'Die Saison neigt sich dem Ende, darum wünschen wir allen Spielern und Eltern unserer Spieler einen erholsamen Sommer!' },
-    { image: first, title: 'Sommerferien!', datetime: '05.07.2024 - 12.08.2024', content: 'Die Saison neigt sich dem Ende, darum wünschen wir allen Spielern und Eltern unserer Spieler einen erholsamen Sommer!' },
-    { image: first, title: 'Sommerferien!', datetime: '05.07.2024 - 12.08.2024', content: 'Die Saison neigt sich dem Ende, darum wünschen wir allen Spielern und Eltern unserer Spieler einen erholsamen Sommer!' },
+    { image: christmas, title: 'Weihnachtsferien!', datetime: '20.12.2024 - 06.01.2025', content: 'Das Jahr neigt sich wieder mal dem Ende was auch bedeutet: 2 Wochen Basketballpause! Wir wünschen allen Spielern und Eltern frohe Weihnachten und einen guten Rutsch ins neue Jahr!' },
+    { image: comeback, title: 'Training geht weiter!', datetime: '11.01.2025', content: 'Nach (hoffentlich) erholsamen Weihnachtsferien möchten wir unsere Spieler wieder herzlich zum Training einladen!' },
+    { image: summer, title: 'Sommerferien!', datetime: '05.07.2025 - 12.08.2025', content: 'Die Saison neigt sich dem Ende, darum wünschen wir allen Spielern und Eltern unserer Spieler einen erholsamen Sommer!' },
   ];
 
   const renderUpNextData = upNextData.map((event) => (
