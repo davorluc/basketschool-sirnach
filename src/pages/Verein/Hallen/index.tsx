@@ -59,9 +59,9 @@ function Hallen() {
         <div className={'gym-grid'}>
           <Grid mx={'8%'} mt={'xl'}>
             <Grid.Col sm={10} md={10} lg={10} mx={'auto'}>
-              <Card shadow={'md'} radius={'md'} mb={'xl'}>
+              <Card shadow={'md'} radius={'md'} mb={'xl'} onClick={() => setHalleSonnenhof((v) => !v)}>
                 <Card.Section>
-                  <AspectRatio ratio={1000 / 500} onClick={() => setHalleSonnenhof((v) => !v)}>
+                  <AspectRatio ratio={1000 / 500}>
                     <Image
                       src={sonnenhof}
                       fit={'fill'}
