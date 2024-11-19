@@ -10,13 +10,10 @@ import {
   Card,
   Image,
   Space,
-  createStyles,
-  Paper,
-  Container,
   Text,
   Badge,
   Group,
-  rem,
+  Spoiler,
   Title,
   AspectRatio
 } from "@mantine/core";
@@ -68,9 +65,11 @@ function Home() {
               {event.datetime}
             </Badge>
           </Group>
-          <Text size={'sm'} color={'dimmed'} mx={'lg'} maw={'60ch'} my={'sm'}>
-            {event.content}
-          </Text>
+          <Spoiler showLabel={'mehr'} hideLabel={'weniger'} maxHeight={50} mx={'lg'} mb={'xs'}>
+            <Text size={'sm'} color={'dimmed'} mx={'lg'} maw={'60ch'} my={'sm'}>
+              {event.content}
+            </Text>
+          </Spoiler>
         </Card.Section>
       </Card>
     </Grid.Col>
