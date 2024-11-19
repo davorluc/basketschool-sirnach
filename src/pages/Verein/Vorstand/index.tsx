@@ -13,7 +13,7 @@ import {
 } from '@mantine/core'
 
 // Image imports
-import placeholder from '../../../media/placeholder_person.jpeg'
+import placeholder from '../../../media/basketschool_sirnach_alternatelogo_withwhite.png';
 
 // Icon imports
 
@@ -29,9 +29,11 @@ function Vorstand() {
     <Grid.Col sm={6} md={4} xl={3}>
       <Card shadow='md' radius='md' mb='xl'>
         <Card.Section>
-          <AspectRatio ratio={6 / 8}>
+          <AspectRatio ratio={10 / 12}>
             <Image
               src={member.img}
+              p={'xs'}
+              fit={'contain'}
             />
           </AspectRatio>
           <Group position='apart' mx='md' my='xs' noWrap={true}>
