@@ -15,8 +15,6 @@ import {
 // Image imports
 import placeholder from '../../../media/basketschool_sirnach_alternatelogo_withwhite.png';
 
-// Icon imports
-
 function Vorstand() {
   const board = [
     { img: placeholder, name: 'Thomas Frischknecht', role: 'Präsident' },
