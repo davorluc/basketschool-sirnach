@@ -1,5 +1,0 @@
-.teams-grid .mantine-Grid-col:hover {
-    transform: scale(1.02);
-    transition: transform 0.33s;
-    cursor: pointer;
-}

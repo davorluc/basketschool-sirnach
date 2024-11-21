@@ -85,6 +85,10 @@ body {
   margin-right: 8%
 }
 
+#hero-logo {
+  max-height: 19rem;
+}
+
 .next-content {
   display: flex;
   align-items: center;

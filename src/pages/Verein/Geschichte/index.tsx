@@ -1,13 +1,10 @@
 // React Import
-import React from "react";
 
 // Mantine Imports
 import {
   Title,
   Text,
-  Container,
   Space,
-  Table,
   Grid, Box
 } from "@mantine/core";
 

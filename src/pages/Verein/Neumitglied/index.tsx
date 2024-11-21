@@ -2,31 +2,23 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-unsafe-call */
+// @ts-nocheck
 import {
   Title,
   Text,
   Space,
   Grid,
   Box,
-  NumberInput,
-  TextInput,
-  Checkbox,
-  Button,
   Container,
   Group,
   Stack,
   Card,
   Badge,
-  Radio,
 } from "@mantine/core"
 
 // Stylesheet imports here
 import './styles.css';
 
-import { DateInput } from "@mantine/dates";
-import { useForm } from "@mantine/form";
-import { useState } from "react";
-import validator from "validator";
 
 const singleTrainingData = [
   { title: 'Einzeltraining', price: 'CHF 15', text: 'Für ein einmaliges Training gültig. Müsste bei jedem Besuch in Bar oder per Twint bezahlt werden.' }

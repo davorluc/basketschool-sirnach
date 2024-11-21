@@ -15,6 +15,9 @@ import {
 // Image imports
 import placeholder from '../../../media/basketschool_sirnach_alternatelogo_withwhite.png';
 
+// Stylesheet imports here
+import './index.css';
+
 function Vorstand() {
   const board = [
     { img: placeholder, name: 'Thomas Frischknecht', role: 'Präsident' },
@@ -53,7 +56,7 @@ function Vorstand() {
           backgroundColor: '#1B1A55',
           borderRadius: '7px'
         })}>
-          <Title order={1} mt={'xl'} mx={'xl'} c={'white'}>
+          <Title order={1} my={'xl'} mx={'xl'} c={'white'}>
             Vorstand
           </Title>
         </Box>

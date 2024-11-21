@@ -1,3 +1,6 @@
+//@ts-nocheck
+import { Link } from 'react-router-dom'
+
 // Mantine Imports
 import { Anchor, AspectRatio, Blockquote, Box, Grid, Group, Image, NavLink, Text, ThemeIcon, Title } from "@mantine/core";
 
@@ -47,18 +50,20 @@ const Footer = () => {
         <Grid.Col md={3} sm={3} mx={'lg'} align={'left'}>
           <Title order={2} ml={'sm'}>SITEMAP</Title>
           <Box w={'100%'}>
-            <NavLink
-              label={'Home'}
-              c={'black'}
-              component={'a'}
-              href={'/'}
-              sx={() => ({
-                '&:hover': {
-                  backgroundColor: '#E6F9FF',
-                }
-              })
-              }>
-            </NavLink>
+            <Link to={'/'}>
+              <NavLink
+                label={'Home'}
+                c={'black'}
+                component={'a'}
+                href={'/'}
+                sx={() => ({
+                  '&:hover': {
+                    backgroundColor: '#E6F9FF',
+                  }
+                })
+                }>
+              </NavLink>
+            </Link>
             <NavLink
               label={'Infos'}
               childrenOffset={'lg'}
@@ -71,91 +76,105 @@ const Footer = () => {
                 }
               })
               }>
-              <NavLink
-                label={'Geschichte'}
-                c={'black'}
-                component={'a'}
-                href={'/infos/geschichte'}
-                sx={() => ({
-                  '&:hover': {
-                    backgroundColor: '#E6F9FF',
-                  }
-                })
-                }>
-              </NavLink>
-              <NavLink
-                label={'Vorstand'}
-                c={'black'}
-                component={'a'}
-                href={'/infos/vorstand'}
-                sx={() => ({
-                  '&:hover': {
-                    backgroundColor: '#E6F9FF',
-                  }
-                })
-                }>
-              </NavLink>
-              <NavLink
-                label={'Trainer/innen'}
-                c={'black'}
-                component={'a'}
-                href={'infos/trainer'}
-                sx={() => ({
-                  '&:hover': {
-                    backgroundColor: '#E6F9FF',
-                  }
-                })
-                }>
-              </NavLink>
-              <NavLink
-                label={'Hallen'}
-                c={'black'}
-                component={'a'}
-                href={'infos/hallen'}
-                sx={() => ({
-                  '&:hover': {
-                    backgroundColor: '#E6F9FF',
-                  }
-                })
-                }>
-              </NavLink>
-              <NavLink
-                label={'Mitglied werden'}
-                c={'black'}
-                component={'a'}
-                href={'/infos/neumitglied'}
-                sx={() => ({
-                  '&:hover': {
-                    backgroundColor: '#E6F9FF',
-                  }
-                })
-                }>
-              </NavLink>
+              <Link to={'/infos/geschichte'}>
+                <NavLink
+                  label={'Geschichte'}
+                  c={'black'}
+                  component={'a'}
+                  href={'/infos/geschichte'}
+                  sx={() => ({
+                    '&:hover': {
+                      backgroundColor: '#E6F9FF',
+                    }
+                  })
+                  }>
+                </NavLink>
+              </Link>
+              <Link to={'/infos/vorstand'}>
+                <NavLink
+                  label={'Vorstand'}
+                  c={'black'}
+                  component={'a'}
+                  href={'/infos/vorstand'}
+                  sx={() => ({
+                    '&:hover': {
+                      backgroundColor: '#E6F9FF',
+                    }
+                  })
+                  }>
+                </NavLink>
+              </Link>
+              <Link to={'/infos/trainer'}>
+                <NavLink
+                  label={'Trainer/innen'}
+                  c={'black'}
+                  component={'a'}
+                  href={'infos/trainer'}
+                  sx={() => ({
+                    '&:hover': {
+                      backgroundColor: '#E6F9FF',
+                    }
+                  })
+                  }>
+                </NavLink>
+              </Link>
+              <Link to={'/infos/hallen'}>
+                <NavLink
+                  label={'Hallen'}
+                  c={'black'}
+                  component={'a'}
+                  href={'infos/hallen'}
+                  sx={() => ({
+                    '&:hover': {
+                      backgroundColor: '#E6F9FF',
+                    }
+                  })
+                  }>
+                </NavLink>
+              </Link>
+              <Link to={'/infos/neumitglied'}>
+                <NavLink
+                  label={'Mitglied werden'}
+                  c={'black'}
+                  component={'a'}
+                  href={'/infos/neumitglied'}
+                  sx={() => ({
+                    '&:hover': {
+                      backgroundColor: '#E6F9FF',
+                    }
+                  })
+                  }>
+                </NavLink>
+              </Link>
             </NavLink>
-            <NavLink
-              label={'Sponsoren'}
-              c={'black'}
-              component={'a'}
-              href={'partners'}
-              sx={() => ({
-                '&:hover': {
-                  backgroundColor: '#E6F9FF',
-                }
-              })
-              }>
-            </NavLink>
-            <NavLink
-              label={'Kontakt'}
-              c={'black'}
-              component={'a'}
-              href={'/kontakt'}
-              sx={() => ({
-                '&:hover': {
-                  backgroundColor: '#E6F9FF',
-                }
-              })
-              }>
-            </NavLink>
+            <Link to={'/partners'}>
+              <NavLink
+                label={'Sponsoren'}
+                c={'black'}
+                component={'a'}
+                href={'partners'}
+                sx={() => ({
+                  '&:hover': {
+                    backgroundColor: '#E6F9FF',
+                  }
+                })
+                }>
+              </NavLink>
+            </Link>
+            <Link to={'/kontakt'}>
+              <NavLink
+                label={'Kontakt'}
+                c={'black'}
+                component={'a'}
+                href={'/kontakt'}
+                sx={() => ({
+                  '&:hover': {
+                    backgroundColor: '#E6F9FF',
+                  }
+                })
+                }>
+              </NavLink>
+            </Link>
           </Box>
         </Grid.Col>
         <Grid.Col md={4} sm={6}>

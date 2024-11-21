@@ -1,5 +1,8 @@
+//@ts-nocheck
+
 // React Imports
-import React from "react";
+import { Link } from 'react-router-dom'
+
 
 // Mantine Imports
 import {
@@ -25,26 +28,28 @@ function Verein() {
   const vereinData = [
     { image: geschichte, title: 'Wann & Wo', link: '/infos/hallen' },
     { image: geschichte, title: 'Mitglied werden', link: '/infos/neumitglied' },
-    { image: geschichte, title: 'Trainer', link: 'infos/trainer' },
+    { image: geschichte, title: 'Trainer', link: '/infos/trainer' },
     { image: geschichte, title: 'Vorstand', link: '/infos/vorstand' },
     { image: geschichte, title: 'Geschichte', link: '/infos/geschichte' }
   ];
 
   const renderVereinData = vereinData.map((entry) => (
     <Grid.Col md={4} sm={6}>
-      <Card shadow={'sm'} radius={'md'} style={{ backgroundColor: "#F0F0F0" }} component={'a'} href={entry.link}>
-        <Card.Section p={'xl'}>
-          <AspectRatio ratio={1 / 1} p={'xl'}>
-            <Image
-              src={entry.image}
-              height={'100%'}
-              alt={'first'}
-              fit={'fill'}
-            />
-          </AspectRatio>
-          <Title m={'xl'} p={'xl'} align={'center'} order={2} c={'#1B1A55'}>{entry.title}</Title>
-        </Card.Section>
-      </Card>
+      <Link to={entry.link}>
+        <Card shadow={'sm'} radius={'md'} style={{ backgroundColor: "#F0F0F0" }}>
+          <Card.Section p={'xl'}>
+            <AspectRatio ratio={1 / 1} p={'xl'}>
+              <Image
+                src={entry.image}
+                height={'100%'}
+                alt={'first'}
+                fit={'fill'}
+              />
+            </AspectRatio>
+            <Title m={'xl'} p={'xl'} align={'center'} order={2} c={'#1B1A55'}>{entry.title}</Title>
+          </Card.Section>
+        </Card>
+      </Link>
     </Grid.Col>
   ))
 

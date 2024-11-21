@@ -1,10 +1,10 @@
+// @ts-nocheck
+
 // Mantine imports
 import {
   Space,
   Text,
   Grid,
-  Container,
-  Stack,
   Card,
   AspectRatio,
   Title,

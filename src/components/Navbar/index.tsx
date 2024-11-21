@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { GrClose } from "react-icons/gr";
+import { Link } from 'react-router-dom'
 import { Image,
   AspectRatio } from "@mantine/core"
 import "./style.css"
@@ -37,10 +36,10 @@ const Navbar = () => {
 			<div
 				className={isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
 				<ul >
-					<li><a href="/" onClick={toggleNav}>Home</a></li>
-					<li><a href="/infos" onClick={toggleNav}>Infos</a></li>
-					<li><a href="/partners" onClick={toggleNav}>Sponsoren</a></li>
-					<li><a href="/kontakt" onClick={toggleNav}>Kontakt</a></li>
+					<li><Link to="/" onClick={toggleNav}>Home</Link></li>
+					<li><Link to="/infos" onClick={toggleNav}>Infos</Link></li>
+					<li><Link to="/partners" onClick={toggleNav}>Sponsoren</Link></li>
+					<li><Link to="kontakt" onClick={toggleNav}>Kontakt</Link></li>
 				</ul>
 			</div>
 		</nav>

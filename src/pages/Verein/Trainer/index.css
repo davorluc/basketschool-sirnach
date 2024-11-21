@@ -1,0 +1,10 @@
+.main {
+  position: relative;
+  z-index: 1;
+  background: #F5F7F8;
+  width: 100vw;
+}
+
+#root {
+  background: #F5F7F8;
+}

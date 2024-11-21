@@ -16,15 +16,18 @@ import {
 
 // Image imports
 import davor from '../../../media/portraits/davor.jpeg'
-import placeholder from '../../../media/placeholder_person.jpeg'
+import placeholder from '../../../media/basketschool_sirnach_alternatelogo_withwhite.png'
 
 // Icon imports
 import { Phone, Mail } from 'tabler-icons-react'
 
+// Stylesheet imports here
+import './index.css';
+
 function Trainer() {
   const trainers = [
     { image: davor, name: 'Davor', selection: 'Knaben/Mädchen', email: 'd.lucic4@hotmail.com', tel: '+41791795801' },
-    { image: placeholder, name: 'Thomas', selection: 'Knaben/Mädchen', email: '*email*', tel: '*tel*' },
+    { image: placeholder, name: 'Thomas', selection: 'Knaben/Mädchen',  tel: '+41797970862', email: 'thomas@basketschool.ch' },
   ]
 
   const renderTrainers = trainers.map((trainer) => (
@@ -51,7 +54,7 @@ function Trainer() {
 
   return (
     <div>
-      <div className="main">
+      <div className={'main'}>
         <Space h='xl' />
         <Space h='xl' />
         <Box mx={'7%'} mt={'4%'} sx={() => ({

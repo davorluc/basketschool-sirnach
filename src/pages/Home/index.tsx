@@ -1,5 +1,8 @@
+// @ts-nocheck
+
 // React imports here
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
+import { Link } from 'react-router-dom'
 
 // Mantine Imports here
 import {
@@ -35,7 +38,6 @@ import cubeless from '../../media/sponsors/cubeless_logo_rgb_500px_transp Juli 2
 // Stylesheet imports here
 import './styles.css';
 import 'aos/dist/aos.css'
-import { render } from 'react-dom';
 
 
 
@@ -116,9 +118,11 @@ function Home() {
                 Bei uns dreht sich alles um Spass am Basketball! In der Basketschool Sirnach lernen Kinder und Jugendliche spielerisch die Grundlagen des Basketballs, verbessern ihre Fähigkeiten und erleben Teamgeist hautnah. Komm vorbei und entdecke, wie viel Freude das Training machen kann!
               </Text>
               <Card.Section>
-                <Button variant={'white'} color={'indigo'} radius={'md'} mx={'xl'} mb={'xl'} component={'a'} href={'/infos/neumitglied'}>
-                  Hier zur Anmeldung!
-                </Button>
+                <Link to='/infos/neumitglied'>
+                  <Button variant={'white'} color={'indigo'} radius={'md'} mx={'xl'} mb={'xl'} component={'Link'} to={'/infos/neumitglied'}>
+                    Hier zur Anmeldung!
+                  </Button>
+                </Link>
               </Card.Section>
             </Card>
             <img id='hero-logo' className={"ball"} src={logo} />
