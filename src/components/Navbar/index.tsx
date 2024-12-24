@@ -2,8 +2,9 @@ import { useState } from "react";
 import { Link } from 'react-router-dom'
 import { Image,
   AspectRatio } from "@mantine/core"
+import { GrClose } from 'react-icons/gr';
+import { GiHamburgerMenu } from 'react-icons/gi';
 import "./style.css"
-// import bears_cartoon from "../../media/bc_bears_cartoon.png";
 import logo from "../../media/basketschool_sirnach_logo_white.png";
 
 const Navbar = () => {
@@ -26,13 +27,11 @@ const Navbar = () => {
             ml = {'xl'}
           />
 			</a>
-			{/*<img id="bears-logo" src={bears_cartoon} alt="bc-bears-logo"></img>*/}
-
-			{/*<button*/}
-			{/*	className="hamburger"*/}
-			{/*	onClick={toggleNav}>*/}
-			{/*	{isNavExpanded ? <GrClose size="25px" /> : <GiHamburgerMenu size="25px" />}*/}
-			{/*</button>*/}
+			<button
+				className="hamburger"
+				onClick={toggleNav}>
+				{isNavExpanded ? <GrClose size="26px" /> : <GiHamburgerMenu size="25px" />}
+			</button>
 			<div
 				className={isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
 				<ul >
