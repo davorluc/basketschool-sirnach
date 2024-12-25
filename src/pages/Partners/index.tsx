@@ -19,6 +19,7 @@ import hostpoint from '../../media/sponsors/logo_hostpoint_orig.png';
 import velopeter from '../../media/sponsors/logo_velopeter_ohne_weiss.png';
 import swissInsurance from '../../media/sponsors/Logo_swissinsuranceag_04.png';
 import cubeless from '../../media/sponsors/cubeless_logo_rgb_500px_transp Juli 2023.png';
+import wilhelmsport from '../../media/sponsors/wilhelmsportlogo.png';
 import bcbears from '../../media/teams/u14.jpeg';
 import frauenfeld from '../../media/frauenfeld.jpg';
 import swissbasket from '../../media/Swiss_Basketball_logo.png';
@@ -31,7 +32,8 @@ function Partners() {
     { image: hostpoint, description: 'Der führende Schweizer Web-hosting Anbieter und ausserdem unser Partner für alles rund ums Hosting. Eine Portion Hosting gefällig? - Mit Hostpoint macht man nichts falsch!', name: 'Hostpoint', link: 'https://www.hostpoint.ch' },
     { image: velopeter, description: 'Velopeter - langjähriger Fahrrad-Spezialist in Sirnach. Wir empfehlen unseren Spielern falls möglich zu Fuss oder mit dem Velo zu kommen. Beim Velo kann euch der Velopeter sicher aushelfen!', name: 'Velopeter', link: 'https://velopeter.ch/' },
     { image: swissInsurance, description: 'Swiss Insurance – Ihre unabhängige Versicherungsberatung – gibt Ihnen Antworten auf Ihre Versicherungsfragen.Wir finden die ideale Form Ihrer Vorsorge. Wir prüfen, koordinieren und verwalten auf Wunsch Ihr gesamtes Versicherungsportfolio auf Mandatsbasis. Ob Sachversicherungen oder Lebensversicherungen, wir behalten den Überblick!', name: 'Swiss Insurance Ostschweiz', link: 'https://www.swi-brokers.ch' },
-    { image: cubeless, description: 'Auf cubeless.ch erwartet dich ein ausgesuchtes Sortiment an verschiedensten Speedcubes, Shape Mods und passendem Zubehör. Da ist auf jeden Fall der passende Speedcube für dich dabei, egal ob du Anfänger oder Profi bist.', name: 'Cubeless', link: 'https://www.cubeless.ch/' }
+    { image: cubeless, description: 'Auf cubeless.ch erwartet dich ein ausgesuchtes Sortiment an verschiedensten Speedcubes, Shape Mods und passendem Zubehör. Da ist auf jeden Fall der passende Speedcube für dich dabei, egal ob du Anfänger oder Profi bist.', name: 'Cubeless', link: 'https://www.cubeless.ch/' },
+    { image: wilhelmsport, description: 'Wilhelm-Sport ist Ihr kompetenter und zuverlässiger Partner für die Ausstattung von Turnhallen und Sportanlagen in der Schweiz und im Fürstentum Liechtenstein. Von der Planung und Produktion über die Lieferung und Montage bis hin zu Service und Revision bieten wir alles aus einer Hand. Unsere Manufaktur steht für hohe Qualität, Leistungsbereitschaft und persönlichen Service – seit 1949.', name: 'Wilhelm Sport', link: 'http://www.wilhelm-sport.ch/' }
   ];
 
   const otherRefsData = [

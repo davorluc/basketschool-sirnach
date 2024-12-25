@@ -33,6 +33,7 @@ import hostpoint from '../../media/sponsors/logo_hostpoint_orig.png';
 import velopeter from '../../media/sponsors/logo_velopeter_ohne_weiss.png';
 import swissInsurance from '../../media/sponsors/Logo_swissinsuranceag_04.png';
 import cubeless from '../../media/sponsors/cubeless_logo_rgb_500px_transp Juli 2023.png';
+import wilhelmsprot from '../../media/sponsors/wilhelmsportlogo.png';
 
 
 // Stylesheet imports here
@@ -81,6 +82,7 @@ function Home() {
     { image: hostpoint, link: 'https://www.hostpoint.ch/', alternativeText: 'Hostpoint Logo' },
     { image: velopeter, link: 'https://velopeter.ch/', alternativeText: 'Velopeter Logo' },
     { image: swissInsurance, link: 'https://www.swiss-insurance-ag.ch/', alternativeText: 'Swiss Insurance Logo' },
+    { image: wilhelmsprot, link: 'http://www.wilhelm-sport.ch/', alternativeText: 'Wilhelm Sport Logo' },
     { image: cubeless, link: 'https://www.cubeless.ch/?adwords_ch_ged-pmax_all&adgr=adwords_&gad_source=1&gclid=CjwKCAiAudG5BhAREiwAWMlSjAgbs5MO4ynpaSh-RCKBNLcmDRxP4nPq10uXusf_ULQvMMJeaHyg_RoCXVgQAvD_BwE', alternativeText: 'Cubeless Logo' }
   ];
 
