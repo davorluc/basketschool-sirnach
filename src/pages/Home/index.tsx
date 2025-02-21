@@ -34,6 +34,7 @@ import velopeter from '../../media/sponsors/logo_velopeter_ohne_weiss.png';
 import swissInsurance from '../../media/sponsors/Logo_swissinsuranceag_04.png';
 import cubeless from '../../media/sponsors/cubeless_logo_rgb_500px_transp Juli 2023.png';
 import wilhelmsprot from '../../media/sponsors/wilhelmsportlogo.png';
+import raiffeisen from '../../media/sponsors/Raiffeisen_Schweiz_Logo.svg.png';
 
 
 // Stylesheet imports here
@@ -45,13 +46,11 @@ import 'aos/dist/aos.css'
 function Home() {
 
   const upNextData = [
-    { image: christmas, title: 'Weihnachtsferien!', datetime: '20.12.2024 - 06.01.2025', content: 'Das Jahr neigt sich wieder mal dem Ende was auch bedeutet: 2 Wochen Basketballpause! Wir wünschen allen Spielern und Eltern frohe Weihnachten und einen guten Rutsch ins neue Jahr!' },
-    { image: comeback, title: 'Training geht weiter!', datetime: '11.01.2025', content: 'Nach (hoffentlich) erholsamen Weihnachtsferien möchten wir unsere Spieler wieder herzlich zum Training einladen!' },
     { image: summer, title: 'Sommerferien!', datetime: '05.07.2025 - 12.08.2025', content: 'Die Saison neigt sich dem Ende, darum wünschen wir allen Spielern und Eltern unserer Spieler einen erholsamen Sommer!' },
   ];
 
   const renderUpNextData = upNextData.map((event) => (
-    <Grid.Col md={4} sm={6}>
+    <Grid.Col md={10} sm={6}>
       <Card shadow={'sm'} radius={'md'}>
         <Card.Section>
           <AspectRatio ratio={2048 / 1357}>
@@ -83,7 +82,8 @@ function Home() {
     { image: velopeter, link: 'https://velopeter.ch/', alternativeText: 'Velopeter Logo' },
     { image: swissInsurance, link: 'https://www.swiss-insurance-ag.ch/', alternativeText: 'Swiss Insurance Logo' },
     { image: wilhelmsprot, link: 'http://www.wilhelm-sport.ch/', alternativeText: 'Wilhelm Sport Logo' },
-    { image: cubeless, link: 'https://www.cubeless.ch/?adwords_ch_ged-pmax_all&adgr=adwords_&gad_source=1&gclid=CjwKCAiAudG5BhAREiwAWMlSjAgbs5MO4ynpaSh-RCKBNLcmDRxP4nPq10uXusf_ULQvMMJeaHyg_RoCXVgQAvD_BwE', alternativeText: 'Cubeless Logo' }
+    { image: cubeless, link: 'https://www.cubeless.ch/?adwords_ch_ged-pmax_all&adgr=adwords_&gad_source=1&gclid=CjwKCAiAudG5BhAREiwAWMlSjAgbs5MO4ynpaSh-RCKBNLcmDRxP4nPq10uXusf_ULQvMMJeaHyg_RoCXVgQAvD_BwE', alternativeText: 'Cubeless Logo' },
+    { image: raiffeisen, link: 'https://www.raiffeisen.ch/regio-sirnach/de.html', alternativeText: 'Raiffeisen Regio Sirnach Logo' },
   ];
 
   const sponsorSlider = sponsorData.map((sponsor, index) => (
@@ -121,8 +121,8 @@ function Home() {
               </Text>
               <Card.Section>
                 <Link to='/infos/neumitglied'>
-                  <Button variant={'white'} color={'indigo'} radius={'md'} mx={'xl'} mb={'xl'} component={'Link'} to={'/infos/neumitglied'}>
-                    Hier zur Anmeldung!
+                  <Button variant={'white'} color={'indigo'} radius={'md'} mx={'xl'} mb={'xl'} component={'Link'} to={'/infos/hallen'}>
+                    Hier zum Training!
                   </Button>
                 </Link>
               </Card.Section>

@@ -180,12 +180,12 @@ const Footer = () => {
         <Grid.Col md={4} sm={6}>
           <Box align={'center'}>
             <Blockquote cite={'- Thomas Frischknecht, Vereinspräsident Basketschool Sirnach'}>
-              Ein Sport, Eine Leidenschaft, Eine Familie
+              Lerne die Grundlagen oder verbessere dein Spiel
             </Blockquote>
           </Box>
         </Grid.Col>
       </Grid>
-      <Title order={4} align={'center'}>&copy; 2024 Basketschool Sirnach</Title>
+      <Title order={4} align={'center'}>&copy; 2025 Basketschool Sirnach</Title>
       <Text align={'center'} size={'sm'}>Engineering and Design by</Text>
       <Text align={'center'} pb={'lg'}><Anchor c={'black'} href={'https://github.com/davorluc'} underline={false}>Davor Lucic</Anchor> and <Anchor href={'https://github.com/FadilSmajilbasic'} underline={false} c={'black'}>Fadil Smajilbasic</Anchor></Text>
     </div>

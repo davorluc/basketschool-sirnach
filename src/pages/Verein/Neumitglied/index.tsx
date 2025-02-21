@@ -112,7 +112,7 @@ function Neumitglied() {
         </Group>
         <Group my={'xl'} mx={'7%'}>
           <Title order={2} c={'#1B1A55'}>Arten Mitgliedschaft</Title>
-          <Text>Generell wird zwischen Einzeltrainings, Sammelkarten und Jahresbeiträgen unterschieden. Nach den absolvierten Probetrainings soll sich das Kind, resp. die Eltern, für eines der Modelle entscheiden. Umso langfristiger das Kind dabei ist, desto weniger Kosten die Trainings im Schnitt.</Text>
+          <Text>Generell wird zwischen Einzeltrainings, Sammelkarten und Jahresbeiträgen unterschieden. Nach den absolvierten Probetrainings soll sich das Kind, resp. die Eltern, für eines der Modelle entscheiden. Umso langfristiger das Kind dabei ist, desto weniger Kosten die Trainings im Schnitt. Falls Ihnen das zu teuer ist, melden Sie sich bitte bei Thomas Frischknecht, wir finden eine Lösung. Niemand soll aus finanziellen Gründen kein Basketball lernen können.</Text>
         </Group>
         <Stack my={'xl'} mx={'7%'} align={'left'}>
           <Title order={3} c={'#1B1A55'}>Einzeltraining</Title>

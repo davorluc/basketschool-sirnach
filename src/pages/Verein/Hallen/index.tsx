@@ -17,8 +17,6 @@ import sonnenhof from '../../../media/hallen/sonnenhof.jpg'
 
 // Data for special Trainings
 const trainingData = [
-  { date: '20. Dezember - 06. Januar', description: 'Weihnachtsferien, es finden keine trainings statt', type: 'Ausfall' },
-  { date: '13. Januar', description: 'Es wird wieder trainiert.', type: 'Info' },
   { date: '05. Juli - 12. August', description: 'Sommerferien, es finden keine Trainings statt', type: 'Ausfall' },
 ];
 
@@ -73,7 +71,7 @@ function Hallen() {
                   <Group position={'apart'} m={'md'}>
                     <Title c={'#1B1A55'} order={2}>Turnhalle am Birkenweg</Title>
                     <Badge color={'blue'} variant={'light'}>
-                      10:30 - 12:00
+                      Samstags, 10:30 - 12:00
                     </Badge>
                     <Text color={'dimmed'}>Birkenweg 20, 8370 Sirnach, Schweiz</Text>
                   </Group>
