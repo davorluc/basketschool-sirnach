@@ -229,3 +229,8 @@ body {
   }
 
 }
+
+.card-img figure,
+.card-img figure .mantine-Image-imageWrapper {
+  height: 100%;
+}

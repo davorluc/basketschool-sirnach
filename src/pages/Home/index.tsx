@@ -13,6 +13,8 @@ import {
   Card,
   Image,
   Space,
+  Flex,
+  Anchor,
   Text,
   Badge,
   Group,
@@ -35,6 +37,8 @@ import swissInsurance from '../../media/sponsors/Logo_swissinsuranceag_04.png';
 import cubeless from '../../media/sponsors/cubeless_logo_rgb_500px_transp Juli 2023.png';
 import wilhelmsprot from '../../media/sponsors/wilhelmsportlogo.png';
 import raiffeisen from '../../media/sponsors/Raiffeisen_Schweiz_Logo.svg.png';
+import flyer from '../../assets/flyer.pdf';
+import autumn from 'http://static.photos/sport/1200x630/79';
 
 
 // Stylesheet imports here
@@ -47,34 +51,34 @@ function Home() {
 
   const upNextData = [
     { image: summer, title: 'Sommerferien!', datetime: '05.07.2025 - 12.08.2025', content: 'Die Saison neigt sich dem Ende, darum wünschen wir allen Spielern und Eltern unserer Spieler einen erholsamen Sommer!' },
+    { image: 'http://static.photos/sport/640x360/79', title: 'Herbstferien Trainigstage', datetime: '06/07.10.25 & 09/10.10.25', content: 'Die Basketschool bietet Trainingstage in den Herbstferien an. Für mehr Informationen, siehe Flyer unten.', file: flyer },
   ];
 
   const renderUpNextData = upNextData.map((event) => (
-    <Grid.Col md={10} sm={6}>
-      <Card shadow={'sm'} radius={'md'}>
-        <Card.Section>
-          <AspectRatio ratio={2048 / 1357}>
-            <Image
-              src={event.image}
-              height={'100%'}
-              alt={'first'}
-              fit={'fill'}
-            />
-          </AspectRatio>
-          <Group position={'apart'} m={'md'}>
-            <Text weight={500}>{event.title}</Text>
-            <Badge color={'blue'} variant={'light'}>
-              {event.datetime}
-            </Badge>
-          </Group>
-          <Spoiler showLabel={'mehr'} hideLabel={'weniger'} maxHeight={50} mx={'lg'} mb={'xs'}>
-            <Text size={'sm'} color={'dimmed'} mx={'lg'} maw={'60ch'} my={'sm'}>
-              {event.content}
-            </Text>
-          </Spoiler>
-        </Card.Section>
-      </Card>
-    </Grid.Col>
+    <Card shadow={'sm'} radius={'md'}>
+      <Card.Section>
+        <AspectRatio ratio={2048 / 1357}>
+          <Image
+            src={event.image}
+            height={'100%'}
+            width={'100%'}
+            alt={'first'}
+            fit={'cover'}
+            class={'card-img'}
+          />
+        </AspectRatio>
+        <Group position={'apart'} m={'md'}>
+          <Text weight={500}>{event.title}</Text>
+          <Badge color={'blue'} variant={'light'}>
+            {event.datetime}
+          </Badge>
+        </Group>
+        <Text size={'sm'} ml={'md'} color={'dimmed'} maw={'60ch'} my={'sm'}>
+          {event.content}
+        </Text>
+        {event.file && <Anchor ml={'md'} pb={'md'} href={event.file}>Flyer öffnen</Anchor>}
+      </Card.Section>
+    </Card>
   ));
 
   const sponsorData = [
@@ -137,9 +141,14 @@ function Home() {
               <Text c='white' mx='7%' mb='xl' size='xl'>Hier finden unsere Spieler und deren Eltern die nächsten wichtigen Termine. Von Spezialtrainings bis hin zu geplanten Trainingsausfällen durch andersweitige Hallenbesetzungen findet Ihr hier alles. Diese Sammlung wird regelmässig gepflegt, sodass ihr sicherlich keine wichtigen Infos verpasst. Bei Unklarheiten könnt ihr euch jederzeit bei einem der Trainer auf Whatsapp melden.</Text>
             </div>
             <div className={'next-content'}>
-              <Grid justify={'center'} align={'center'} mx={'lg'} pb='xl'>
+              <Flex
+                direction={{ base: 'column', sm: 'row' }}
+                gap={{ base: 'sm', sm: 'lg' }}
+                justify={{ sm: 'center' }}
+                pb='xl'
+              >
                 {renderUpNextData}
-              </Grid>
+              </Flex>
             </div>
           </div>
           <Divider mb='xl' mx='7%' />
